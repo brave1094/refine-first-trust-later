@@ -1,0 +1,2 @@
+﻿model,exp1_refined(%),exp4_unrefined_practice(%),"Δ(e1-e4,%p)",exp2_noisy_test(%),"Δ(e1-e2,%p)"
+rf,84.90,87.41,-2.51,31.75,+53.15

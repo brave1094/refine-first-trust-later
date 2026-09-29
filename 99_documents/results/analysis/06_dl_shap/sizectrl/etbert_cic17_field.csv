@@ -1,0 +1,44 @@
+﻿field,layer,artifact,exp1_refined,exp3_noisy,delta
+tcp.options.timestamp.tsval,L3/L4 header,0,0.21945,0.20870,-0.01075
+tcp.options.timestamp.tsecr,L3/L4 header,0,0.08303,0.08725,+0.00422
+ip.frag_offset,L3/L4 header,1,0.07545,0.05884,-0.01660
+ip.checksum,L3/L4 header,1,0.04388,0.05871,+0.01483
+tcp.option_len,L3/L4 header,0,0.05293,0.05046,-0.00247
+tcp.seq,L3/L4 header,0,0.03346,0.04346,+0.01000
+tcp.option_kind,L3/L4 header,0,0.03883,0.04042,+0.00159
+ip.ttl,L3/L4 header,1,0.03912,0.03930,+0.00018
+ip.len,L3/L4 header,0,0.03544,0.02986,-0.00558
+ip.id,L3/L4 header,1,0.03709,0.02976,-0.00733
+ip.src#masked,masked(ip/port),1,0.02699,0.02787,+0.00088
+tcp.ack,L3/L4 header,0,0.02711,0.02518,-0.00193
+ip.proto,L3/L4 header,0,0.02518,0.02461,-0.00057
+<pad>,pad/sep,0,0.02459,0.02416,-0.00043
+tcp.checksum,L3/L4 header,1,0.01807,0.02292,+0.00485
+ip.flags,L3/L4 header,1,0.02239,0.02232,-0.00007
+tcp.window_size_value,L3/L4 header,0,0.02015,0.02224,+0.00209
+tcp.options.mss_val,L3/L4 header,0,0.01886,0.02221,+0.00335
+tcp.options.nop,L3/L4 header,0,0.02373,0.01969,-0.00403
+tcp.urgent_pointer,L3/L4 header,0,0.01537,0.01717,+0.00181
+ip.dst#masked,masked(ip/port),1,0.01667,0.01645,-0.00022
+ip.version,L3/L4 header,0,0.01249,0.01518,+0.00269
+dns.qry.name,app/payload,0,0.01242,0.01382,+0.00139
+ip.dsfield,L3/L4 header,1,0.01245,0.01344,+0.00099
+tcp.options.wscale.shift,L3/L4 header,0,0.01342,0.01291,-0.00051
+tcp.flags.cwr,L3/L4 header,0,0.00956,0.01021,+0.00065
+tcp.hdr_len,L3/L4 header,0,0.00908,0.00945,+0.00038
+tcp.dstport#masked,masked(ip/port),1,0.00900,0.00872,-0.00028
+tcp.srcport#masked,masked(ip/port),1,0.00777,0.00752,-0.00026
+payload,app/payload,0,0.00349,0.00464,+0.00115
+dns.count.answers,app/payload,0,0.00178,0.00183,+0.00005
+dns.count.auth_rr,app/payload,0,0.00119,0.00163,+0.00043
+dns.count.queries,app/payload,0,0.00149,0.00142,-0.00006
+dns.qry.class,app/payload,0,0.00165,0.00138,-0.00027
+dns.qry.type,app/payload,0,0.00122,0.00119,-0.00004
+dns.count.add_rr,app/payload,0,0.00099,0.00104,+0.00005
+dns.flags,app/payload,0,0.00101,0.00082,-0.00019
+dns.id,app/payload,0,0.00071,0.00073,+0.00003
+udp.length,L3/L4 header,0,0.00067,0.00072,+0.00004
+udp.checksum,L3/L4 header,1,0.00074,0.00069,-0.00005
+udp.dstport#masked,masked(ip/port),1,0.00057,0.00059,+0.00002
+udp.srcport#masked,masked(ip/port),1,0.00044,0.00041,-0.00003
+tcp.options.eol,L3/L4 header,0,0.00008,0.00008,+0.00000

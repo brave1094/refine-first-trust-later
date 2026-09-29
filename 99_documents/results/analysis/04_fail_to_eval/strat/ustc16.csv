@@ -1,0 +1,5 @@
+﻿model,exp1_refined(%),exp4_unrefined_practice(%),"Δ(e1-e4,%p)",exp2_noisy_test(%),"Δ(e1-e2,%p)"
+rf,97.40,97.22,+0.18,96.55,+0.85
+etbert,97.42,97.47,-0.05,96.32,+1.10
+netmamba,96.95,96.42,+0.53,95.72,+1.23
+trafficformer,97.35,97.30,+0.05,96.22,+1.13

@@ -1,0 +1,15 @@
+{
+  "basis": "acc",
+  "best_value": 0.8237410071942446,
+  "params": {
+    "n_estimators": 700,
+    "max_depth": 12,
+    "learning_rate": 0.024872232756527182,
+    "subsample": 0.5283779531163562,
+    "colsample_bytree": 0.7221915356747067,
+    "min_child_weight": 2,
+    "gamma": 1.7606291839753019,
+    "reg_alpha": 0.06300256833685496,
+    "reg_lambda": 1.2847352691083356
+  }
+}

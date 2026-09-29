@@ -1,0 +1,16 @@
+{
+  "Benign": 0,
+  "Bot": 1,
+  "Brute-Force": 2,
+  "FTP-Patator": 3,
+  "GoldenEye": 4,
+  "HOIC": 5,
+  "Hulk": 6,
+  "Infiltration": 7,
+  "LOIC-UDP": 8,
+  "SSH-Patator": 9,
+  "Slowhttptest": 10,
+  "Slowloris": 11,
+  "Sql-Injection": 12,
+  "XSS": 13
+}

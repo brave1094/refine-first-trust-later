@@ -1,0 +1,162 @@
+﻿field,layer,artifact,exp1_refined,exp3_noisy,delta
+<pad>,pad/sep,0,0.29935,0.36725,+0.06791
+tcp.options.timestamp.tsval,L3/L4 header,0,0.15210,0.10392,-0.04818
+tcp.options.timestamp.tsecr,L3/L4 header,0,0.23663,0.10126,-0.13537
+tcp.window_size_value,L3/L4 header,0,0.16799,0.09311,-0.07487
+http.user_agent,app/payload,0,0.03394,0.08949,+0.05556
+http.request.line,app/payload,0,0.00817,0.05672,+0.04856
+http.accept,app/payload,0,0.00540,0.04373,+0.03833
+tcp.checksum,L3/L4 header,1,0.01462,0.02146,+0.00685
+tcp.hdr_len,L3/L4 header,0,0.00806,0.01660,+0.00854
+tcp.payload,L3/L4 header,0,0.00317,0.01332,+0.01016
+http.accept_language,app/payload,0,0.00205,0.01051,+0.00846
+http.referer,app/payload,0,0.00096,0.00851,+0.00754
+http.connection,app/payload,0,0.00100,0.00793,+0.00693
+ssh.protocol,app/payload,0,0.00025,0.00571,+0.00546
+tcp.ack,L3/L4 header,0,0.00630,0.00526,-0.00104
+http.cache_control,app/payload,0,0.00121,0.00483,+0.00362
+tcp.seq,L3/L4 header,0,0.00744,0.00364,-0.00380
+ip.id,L3/L4 header,1,0.00078,0.00306,+0.00228
+http.host,app/payload,0,0.00083,0.00291,+0.00208
+http.accept_encoding,app/payload,0,0.00079,0.00284,+0.00205
+cotp.type,app/payload,0,0.00070,0.00229,+0.00159
+tcp.segment_data,L3/L4 header,0,0.00060,0.00223,+0.00164
+ip.checksum,L3/L4 header,1,0.00124,0.00208,+0.00084
+http.request.uri,app/payload,0,0.00092,0.00195,+0.00102
+tcp.flags.cwr,L3/L4 header,0,0.00544,0.00193,-0.00351
+http.request.version,app/payload,0,0.00054,0.00175,+0.00121
+tcp.option_kind,L3/L4 header,0,0.00239,0.00125,-0.00114
+dns.qry.name,app/payload,0,0.00011,0.00117,+0.00106
+tcp.options.nop,L3/L4 header,0,0.02325,0.00113,-0.02212
+tls.handshake.sig_hash_sig,app/payload,0,0.00018,0.00112,+0.00094
+http.request.uri.query,app/payload,0,0.00063,0.00104,+0.00041
+tls.handshake.sig_hash_hash,app/payload,0,0.00015,0.00103,+0.00088
+ip.ttl,L3/L4 header,1,0.00085,0.00086,+0.00001
+tls.handshake.extension.type,app/payload,0,0.00018,0.00086,+0.00068
+tls.handshake.extensions_alpn_str,app/payload,0,0.00003,0.00085,+0.00082
+tcp.option_len,L3/L4 header,0,0.00166,0.00084,-0.00081
+tls.handshake.extension.len,app/payload,0,0.00020,0.00084,+0.00064
+cotp.srcref,app/payload,0,0.00004,0.00076,+0.00072
+rdp.rt_cookie,app/payload,0,0.00058,0.00070,+0.00012
+tls.handshake.session_id,app/payload,0,0.00005,0.00067,+0.00061
+tls.handshake.extensions_server_name,app/payload,0,0.00001,0.00056,+0.00056
+ip.flags,L3/L4 header,1,0.00012,0.00055,+0.00042
+tls.handshake.random_bytes,app/payload,0,0.00056,0.00054,-0.00002
+ip.len,L3/L4 header,0,0.00020,0.00052,+0.00032
+http.request.method,app/payload,0,0.00049,0.00051,+0.00001
+tcp.options.mss_val,L3/L4 header,0,0.00399,0.00050,-0.00349
+dns.a,app/payload,0,0.00005,0.00048,+0.00044
+tls.handshake.ciphersuite,app/payload,0,0.00002,0.00047,+0.00045
+tls.handshake.extensions_supported_group,app/payload,0,0.00009,0.00043,+0.00034
+cotp.destref,app/payload,0,0.00002,0.00041,+0.00039
+tpkt.version,app/payload,0,0.00001,0.00037,+0.00036
+http,app/payload,0,0.00091,0.00037,-0.00055
+smb.challenge,app/payload,0,0.00003,0.00035,+0.00032
+dns.resp.ttl,app/payload,0,0.00005,0.00032,+0.00027
+dns.cname,app/payload,0,0.00001,0.00031,+0.00030
+dns.resp.name,app/payload,0,0.00005,0.00027,+0.00022
+smb.system.time,app/payload,0,0.00002,0.00024,+0.00022
+dns.resp.len,app/payload,0,0.00002,0.00023,+0.00021
+dns.resp.type,app/payload,0,0.00003,0.00021,+0.00017
+dns.id,app/payload,0,0.00002,0.00021,+0.00019
+dns.resp.class,app/payload,0,0.00005,0.00021,+0.00016
+dns.aaaa,app/payload,0,0.00009,0.00020,+0.00011
+tls.handshake.extensions.session_ticket,app/payload,0,0.00003,0.00019,+0.00017
+tls.handshake.length,app/payload,0,0.00005,0.00018,+0.00013
+tls.handshake.extensions_supported_groups_length,app/payload,0,0.00002,0.00016,+0.00014
+tpkt.length,app/payload,0,0.00000,0.00015,+0.00014
+cotp.li,app/payload,0,0.00003,0.00015,+0.00012
+ip.version,L3/L4 header,0,0.00013,0.00015,+0.00001
+smb.primary_domain,app/payload,0,0.00001,0.00013,+0.00012
+dns.soa.rname,app/payload,0,0.00000,0.00013,+0.00013
+cotp.class,app/payload,0,0.00000,0.00011,+0.00011
+tls.handshake.extensions_status_request_exts_len,app/payload,0,0.00003,0.00011,+0.00008
+udp.payload,L3/L4 header,0,0.00012,0.00011,-0.00002
+tls.handshake.extensions_alpn_len,app/payload,0,0.00005,0.00011,+0.00006
+smb.server_timezone,app/payload,0,0.00000,0.00010,+0.00010
+smb.server,app/payload,0,0.00000,0.00010,+0.00009
+tls.record.length,app/payload,0,0.00008,0.00010,+0.00002
+dns.count.auth_rr,app/payload,0,0.00000,0.00010,+0.00009
+smb.flags2,app/payload,0,0.00002,0.00009,+0.00008
+tls.handshake.random_time,app/payload,0,0.00041,0.00009,-0.00032
+tls.handshake.extensions_status_request_responder_ids_len,app/payload,0,0.00002,0.00008,+0.00006
+smb.dialect.name,app/payload,0,0.00000,0.00008,+0.00008
+ip.dsfield,L3/L4 header,1,0.00002,0.00008,+0.00006
+rdp.neg_type,app/payload,0,0.00000,0.00007,+0.00007
+smb.server_cap,app/payload,0,0.00001,0.00007,+0.00006
+tls.handshake.sig_hash_alg_len,app/payload,0,0.00002,0.00007,+0.00005
+dns.count.add_rr,app/payload,0,0.00000,0.00006,+0.00006
+tls.handshake.extensions_length,app/payload,0,0.00000,0.00006,+0.00006
+tls.handshake.extensions_ec_point_formats,app/payload,0,0.00002,0.00006,+0.00004
+rdp.negReq.requestedProtocols,app/payload,0,0.00000,0.00006,+0.00005
+tls.handshake.extensions_ec_point_formats_length,app/payload,0,0.00004,0.00005,+0.00002
+tls.handshake.extensions_alpn_str_len,app/payload,0,0.00002,0.00005,+0.00004
+rdp,app/payload,0,0.00001,0.00005,+0.00004
+smb.pid,app/payload,0,0.00001,0.00005,+0.00004
+dns.soa.mname,app/payload,0,0.00000,0.00005,+0.00005
+rdp.negRsp.flags,app/payload,0,0.00003,0.00005,+0.00002
+dns.soa.minimum_ttl,app/payload,0,0.00000,0.00005,+0.00005
+tls.handshake.extensions_server_name_list_len,app/payload,0,0.00000,0.00005,+0.00004
+udp.length,L3/L4 header,0,0.00010,0.00004,-0.00006
+rdp.negReq.selectedProtocol,app/payload,0,0.00000,0.00004,+0.00004
+tls.handshake.cipher_suites_length,app/payload,0,0.00000,0.00004,+0.00004
+tcp.options.wscale.shift,L3/L4 header,0,0.00019,0.00004,-0.00015
+http.request.uri.path,app/payload,0,0.00002,0.00004,+0.00003
+tls.handshake.extensions_status_request_type,app/payload,0,0.00001,0.00004,+0.00003
+tls.handshake.comp_methods_length,app/payload,0,0.00000,0.00004,+0.00004
+smb.flags,app/payload,0,0.00001,0.00004,+0.00003
+dns.soa.expire_limit,app/payload,0,0.00000,0.00004,+0.00004
+dns.count.queries,app/payload,0,0.00002,0.00004,+0.00002
+ip.proto,L3/L4 header,0,0.00006,0.00004,-0.00002
+rdp.neg_length,app/payload,0,0.00001,0.00004,+0.00003
+udp.checksum,L3/L4 header,1,0.00003,0.00004,+0.00001
+tls.handshake.extensions_reneg_info_len,app/payload,0,0.00000,0.00004,+0.00003
+tpkt.reserved,app/payload,0,0.00001,0.00004,+0.00003
+dns.count.answers,app/payload,0,0.00001,0.00003,+0.00003
+tls.record.content_type,app/payload,0,0.00005,0.00003,-0.00002
+smb.server_component,app/payload,0,0.00009,0.00003,-0.00006
+dns.flags,app/payload,0,0.00000,0.00003,+0.00002
+tls.handshake.version,app/payload,0,0.00000,0.00002,+0.00002
+dns.soa.serial_number,app/payload,0,0.00000,0.00002,+0.00002
+tls.handshake.extensions_server_name_len,app/payload,0,0.00000,0.00002,+0.00002
+smb.cmd,app/payload,0,0.00029,0.00002,-0.00027
+rdp.negReq.flags,app/payload,0,0.00000,0.00002,+0.00002
+dns.qry.type,app/payload,0,0.00000,0.00002,+0.00001
+tls.handshake.extensions_server_name_type,app/payload,0,0.00000,0.00002,+0.00002
+dns.qry.class,app/payload,0,0.00001,0.00002,+0.00001
+dns.soa.retry_interval,app/payload,0,0.00000,0.00001,+0.00001
+nbss.length,app/payload,0,0.00008,0.00001,-0.00007
+tls.handshake.type,app/payload,0,0.00006,0.00001,-0.00005
+tls.record.version,app/payload,0,0.00013,0.00001,-0.00012
+tls.handshake.session_id_length,app/payload,0,0.00000,0.00001,+0.00001
+smb.nt_status,app/payload,0,0.00000,0.00001,+0.00001
+smb.session_key,app/payload,0,0.00000,0.00001,+0.00001
+tls.handshake.comp_methods,app/payload,0,0.00000,0.00001,+0.00001
+dns.soa.refresh_interval,app/payload,0,0.00000,0.00001,+0.00001
+smb.signature,app/payload,0,0.00000,0.00001,+0.00000
+smb.max_raw,app/payload,0,0.00000,0.00000,+0.00000
+smb.max_bufsize,app/payload,0,0.00000,0.00000,+0.00000
+smb.pid.high,app/payload,0,0.00000,0.00000,+0.00000
+nbss.type,app/payload,0,0.00000,0.00000,+0.00000
+smb.wct,app/payload,0,0.00000,0.00000,+0.00000
+smb.challenge_length,app/payload,0,0.00000,0.00000,+0.00000
+smb.uid,app/payload,0,0.00000,0.00000,+0.00000
+smb.bcc,app/payload,0,0.00000,0.00000,+0.00000
+smb.sm,app/payload,0,0.00000,0.00000,+0.00000
+smb.dialect.index,app/payload,0,0.00000,0.00000,+0.00000
+smb.max_mpx_count,app/payload,0,0.00000,0.00000,+0.00000
+smb.tid,app/payload,0,0.00000,0.00000,+0.00000
+smb.max_vcs,app/payload,0,0.00000,0.00000,+0.00000
+smb.mid,app/payload,0,0.00000,0.00000,+0.00000
+smb.buffer_format,app/payload,0,0.00000,0.00000,+0.00000
+smb.reserved,app/payload,0,0.00000,0.00000,+0.00000
+tcp.options.eol,L3/L4 header,0,0.00000,0.00000,-0.00000
+tls.handshake.comp_method,app/payload,0,0.00000,0.00000,+0.00000
+tcp.urgent_pointer,L3/L4 header,0,0.00000,0.00000,+0.00000
+udp.dstport#masked,masked(ip/port),1,0.00000,0.00000,+0.00000
+tcp.dstport#masked,masked(ip/port),1,0.00000,0.00000,+0.00000
+ip.src#masked,masked(ip/port),1,0.00000,0.00000,+0.00000
+udp.srcport#masked,masked(ip/port),1,0.00000,0.00000,+0.00000
+tcp.srcport#masked,masked(ip/port),1,0.00000,0.00000,+0.00000
+ip.dst#masked,masked(ip/port),1,0.00000,0.00000,+0.00000
+ip.frag_offset,L3/L4 header,1,0.00000,0.00000,+0.00000

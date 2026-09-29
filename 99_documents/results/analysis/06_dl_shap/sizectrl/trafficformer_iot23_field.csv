@@ -1,0 +1,75 @@
+﻿field,layer,artifact,exp1_refined,exp3_noisy,delta
+<pad>,pad/sep,0,0.16277,0.16409,+0.00132
+dns.qry.name,app/payload,0,0.07639,0.08173,+0.00534
+ip.src#masked,masked(ip/port),1,0.07241,0.07573,+0.00332
+ip.id,L3/L4 header,1,0.07769,0.07483,-0.00285
+tcp.ack,L3/L4 header,0,0.05993,0.07264,+0.01271
+dns.id,app/payload,0,0.02525,0.03908,+0.01383
+payload,app/payload,0,0.03935,0.03850,-0.00085
+ip.checksum,L3/L4 header,1,0.04164,0.03762,-0.00401
+tcp.seq,L3/L4 header,0,0.04455,0.03516,-0.00939
+udp.payload,L3/L4 header,0,0.03159,0.03375,+0.00216
+ip.flags,L3/L4 header,1,0.03421,0.03354,-0.00067
+dns.flags,app/payload,0,0.02263,0.02576,+0.00314
+ip.dst#masked,masked(ip/port),1,0.02311,0.02026,-0.00284
+tcp.window_size_value,L3/L4 header,0,0.01726,0.02000,+0.00274
+ip.len,L3/L4 header,0,0.01898,0.01736,-0.00162
+ip.proto,L3/L4 header,0,0.01443,0.01687,+0.00243
+ip.frag_offset,L3/L4 header,1,0.01653,0.01610,-0.00042
+udp.checksum,L3/L4 header,1,0.01840,0.01527,-0.00313
+tcp.checksum,L3/L4 header,1,0.01241,0.01480,+0.00239
+ip.ttl,L3/L4 header,1,0.01790,0.01463,-0.00328
+dns.count.queries,app/payload,0,0.01482,0.01457,-0.00025
+dns.count.answers,app/payload,0,0.00957,0.01108,+0.00151
+tcp.urgent_pointer,L3/L4 header,0,0.01420,0.01029,-0.00392
+tcp.options.timestamp.tsecr,L3/L4 header,0,0.00829,0.00830,+0.00000
+ip.version,L3/L4 header,0,0.00849,0.00752,-0.00097
+<sep>,pad/sep,0,0.00561,0.00705,+0.00145
+ip.dsfield,L3/L4 header,1,0.00759,0.00654,-0.00104
+tcp.hdr_len,L3/L4 header,0,0.01172,0.00651,-0.00521
+tcp.options.timestamp.tsval,L3/L4 header,0,0.00707,0.00650,-0.00057
+dns.count.auth_rr,app/payload,0,0.00662,0.00600,-0.00062
+tcp.flags.cwr,L3/L4 header,0,0.00745,0.00556,-0.00189
+tcp.dstport#masked,masked(ip/port),1,0.00607,0.00550,-0.00058
+tcp.option_len,L3/L4 header,0,0.00563,0.00506,-0.00057
+tcp.payload,L3/L4 header,0,0.00591,0.00505,-0.00086
+tcp.option_kind,L3/L4 header,0,0.00554,0.00479,-0.00074
+udp.length,L3/L4 header,0,0.00625,0.00468,-0.00157
+dns.qry.type,app/payload,0,0.00396,0.00460,+0.00064
+dns.count.add_rr,app/payload,0,0.00564,0.00411,-0.00153
+tcp.srcport#masked,masked(ip/port),1,0.00472,0.00385,-0.00087
+tcp.options.mss_val,L3/L4 header,0,0.00418,0.00316,-0.00102
+udp.dstport#masked,masked(ip/port),1,0.00375,0.00294,-0.00080
+udp.srcport#masked,masked(ip/port),1,0.00367,0.00292,-0.00075
+tcp.options.nop,L3/L4 header,0,0.00272,0.00260,-0.00012
+dns.qry.class,app/payload,0,0.00181,0.00212,+0.00030
+tls.app_data,app/payload,0,0.00158,0.00163,+0.00004
+dns.resp.class,app/payload,0,0.00123,0.00137,+0.00013
+gre.proto,app/payload,0,0.00082,0.00090,+0.00008
+dns.resp.name,app/payload,0,0.00104,0.00084,-0.00020
+dns.resp.type,app/payload,0,0.00106,0.00083,-0.00023
+http.request.uri,app/payload,0,0.00085,0.00072,-0.00013
+dns.resp.ttl,app/payload,0,0.00045,0.00066,+0.00021
+http.request.uri.path,app/payload,0,0.00049,0.00061,+0.00012
+tls.record.length,app/payload,0,0.00052,0.00051,-0.00001
+icmp.unused,L3/L4 header,0,0.00043,0.00048,+0.00005
+tls.record.version,app/payload,0,0.00035,0.00044,+0.00009
+http.response.version,app/payload,0,0.00053,0.00037,-0.00016
+http.request.method,app/payload,0,0.00043,0.00030,-0.00013
+tls.record.content_type,app/payload,0,0.00028,0.00023,-0.00004
+icmp.checksum,L3/L4 header,1,0.00023,0.00018,-0.00005
+http.response.code,app/payload,0,0.00018,0.00016,-0.00002
+rtsp.method,app/payload,0,0.00009,0.00015,+0.00005
+icmp.code,L3/L4 header,0,0.00019,0.00014,-0.00005
+icmp.type,L3/L4 header,0,0.00023,0.00011,-0.00012
+ssh.protocol,app/payload,0,0.00008,0.00008,+0.00000
+tcp.options.sack_le,L3/L4 header,0,0.00003,0.00006,+0.00003
+rtsp.request,app/payload,0,0.00001,0.00006,+0.00005
+rtsp.url,app/payload,0,0.00002,0.00004,+0.00003
+tcp.options.sack_re,L3/L4 header,0,0.00007,0.00004,-0.00003
+http,app/payload,0,0.00004,0.00002,-0.00002
+xml.attribute,app/payload,0,0.00002,0.00001,-0.00000
+http.request.uri.query.parameter,app/payload,0,0.00001,0.00001,+0.00000
+json.array,app/payload,0,0.00000,0.00000,+0.00000
+json.path_with_value,app/payload,0,0.00000,0.00000,-0.00000
+gre.flags_and_version,app/payload,0,0.00000,0.00000,+0.00000

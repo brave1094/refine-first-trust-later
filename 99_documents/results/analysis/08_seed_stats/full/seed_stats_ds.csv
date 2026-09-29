@@ -1,0 +1,9 @@
+﻿dataset,n,delta_mean_pp,within_seed_sd_pp,between_model_sd_pp,ci_lo,ci_hi,n_model_pos,n_model_neg,verdict
+vpn16,35,16.64,1.56,3.16,15.53,17.76,7,0,significant effect (+)
+tor16,35,-0.17,1.22,1.33,-0.89,0.55,4,2,within error (≈0)
+tls1.3,35,-0.11,0.92,0.41,-0.49,0.27,2,5,within error (≈0)
+cispec,35,-0.08,0.55,0.13,-0.42,0.27,0,3,within error (≈0)
+ustc16,35,0.12,0.83,0.60,-0.37,0.60,2,5,within error (≈0)
+cic17,35,0.39,1.31,1.10,-0.32,1.10,3,3,within error (≈0)
+cic18,35,-0.40,1.55,1.47,-1.39,0.59,3,4,within error (≈0)
+iot23,35,6.97,2.32,1.58,5.90,8.04,7,0,significant effect (+)

@@ -1,0 +1,2 @@
+﻿model,exp1_refined(%),exp3_noisy(%),"Δ(e1-e3,%p)"
+rf,95.49,93.28,+2.21

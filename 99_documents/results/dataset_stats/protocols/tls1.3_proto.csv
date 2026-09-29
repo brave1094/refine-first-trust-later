@@ -1,0 +1,7 @@
+﻿layer,protocol,count,ratio_%
+L3,ip,46382,100.000
+L4,tcp,46382,100.000
+L7,tls,46376,99.987
+L7,-,4,0.009
+L7,mptcp,1,0.002
+L7,irc,1,0.002

@@ -1,0 +1,9 @@
+﻿dataset,exp1-exp4(%p),base_noise_rate(%),wrong_noise_rate(%),Lift,verdict
+vpn16,+5.68,77.9,96.3,1.24,holds
+tor16,+2.14,50.9,89.6,1.76,holds
+tls1.3,-0.15,0.0,—,0.00,control
+cispec,-0.09,0.0,—,0.00,control
+ustc16,+0.21,64.7,72.2,1.12,holds
+cic17,+0.10,0.0,0.0,0.00,⚠️Lift<1
+cic18,-0.07,29.0,20.9,0.72,⚠️Lift<1
+iot23,+8.26,58.7,82.5,1.41,holds

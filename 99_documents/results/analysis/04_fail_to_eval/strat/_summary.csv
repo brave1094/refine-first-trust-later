@@ -1,0 +1,8 @@
+﻿dataset,exp1-exp4(%p),base_noise_rate(%),wrong_noise_rate(%),Lift,verdict
+vpn16,-2.51,87.6,99.0,1.13,holds
+tor16,+4.15,36.6,93.0,2.54,holds
+tls1.3,-0.24,0.0,—,—,control(clean)
+cispec,+0.74,0.0,—,—,control(clean)
+ustc16,+0.18,3.9,30.7,7.97,holds
+cic17,-0.22,0.5,21.9,44.98,holds
+cic18,-0.40,9.8,—,—,not_counted(no wrong_list)

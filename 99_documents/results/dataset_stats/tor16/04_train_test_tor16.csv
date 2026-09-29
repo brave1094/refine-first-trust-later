@@ -1,0 +1,16 @@
+﻿class,train_noisy,train_denoised,test_noisy,test_denoised,excluded
+Browser,798,806,202,194,
+BitTorrent,788,798,212,202,
+FTP,803,806,197,194,
+Spotify,818,537,182,129,
+Youtube,800,184,200,43,
+Skype,805,801,195,199,
+Vimeo,587,245,161,63,
+Facebook,386,197,83,47,
+Gmail,380,15,82,3,
+Hangouts,311,64,55,11,
+ICQ,45,4,8,1,
+SFTP,14,11,0,0,
+Twitter,0,0,0,0,Y
+AIM,0,0,0,0,Y
+Google,0,0,0,0,Y

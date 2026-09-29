@@ -1,0 +1,17 @@
+﻿applied_rules,Aa_2,Aa_4,Aa_6,Aa_7,Bb_5,Bb_8,Bb_9,Bb_10,Bb_11,Bb_12
+class,count,excluded
+Benign,1139956,
+PortScan,159098,
+Hulk,156953,
+LOIC,84908,
+GoldenEye,7379,
+FTP-Patator,3741,
+Slowloris,3626,
+Slowhttptest,3576,
+SSH-Patator,2951,
+none,0,Y
+Bot,2208,
+Brute-Force,1246,
+XSS,576,
+Infiltration,0,
+Sql-Injection,12,

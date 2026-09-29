@@ -1,0 +1,28 @@
+﻿field,layer,artifact,exp1_refined,exp3_noisy,delta
+ip.proto,L3/L4 header,0,0.16538,0.16538,+0.00000
+ip.len,L3/L4 header,0,0.16134,0.16134,+0.00000
+ip.src#masked,masked(ip/port),1,0.14462,0.14462,+0.00000
+ip.checksum,L3/L4 header,1,0.10411,0.10411,+0.00000
+ip.id,L3/L4 header,1,0.07618,0.07618,+0.00000
+tcp.options.timestamp.tsval,L3/L4 header,0,0.05554,0.05554,+0.00000
+ip.frag_offset,L3/L4 header,1,0.05206,0.05206,+0.00000
+ip.flags,L3/L4 header,1,0.04702,0.04702,+0.00000
+ip.ttl,L3/L4 header,1,0.04671,0.04671,+0.00000
+ip.dst#masked,masked(ip/port),1,0.02941,0.02941,+0.00000
+tcp.seq,L3/L4 header,0,0.02131,0.02131,+0.00000
+tcp.ack,L3/L4 header,0,0.01262,0.01262,+0.00000
+tcp.option_len,L3/L4 header,0,0.01217,0.01217,+0.00000
+tcp.checksum,L3/L4 header,1,0.01117,0.01117,+0.00000
+tcp.option_kind,L3/L4 header,0,0.00912,0.00912,+0.00000
+tcp.urgent_pointer,L3/L4 header,0,0.00912,0.00912,+0.00000
+tcp.options.timestamp.tsecr,L3/L4 header,0,0.00827,0.00827,+0.00000
+tcp.window_size_value,L3/L4 header,0,0.00796,0.00796,+0.00000
+tcp.options.mss_val,L3/L4 header,0,0.00565,0.00565,+0.00000
+tcp.hdr_len,L3/L4 header,0,0.00451,0.00451,+0.00000
+tcp.flags.cwr,L3/L4 header,0,0.00427,0.00427,+0.00000
+ip.version,L3/L4 header,0,0.00342,0.00342,+0.00000
+ip.dsfield,L3/L4 header,1,0.00330,0.00330,+0.00000
+tcp.dstport#masked,masked(ip/port),1,0.00182,0.00182,+0.00000
+tcp.options.wscale.shift,L3/L4 header,0,0.00152,0.00152,+0.00000
+tcp.options.nop,L3/L4 header,0,0.00136,0.00136,+0.00000
+tcp.srcport#masked,masked(ip/port),1,0.00006,0.00006,+0.00000

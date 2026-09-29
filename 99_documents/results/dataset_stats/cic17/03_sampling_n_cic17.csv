@@ -1,0 +1,17 @@
+﻿sampling_n,2000
+class,noisy,denoised,excluded
+Benign,1000,1000,
+PortScan,1000,1000,
+Hulk,1000,1000,
+LOIC,1000,1000,
+GoldenEye,1000,1000,
+FTP-Patator,1000,1000,
+Slowloris,1000,1000,
+Slowhttptest,1000,1000,
+SSH-Patator,1000,1000,
+none,0,0,Y
+Bot,1000,1000,
+Brute-Force,1000,1000,
+XSS,576,576,
+Infiltration,20,0,
+Sql-Injection,12,12,

@@ -1,0 +1,4 @@
+﻿layer,protocol,count,ratio_%
+L3,ip,123000,100.000
+L4,tcp,123000,100.000
+L7,tls,123000,100.000

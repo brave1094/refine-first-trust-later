@@ -1,0 +1,4 @@
+﻿# cic18 classes excluded from experiments (05_make_filelist EXCLUDE_LABELS)
+# excluded 0 / total 14
+
+(no excluded classes)

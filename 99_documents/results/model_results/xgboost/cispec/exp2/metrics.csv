@@ -1,0 +1,2 @@
+accuracy,f1_macro,balanced_acc,best_iteration,n_train,n_test,n_features,tuned
+0.987884,0.987927,0.987922,549,32664,8336,1205,True

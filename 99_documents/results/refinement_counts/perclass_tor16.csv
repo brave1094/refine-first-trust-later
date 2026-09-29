@@ -1,0 +1,16 @@
+﻿group,class,before,after,removed,vanished
+app,AIM,6,0,6,1
+app,BitTorrent,21644,20814,830,0
+app,Browser,33508,16385,17123,0
+app,Facebook,469,244,225,0
+app,FTP,1556,1088,468,0
+app,Gmail,462,18,444,0
+app,Google,5,0,5,1
+app,Hangouts,366,75,291,0
+app,ICQ,53,5,48,0
+app,SFTP,14,11,3,0
+app,Skype,1097,1001,96,0
+app,Spotify,1363,666,697,0
+app,Twitter,6,0,6,1
+app,Vimeo,748,308,440,0
+app,Youtube,1296,227,1069,0

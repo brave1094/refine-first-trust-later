@@ -1,0 +1,17 @@
+﻿applied_rules,Aa_1,Aa_2,Aa_4,Aa_5,Aa_6,Aa_7,Bb_1,Bb_2,Cc_1,Cc_2,Cc_3,Cc_5,Cd_2,Cd_3,Cd_4,De_1,De_3,De_4,Df_1
+class,count,excluded
+Browser,16385,
+BitTorrent,20814,
+FTP,1088,
+Spotify,666,
+Youtube,227,
+Skype,1001,
+Vimeo,308,
+Facebook,244,
+Gmail,18,
+Hangouts,75,
+ICQ,5,
+SFTP,11,
+Twitter,0,Y
+AIM,0,Y
+Google,0,Y

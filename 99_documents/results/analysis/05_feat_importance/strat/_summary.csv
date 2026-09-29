@@ -1,0 +1,7 @@
+﻿dataset,"rankρ(e1,e3)",artifact_mass_e1(%),_e3(%),Δ(%p),top1_e1,top1_e3,verdict
+vpn16,0.650,1.4,13.2,+11.8,payload_Forward_5_Geo_Mean,ip_id_hi,strong_distortion
+tor16,0.696,0.4,0.4,-0.0,packet_sizes_Both_5_Sample_Std,payload_Both_5_Mean,⚠️reversed
+tls1.3,0.930,5.9,1.9,-4.1,tcp_window_lo,tcp_window_lo,⚠️reversed
+cispec,0.988,0.0,0.0,-0.0,packet_sizes_Backward_5_Sum,packet_sizes_Backward_5_Sum,⚠️reversed
+ustc16,0.951,5.8,5.6,-0.1,tcp_window_hi,tcp_window_hi,⚠️reversed
+cic17,0.896,8.1,7.8,-0.3,ip_ttl,ip_ttl,⚠️reversed

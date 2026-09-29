@@ -1,0 +1,6 @@
+﻿# tor16 classes excluded from experiments (05_make_filelist EXCLUDE_LABELS)
+# excluded 3 / total 15
+
+Twitter	origin=6  refined=0  (excluded: too few in origin / untrainable after refinement)
+AIM	origin=6  refined=0  (excluded: too few in origin / untrainable after refinement)
+Google	origin=5  refined=0  (excluded: too few in origin / untrainable after refinement)

@@ -1,0 +1,17 @@
+﻿sampling_n,2000
+class,noisy,denoised,excluded
+Browser,1000,1000,
+BitTorrent,1000,1000,
+FTP,1000,1000,
+Spotify,1000,666,
+Youtube,1000,227,
+Skype,1000,1000,
+Vimeo,748,308,
+Facebook,469,244,
+Gmail,462,18,
+Hangouts,366,75,
+ICQ,53,5,
+SFTP,14,11,
+Twitter,0,0,Y
+AIM,0,0,Y
+Google,0,0,Y

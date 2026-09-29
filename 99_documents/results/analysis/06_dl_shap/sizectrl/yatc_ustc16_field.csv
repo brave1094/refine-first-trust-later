@@ -1,0 +1,263 @@
+﻿field,layer,artifact,exp1_refined,exp3_noisy,delta
+<pad>,pad/sep,0,0.36580,0.35521,-0.01060
+tcp.window_size_value,L3/L4 header,0,0.10576,0.13278,+0.02701
+tcp.payload,L3/L4 header,0,0.06297,0.06167,-0.00129
+tcp.options.timestamp.tsval,L3/L4 header,0,0.06489,0.05835,-0.00654
+tcp.options.timestamp.tsecr,L3/L4 header,0,0.05212,0.04253,-0.00959
+ip.ttl,L3/L4 header,1,0.02331,0.03531,+0.01200
+ip.id,L3/L4 header,1,0.03133,0.03067,-0.00066
+tcp.ack,L3/L4 header,0,0.02397,0.02640,+0.00243
+ip.checksum,L3/L4 header,1,0.03006,0.02573,-0.00433
+dns.qry.name,app/payload,0,0.02274,0.02441,+0.00167
+udp.payload,L3/L4 header,0,0.02173,0.02071,-0.00102
+tcp.seq,L3/L4 header,0,0.01565,0.01686,+0.00121
+tls.app_data,app/payload,0,0.01574,0.01568,-0.00006
+bt-dht.bencoded.string,app/payload,0,0.01079,0.00999,-0.00080
+ip.flags,L3/L4 header,1,0.00933,0.00770,-0.00163
+ip.len,L3/L4 header,0,0.00513,0.00696,+0.00183
+dns.soa.rname,app/payload,0,0.00580,0.00653,+0.00074
+tcp.options.nop,L3/L4 header,0,0.01144,0.00640,-0.00504
+tcp.options.mss_val,L3/L4 header,0,0.00807,0.00604,-0.00203
+payload,app/payload,0,0.00620,0.00582,-0.00038
+http.request.uri,app/payload,0,0.01024,0.00574,-0.00450
+dns.soa.serial_number,app/payload,0,0.00612,0.00518,-0.00094
+tcp.checksum,L3/L4 header,1,0.00225,0.00515,+0.00290
+bt-dht.id,app/payload,0,0.00468,0.00509,+0.00040
+dns.soa.mname,app/payload,0,0.00686,0.00408,-0.00278
+dns.flags,app/payload,0,0.00250,0.00398,+0.00148
+tls.handshake.random_bytes,app/payload,0,0.00410,0.00372,-0.00038
+tls.handshake.session_id,app/payload,0,0.00302,0.00366,+0.00065
+dns.id,app/payload,0,0.00288,0.00362,+0.00074
+tcp.hdr_len,L3/L4 header,0,0.00394,0.00340,-0.00054
+tcp.option_len,L3/L4 header,0,0.00425,0.00259,-0.00166
+dns.resp.name,app/payload,0,0.00165,0.00247,+0.00082
+mysql.payload,app/payload,0,0.00171,0.00227,+0.00056
+bt-dht.bencoded.dict_entry,app/payload,0,0.00337,0.00210,-0.00126
+tcp.option_kind,L3/L4 header,0,0.00371,0.00208,-0.00163
+x509af.algorithm.id,app/payload,0,0.00089,0.00172,+0.00083
+ftp.response.arg,app/payload,0,0.00096,0.00171,+0.00075
+ip.proto,L3/L4 header,0,0.00112,0.00156,+0.00044
+udp.length,L3/L4 header,0,0.00212,0.00147,-0.00065
+dns.a,app/payload,0,0.00135,0.00131,-0.00004
+udp.checksum,L3/L4 header,1,0.00069,0.00120,+0.00051
+http.request.uri.query.parameter,app/payload,0,0.00138,0.00115,-0.00022
+wow.utc.timezone.offset,app/payload,0,0.00079,0.00115,+0.00036
+bt-dht.ip,app/payload,0,0.00088,0.00100,+0.00012
+ip.dsfield,L3/L4 header,1,0.00119,0.00099,-0.00020
+dns.soa.expire_limit,app/payload,0,0.00061,0.00098,+0.00037
+dns.count.auth_rr,app/payload,0,0.00100,0.00098,-0.00003
+dns.resp.ttl,app/payload,0,0.00079,0.00095,+0.00016
+x509sat.printableString,app/payload,0,0.00067,0.00091,+0.00024
+x509af.notAfter,app/payload,0,0.00113,0.00090,-0.00022
+x509af.notBefore,app/payload,0,0.00096,0.00086,-0.00010
+dns.qry.class,app/payload,0,0.00051,0.00082,+0.00031
+x509sat.teletexString,app/payload,0,0.00059,0.00081,+0.00022
+dns.qry.type,app/payload,0,0.00061,0.00080,+0.00019
+tls.handshake.random_time,app/payload,0,0.00126,0.00076,-0.00050
+tcp.flags.cwr,L3/L4 header,0,0.00086,0.00076,-0.00010
+smb.server_component,app/payload,0,0.00132,0.00076,-0.00057
+http.user_agent,app/payload,0,0.00055,0.00067,+0.00013
+x509if.oid,app/payload,0,0.00046,0.00066,+0.00021
+tls.handshake.ciphersuite,app/payload,0,0.00055,0.00061,+0.00006
+tls.record.length,app/payload,0,0.00049,0.00061,+0.00012
+dns.soa.refresh_interval,app/payload,0,0.00041,0.00059,+0.00018
+tls.handshake.length,app/payload,0,0.00036,0.00058,+0.00022
+tls.handshake.extension.type,app/payload,0,0.00023,0.00054,+0.00031
+ip.version,L3/L4 header,0,0.00057,0.00053,-0.00004
+mysql.query,app/payload,0,0.00053,0.00053,+0.00000
+ip.dst#masked,masked(ip/port),1,0.00052,0.00053,+0.00001
+x509if.RDNSequence_item,app/payload,0,0.00052,0.00052,+0.00001
+wow.client.ip.address,app/payload,0,0.00017,0.00048,+0.00032
+bt-dht.port,app/payload,0,0.00039,0.00048,+0.00008
+wow.locale,app/payload,0,0.00043,0.00047,+0.00004
+dns.ns,app/payload,0,0.00050,0.00046,-0.00004
+ip.frag_offset,L3/L4 header,1,0.00046,0.00044,-0.00002
+dns.count.queries,app/payload,0,0.00041,0.00044,+0.00003
+ftp.request.arg,app/payload,0,0.00014,0.00044,+0.00030
+dns.count.add_rr,app/payload,0,0.00058,0.00041,-0.00018
+wow.name,app/payload,0,0.00032,0.00037,+0.00005
+wow.os,app/payload,0,0.00024,0.00036,+0.00012
+dns.resp.type,app/payload,0,0.00033,0.00036,+0.00003
+wow.account.name,app/payload,0,0.00022,0.00036,+0.00014
+x509if.rdnSequence,app/payload,0,0.00030,0.00036,+0.00006
+dns.count.answers,app/payload,0,0.00048,0.00035,-0.00013
+wow.platform,app/payload,0,0.00016,0.00034,+0.00018
+udp.srcport#masked,masked(ip/port),1,0.00034,0.00034,-0.00000
+x509af.signedCertificate_element,app/payload,0,0.00022,0.00032,+0.00010
+dns.mx.mail_exchange,app/payload,0,0.00041,0.00030,-0.00012
+x509af.issuer,app/payload,0,0.00018,0.00030,+0.00012
+tls.handshake.extensions_alpn_str,app/payload,0,0.00015,0.00029,+0.00014
+ftp.request.command,app/payload,0,0.00008,0.00029,+0.00022
+icmp.unused,L3/L4 header,0,0.00037,0.00029,-0.00008
+mysql.schema,app/payload,0,0.00026,0.00029,+0.00003
+smb,app/payload,0,0.00022,0.00027,+0.00005
+mysql.packet_length,app/payload,0,0.00017,0.00027,+0.00010
+http.request.uri.path,app/payload,0,0.00053,0.00026,-0.00027
+tls.handshake.extension.len,app/payload,0,0.00014,0.00026,+0.00012
+tls.record.version,app/payload,0,0.00020,0.00026,+0.00006
+http.host,app/payload,0,0.00043,0.00026,-0.00018
+tls.handshake.version,app/payload,0,0.00019,0.00025,+0.00006
+smb.cmd,app/payload,0,0.00008,0.00025,+0.00017
+wow.game.name,app/payload,0,0.00027,0.00023,-0.00004
+tls.handshake.certificate,app/payload,0,0.00020,0.00023,+0.00003
+mysql.version,app/payload,0,0.00026,0.00023,-0.00003
+smb.flags2,app/payload,0,0.00007,0.00023,+0.00016
+ip.src#masked,masked(ip/port),1,0.00006,0.00021,+0.00015
+dns.resp.class,app/payload,0,0.00036,0.00021,-0.00015
+bt-dht.bencoded.dict,app/payload,0,0.00027,0.00021,-0.00006
+bt-dht.bencoded.list.terminator,app/payload,0,0.00015,0.00020,+0.00005
+http.accept,app/payload,0,0.00024,0.00020,-0.00004
+dns.resp.len,app/payload,0,0.00034,0.00019,-0.00015
+tls.record.content_type,app/payload,0,0.00013,0.00018,+0.00005
+tcp.options.wscale.shift,L3/L4 header,0,0.00061,0.00018,-0.00043
+http.cache_control,app/payload,0,0.00025,0.00018,-0.00007
+x509sat.DirectoryString,app/payload,0,0.00015,0.00017,+0.00003
+ftp.response.code,app/payload,0,0.00006,0.00017,+0.00011
+x509af.signature_element,app/payload,0,0.00013,0.00017,+0.00004
+http.request.method,app/payload,0,0.00018,0.00017,-0.00002
+mysql.command,app/payload,0,0.00004,0.00015,+0.00011
+tls.handshake.certificate_length,app/payload,0,0.00010,0.00015,+0.00005
+dns.soa.minimum_ttl,app/payload,0,0.00013,0.00015,+0.00002
+smb.signature,app/payload,0,0.00032,0.00014,-0.00017
+udp.dstport#masked,masked(ip/port),1,0.00012,0.00014,+0.00002
+dns.soa.retry_interval,app/payload,0,0.00027,0.00014,-0.00013
+wow.address,app/payload,0,0.00024,0.00014,-0.00010
+mysql.salt2,app/payload,0,0.00017,0.00014,-0.00003
+nbss.length,app/payload,0,0.00005,0.00013,+0.00008
+tls.handshake.extensions.session_ticket,app/payload,0,0.00015,0.00013,-0.00002
+http.referer,app/payload,0,0.00011,0.00012,+0.00001
+wow.realm.type,app/payload,0,0.00015,0.00012,-0.00003
+smb.pid,app/payload,0,0.00006,0.00012,+0.00006
+http.date,app/payload,0,0.00014,0.00011,-0.00003
+tls.handshake.extensions_server_name,app/payload,0,0.00016,0.00011,-0.00006
+tls.handshake.certificates_length,app/payload,0,0.00027,0.00010,-0.00017
+tls.handshake.type,app/payload,0,0.00006,0.00010,+0.00004
+mysql.salt,app/payload,0,0.00014,0.00010,-0.00004
+wow.build,app/payload,0,0.00010,0.00010,-0.00000
+tls.handshake.extensions_ec_point_formats_length,app/payload,0,0.00004,0.00010,+0.00006
+tls.handshake.extensions_length,app/payload,0,0.00004,0.00010,+0.00006
+http.request.version,app/payload,0,0.00012,0.00010,-0.00003
+smb.access_mask,app/payload,0,0.00012,0.00009,-0.00002
+http.last_modified,app/payload,0,0.00008,0.00009,+0.00001
+x509sat.CountryName,app/payload,0,0.00034,0.00009,-0.00025
+mysql.packet_number,app/payload,0,0.00005,0.00009,+0.00004
+http.response.line,app/payload,0,0.00026,0.00008,-0.00018
+mysql.response_code,app/payload,0,0.00012,0.00007,-0.00005
+dns.cname,app/payload,0,0.00011,0.00007,-0.00004
+wow.population,app/payload,0,0.00010,0.00007,-0.00003
+x509af.validity_element,app/payload,0,0.00011,0.00007,-0.00004
+smb.tid,app/payload,0,0.00002,0.00007,+0.00004
+smb.dc,app/payload,0,0.00001,0.00006,+0.00005
+wow.size,app/payload,0,0.00010,0.00006,-0.00004
+tls.handshake.extensions_reneg_info_len,app/payload,0,0.00002,0.00005,+0.00003
+http.content_type,app/payload,0,0.00006,0.00005,-0.00001
+smb.wct,app/payload,0,0.00003,0.00005,+0.00002
+http.connection,app/payload,0,0.00017,0.00005,-0.00012
+smb.reserved,app/payload,0,0.00003,0.00005,+0.00002
+x509af.serialNumber,app/payload,0,0.00001,0.00005,+0.00003
+wow.realm.category,app/payload,0,0.00002,0.00005,+0.00003
+smb.tdc,app/payload,0,0.00000,0.00004,+0.00004
+wow.server.proof,app/payload,0,0.00006,0.00004,-0.00002
+smb.flags,app/payload,0,0.00001,0.00004,+0.00003
+tls.handshake.extensions_ec_point_formats,app/payload,0,0.00002,0.00004,+0.00002
+smb.nt_status,app/payload,0,0.00009,0.00004,-0.00005
+smb.file,app/payload,0,0.00003,0.00004,+0.00001
+wow.cmd,app/payload,0,0.00004,0.00004,+0.00000
+smb.mid,app/payload,0,0.00005,0.00004,-0.00001
+smb.uid,app/payload,0,0.00003,0.00004,+0.00000
+http.request.uri.query,app/payload,0,0.00005,0.00003,-0.00002
+wow.realm.flag,app/payload,0,0.00002,0.00003,+0.00001
+mysql.server_status,app/payload,0,0.00002,0.00003,+0.00001
+wow.number.of.characters.on.realm,app/payload,0,0.00001,0.00003,+0.00002
+mysql.warnings,app/payload,0,0.00004,0.00003,-0.00001
+mysql.affected_rows,app/payload,0,0.00000,0.00003,+0.00003
+mysql.thread_id,app/payload,0,0.00002,0.00003,+0.00000
+smb.create_flags,app/payload,0,0.00004,0.00003,-0.00001
+smb.offset,app/payload,0,0.00002,0.00003,+0.00001
+smb.pid.high,app/payload,0,0.00005,0.00003,-0.00002
+x509af.subject,app/payload,0,0.00005,0.00002,-0.00003
+mysql.caps.server,app/payload,0,0.00001,0.00002,+0.00001
+tls.handshake.session_id_length,app/payload,0,0.00003,0.00002,-0.00001
+smb.bcc,app/payload,0,0.00002,0.00002,+0.00000
+ftp.epsv.port,app/payload,0,0.00001,0.00002,+0.00001
+tls.handshake.comp_method,app/payload,0,0.00001,0.00002,+0.00001
+tls.handshake.extensions_supported_group,app/payload,0,0.00001,0.00002,+0.00000
+tls.handshake.cipher_suites_length,app/payload,0,0.00002,0.00002,-0.00000
+smb.rfid,app/payload,0,0.00001,0.00002,+0.00000
+smb.pd,app/payload,0,0.00005,0.00002,-0.00004
+http.response.version,app/payload,0,0.00003,0.00001,-0.00002
+wow.header.padding,app/payload,0,0.00001,0.00001,+0.00000
+smb.po,app/payload,0,0.00003,0.00001,-0.00001
+nbss.type,app/payload,0,0.00001,0.00001,+0.00000
+wow.protocol.version,app/payload,0,0.00002,0.00001,-0.00000
+wow.padding,app/payload,0,0.00002,0.00001,-0.00001
+tls.handshake.sig_hash_sig,app/payload,0,0.00001,0.00001,-0.00000
+tls.handshake.sig_hash_hash,app/payload,0,0.00001,0.00001,+0.00000
+smb.fid,app/payload,0,0.00000,0.00001,+0.00001
+smb.file_name_len,app/payload,0,0.00000,0.00001,+0.00001
+wow.patch,app/payload,0,0.00001,0.00001,+0.00000
+mysql.extra,app/payload,0,0.00001,0.00001,+0.00000
+smb.alloc_size64,app/payload,0,0.00002,0.00001,-0.00001
+smb.create_options,app/payload,0,0.00001,0.00001,-0.00000
+mysql.unused,app/payload,0,0.00001,0.00001,-0.00000
+smb.error_code,app/payload,0,0.00004,0.00001,-0.00004
+smb.service,app/payload,0,0.00001,0.00001,-0.00000
+tls.handshake.comp_methods_length,app/payload,0,0.00000,0.00001,+0.00000
+tls.handshake.extensions_supported_groups_length,app/payload,0,0.00000,0.00001,+0.00001
+smb.data_offset,app/payload,0,0.00000,0.00001,+0.00000
+http.response.code,app/payload,0,0.00004,0.00001,-0.00003
+tls.handshake.extensions_alpn_str_len,app/payload,0,0.00001,0.00001,+0.00000
+smb.data_disp,app/payload,0,0.00000,0.00001,+0.00000
+http,app/payload,0,0.00003,0.00001,-0.00002
+wow.number.of.realms,app/payload,0,0.00001,0.00001,+0.00000
+bt-dht.bencoded.int,app/payload,0,0.00001,0.00001,-0.00000
+x509af.rdnSequence,app/payload,0,0.00003,0.00001,-0.00002
+mysql.insert_id,app/payload,0,0.00000,0.00001,+0.00000
+tls.handshake.extensions_server_name_len,app/payload,0,0.00000,0.00001,+0.00000
+tls.handshake.extensions_server_name_list_len,app/payload,0,0.00000,0.00001,+0.00000
+wow.major,app/payload,0,0.00001,0.00001,-0.00000
+mysql.protocol,app/payload,0,0.00000,0.00001,+0.00000
+tls.handshake.extensions_alpn_len,app/payload,0,0.00000,0.00001,+0.00000
+wow.footer.padding,app/payload,0,0.00000,0.00000,+0.00000
+smb.andxoffset,app/payload,0,0.00000,0.00000,+0.00000
+wow.minor,app/payload,0,0.00001,0.00000,-0.00000
+tls.handshake.extensions_status_request_responder_ids_len,app/payload,0,0.00000,0.00000,-0.00000
+smb.impersonation.level,app/payload,0,0.00000,0.00000,+0.00000
+smb.sc,app/payload,0,0.00000,0.00000,+0.00000
+wow.string.length,app/payload,0,0.00001,0.00000,-0.00000
+smb.file_attribute,app/payload,0,0.00003,0.00000,-0.00002
+tls.handshake.extensions_status_request_exts_len,app/payload,0,0.00001,0.00000,-0.00000
+http.response.phrase,app/payload,0,0.00001,0.00000,-0.00000
+wow.realm.id,app/payload,0,0.00000,0.00000,+0.00000
+tls.handshake.comp_methods,app/payload,0,0.00000,0.00000,+0.00000
+mariadb.extcaps.server,app/payload,0,0.00000,0.00000,+0.00000
+smb.share_access,app/payload,0,0.00000,0.00000,+0.00000
+smb.maxcount_low,app/payload,0,0.00001,0.00000,-0.00000
+tls.handshake.extensions_server_name_type,app/payload,0,0.00000,0.00000,-0.00000
+smb.pc,app/payload,0,0.00001,0.00000,-0.00001
+dns.mx.preference,app/payload,0,0.00000,0.00000,-0.00000
+tls.handshake.sig_hash_alg_len,app/payload,0,0.00000,0.00000,-0.00000
+smb.create.disposition,app/payload,0,0.00001,0.00000,-0.00000
+wow.hardware.survey.id,app/payload,0,0.00001,0.00000,-0.00001
+smb.security.flags,app/payload,0,0.00000,0.00000,+0.00000
+smb.mincount,app/payload,0,0.00001,0.00000,-0.00001
+mysql.num_fields,app/payload,0,0.00000,0.00000,-0.00000
+smb.tpc,app/payload,0,0.00000,0.00000,+0.00000
+smb.offset_high,app/payload,0,0.00001,0.00000,-0.00001
+smb.native_fs,app/payload,0,0.00000,0.00000,+0.00000
+smb.maxcount_high,app/payload,0,0.00001,0.00000,-0.00001
+smb.connect.support,app/payload,0,0.00000,0.00000,+0.00000
+smb.padding,app/payload,0,0.00000,0.00000,-0.00000
+mysql.auth_plugin.length,app/payload,0,0.00000,0.00000,+0.00000
+tls.handshake.extensions_status_request_type,app/payload,0,0.00000,0.00000,-0.00000
+wow.login.result,app/payload,0,0.00000,0.00000,+0.00000
+smb.remaining,app/payload,0,0.00000,0.00000,-0.00000
+mariadb.server_language,app/payload,0,0.00000,0.00000,-0.00000
+mysql.extcaps.server,app/payload,0,0.00000,0.00000,-0.00000
+smb.error_class,app/payload,0,0.00000,0.00000,-0.00000
+tcp.urgent_pointer,L3/L4 header,0,0.00000,0.00000,+0.00000
+tcp.dstport#masked,masked(ip/port),1,0.00000,0.00000,+0.00000
+tcp.srcport#masked,masked(ip/port),1,0.00000,0.00000,+0.00000
+icmp.type,L3/L4 header,0,0.00000,0.00000,+0.00000
+icmp.code,L3/L4 header,0,0.00000,0.00000,+0.00000
+icmp.checksum,L3/L4 header,1,0.00000,0.00000,+0.00000

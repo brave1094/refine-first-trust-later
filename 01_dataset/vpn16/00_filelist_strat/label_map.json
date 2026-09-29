@@ -1,0 +1,17 @@
+{
+  "AIM": 0,
+  "BitTorrent": 1,
+  "FTPS": 2,
+  "Facebook": 3,
+  "Gmail": 4,
+  "Hangouts": 5,
+  "ICQ": 6,
+  "Netflix": 7,
+  "SCP": 8,
+  "SFTP": 9,
+  "Skype": 10,
+  "Spotify": 11,
+  "Vimeo": 12,
+  "VoIPBuster": 13,
+  "Youtube": 14
+}

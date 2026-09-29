@@ -1,0 +1,15 @@
+﻿group,class,before,after,removed,vanished
+normal,Benign,47837580,47133670,703910,0
+attack,Bot,96154,95896,258,0
+attack,Brute-Force,260,260,0,0
+attack,FTP-Patator,190300,0,190300,1
+attack,GoldenEye,26860,22612,4248,0
+attack,HOIC,1074379,1074379,0,0
+attack,Hulk,1803379,1803379,0,0
+attack,Infiltration,5,5,0,0
+attack,LOIC-UDP,94,9,85,0
+attack,Slowhttptest,105550,0,105550,1
+attack,Slowloris,6979,4833,2146,0
+attack,Sql-Injection,50,50,0,0
+attack,SSH-Patator,92648,92618,30,0
+attack,XSS,116,113,3,0

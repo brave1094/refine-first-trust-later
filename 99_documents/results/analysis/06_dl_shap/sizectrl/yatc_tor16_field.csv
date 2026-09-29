@@ -1,0 +1,153 @@
+﻿field,layer,artifact,exp1_refined,exp3_noisy,delta
+<pad>,pad/sep,0,0.31089,0.32401,+0.01312
+tcp.payload,L3/L4 header,0,0.13182,0.08121,-0.05061
+tcp.window_size_value,L3/L4 header,0,0.02511,0.07496,+0.04985
+tcp.checksum,L3/L4 header,1,0.03554,0.04365,+0.00811
+udp.payload,L3/L4 header,0,0.02709,0.03369,+0.00660
+http.user_agent,app/payload,0,0.04041,0.02804,-0.01238
+tls.handshake.extensions.session_ticket,app/payload,0,0.03416,0.02567,-0.00849
+tcp.ack,L3/L4 header,0,0.00749,0.02524,+0.01775
+gquic.tag_value,app/payload,0,0.02132,0.01971,-0.00161
+ip.checksum,L3/L4 header,1,0.01205,0.01786,+0.00582
+tls.handshake.extensions_server_name,app/payload,0,0.01776,0.01758,-0.00018
+tls.handshake.random_bytes,app/payload,0,0.01702,0.01734,+0.00032
+tcp.seq,L3/L4 header,0,0.01124,0.01693,+0.00569
+tls.handshake.ciphersuite,app/payload,0,0.01703,0.01574,-0.00129
+http.request.uri.path,app/payload,0,0.01313,0.01552,+0.00239
+ip.ttl,L3/L4 header,1,0.00102,0.01498,+0.01396
+tls.handshake.extension.type,app/payload,0,0.01656,0.01184,-0.00472
+stun.id,app/payload,0,0.01223,0.01162,-0.00061
+http.request.uri.query.parameter,app/payload,0,0.01765,0.01117,-0.00648
+http.request.line,app/payload,0,0.01023,0.01032,+0.00009
+ip.id,L3/L4 header,1,0.01153,0.00961,-0.00192
+tls.handshake.extension.len,app/payload,0,0.01205,0.00951,-0.00254
+http.host,app/payload,0,0.01175,0.00870,-0.00305
+http.connection,app/payload,0,0.01476,0.00830,-0.00647
+bt-dht.bencoded.string,app/payload,0,0.01064,0.00703,-0.00360
+ip.len,L3/L4 header,0,0.00599,0.00679,+0.00079
+http.request.uri.query,app/payload,0,0.00633,0.00636,+0.00002
+tls.handshake.session_id,app/payload,0,0.00748,0.00587,-0.00162
+http.accept,app/payload,0,0.00731,0.00565,-0.00166
+bittorrent.protocol.name,app/payload,0,0.00921,0.00565,-0.00356
+gquic.message_authentication_hash,app/payload,0,0.00706,0.00555,-0.00152
+stun.cookie,app/payload,0,0.00227,0.00550,+0.00323
+gquic.cid,app/payload,0,0.00440,0.00523,+0.00083
+tls.handshake.extensions_alpn_str,app/payload,0,0.01146,0.00497,-0.00649
+tls.handshake.length,app/payload,0,0.00200,0.00456,+0.00256
+bittorrent.info_hash,app/payload,0,0.00337,0.00448,+0.00112
+payload,app/payload,0,0.00296,0.00419,+0.00123
+gquic.tag_type,app/payload,0,0.00350,0.00346,-0.00004
+tls.handshake.extensions_supported_group,app/payload,0,0.00489,0.00323,-0.00167
+gquic.tag_offset_end,app/payload,0,0.00296,0.00321,+0.00024
+tls.handshake.random_time,app/payload,0,0.00316,0.00297,-0.00019
+stun.att.hmac,app/payload,0,0.00377,0.00279,-0.00099
+bittorrent.peer_id,app/payload,0,0.00379,0.00278,-0.00101
+tcp.options.mss_val,L3/L4 header,0,0.00099,0.00258,+0.00158
+stun.att.username,app/payload,0,0.00181,0.00255,+0.00075
+tcp.hdr_len,L3/L4 header,0,0.00120,0.00246,+0.00126
+http.accept_encoding,app/payload,0,0.00383,0.00244,-0.00139
+http.request.version,app/payload,0,0.00348,0.00226,-0.00121
+http.request.uri,app/payload,0,0.00463,0.00210,-0.00253
+tls.handshake.version,app/payload,0,0.00245,0.00188,-0.00057
+http.accept_language,app/payload,0,0.00336,0.00178,-0.00159
+bt-dht.bencoded.dict_entry,app/payload,0,0.00206,0.00176,-0.00030
+tls.record.length,app/payload,0,0.00121,0.00173,+0.00052
+bittorrent.reserved,app/payload,0,0.00667,0.00163,-0.00504
+gquic.version,app/payload,0,0.00070,0.00158,+0.00087
+udp.length,L3/L4 header,0,0.00214,0.00144,-0.00070
+tls.handshake.extensions_server_name_len,app/payload,0,0.00119,0.00136,+0.00017
+tcp.flags.cwr,L3/L4 header,0,0.00028,0.00120,+0.00092
+bt-dht.id,app/payload,0,0.00101,0.00115,+0.00014
+tls.record.version,app/payload,0,0.00113,0.00115,+0.00002
+ftp.response.arg,app/payload,0,0.00127,0.00110,-0.00017
+tls.handshake.extensions_server_name_list_len,app/payload,0,0.00109,0.00107,-0.00001
+ip.proto,L3/L4 header,0,0.00025,0.00106,+0.00080
+tls.handshake.extensions_supported_groups_length,app/payload,0,0.00198,0.00102,-0.00096
+tls.handshake.comp_methods,app/payload,0,0.00111,0.00096,-0.00015
+tls.handshake.extensions_ec_point_formats,app/payload,0,0.00082,0.00092,+0.00011
+tls.handshake.extensions_length,app/payload,0,0.00173,0.00092,-0.00081
+tls.handshake.extensions_ec_point_formats_length,app/payload,0,0.00096,0.00082,-0.00014
+gift.request_cmd,app/payload,0,0.00079,0.00080,+0.00000
+tls.handshake.comp_methods_length,app/payload,0,0.00104,0.00080,-0.00025
+ip.flags,L3/L4 header,1,0.00025,0.00079,+0.00054
+tls.handshake.extensions_reneg_info_len,app/payload,0,0.00087,0.00077,-0.00010
+tls.handshake.extensions_server_name_type,app/payload,0,0.00058,0.00072,+0.00014
+stun.att.tie-breaker,app/payload,0,0.00048,0.00067,+0.00019
+tls.handshake.extensions_status_request_exts_len,app/payload,0,0.00064,0.00065,+0.00002
+http.request.method,app/payload,0,0.00171,0.00055,-0.00116
+tls.handshake.type,app/payload,0,0.00064,0.00054,-0.00010
+tls.handshake.cipher_suites_length,app/payload,0,0.00066,0.00054,-0.00012
+tls.handshake.extensions_status_request_responder_ids_len,app/payload,0,0.00093,0.00053,-0.00040
+stun.att.crc32,app/payload,0,0.00032,0.00051,+0.00019
+gquic.tag,app/payload,0,0.00029,0.00051,+0.00022
+udp.checksum,L3/L4 header,1,0.00050,0.00050,+0.00000
+stun.att.type,app/payload,0,0.00044,0.00049,+0.00005
+stun.length,app/payload,0,0.00064,0.00049,-0.00016
+stun.type,app/payload,0,0.00061,0.00048,-0.00014
+stun.att.priority,app/payload,0,0.00030,0.00047,+0.00016
+tls.handshake.sig_hash_sig,app/payload,0,0.00084,0.00043,-0.00040
+tls.handshake.extensions_alpn_str_len,app/payload,0,0.00081,0.00042,-0.00039
+tls.handshake.sig_hash_hash,app/payload,0,0.00083,0.00040,-0.00043
+tls.handshake.extensions_alpn_len,app/payload,0,0.00059,0.00036,-0.00022
+tls.record.content_type,app/payload,0,0.00028,0.00035,+0.00007
+stun.att.length,app/payload,0,0.00030,0.00034,+0.00004
+http,app/payload,0,0.00011,0.00033,+0.00022
+bt-dht.bencoded.dict,app/payload,0,0.00011,0.00030,+0.00019
+ip.version,L3/L4 header,0,0.00013,0.00029,+0.00015
+gquic.frame,app/payload,0,0.00031,0.00026,-0.00005
+tls.handshake.extensions_status_request_type,app/payload,0,0.00028,0.00022,-0.00006
+bt-dht.ip,app/payload,0,0.00016,0.00020,+0.00005
+bittorrent.protocol.name.length,app/payload,0,0.00018,0.00017,-0.00001
+sip.from.tag,app/payload,0,0.00031,0.00017,-0.00015
+bt-dht.bencoded.list.terminator,app/payload,0,0.00015,0.00015,+0.00000
+tls.handshake.session_id_length,app/payload,0,0.00019,0.00015,-0.00004
+sip.Content-Length,app/payload,0,0.00005,0.00015,+0.00009
+gquic.packet_number,app/payload,0,0.00010,0.00014,+0.00004
+tcp.option_kind,L3/L4 header,0,0.00005,0.00011,+0.00006
+gquic.tag_number,app/payload,0,0.00008,0.00011,+0.00003
+gquic.data_len,app/payload,0,0.00012,0.00011,-0.00001
+http.referer,app/payload,0,0.00029,0.00010,-0.00019
+gquic.padding,app/payload,0,0.00009,0.00010,+0.00001
+tcp.option_len,L3/L4 header,0,0.00007,0.00010,+0.00003
+stun.att.padding,app/payload,0,0.00010,0.00010,+0.00000
+tls.handshake.sig_hash_alg_len,app/payload,0,0.00012,0.00009,-0.00003
+sip.Via,app/payload,0,0.00011,0.00008,-0.00002
+stun.att.reserved,app/payload,0,0.00030,0.00008,-0.00022
+sip.Via.branch,app/payload,0,0.00006,0.00008,+0.00002
+gquic.puflags,app/payload,0,0.00009,0.00008,-0.00001
+http.range,app/payload,0,0.00015,0.00007,-0.00008
+bt-dht.port,app/payload,0,0.00010,0.00007,-0.00003
+sip.Accept,app/payload,0,0.00007,0.00007,+0.00000
+tcp.options.wscale.shift,L3/L4 header,0,0.00006,0.00006,+0.00001
+sip.r-uri.host,app/payload,0,0.00003,0.00006,+0.00004
+tcp.options.nop,L3/L4 header,0,0.00002,0.00006,+0.00004
+sip.Method,app/payload,0,0.00020,0.00005,-0.00016
+ftp.response.code,app/payload,0,0.00008,0.00004,-0.00004
+sip.r-uri,app/payload,0,0.00001,0.00004,+0.00003
+sip.From,app/payload,0,0.00009,0.00004,-0.00004
+sip.from.display.info,app/payload,0,0.00003,0.00004,+0.00001
+gquic.stream_id,app/payload,0,0.00008,0.00003,-0.00004
+sip.from.user,app/payload,0,0.00001,0.00003,+0.00002
+gquic.prflags,app/payload,0,0.00004,0.00003,-0.00000
+sip.Via.rport,app/payload,0,0.00004,0.00003,-0.00001
+sip.Request-Line,app/payload,0,0.00002,0.00002,+0.00000
+stun.att.transp,app/payload,0,0.00006,0.00002,-0.00004
+tls.handshake.extensions_ec_point_format,app/payload,0,0.00009,0.00002,-0.00007
+sip.from.host,app/payload,0,0.00002,0.00001,-0.00000
+sip.from.addr,app/payload,0,0.00001,0.00001,+0.00000
+sip.Via.sent-by.address,app/payload,0,0.00005,0.00001,-0.00003
+sip.r-uri.user,app/payload,0,0.00000,0.00001,+0.00000
+sip.User-Agent,app/payload,0,0.00009,0.00001,-0.00009
+sip.Via.transport,app/payload,0,0.00001,0.00000,-0.00001
+sip.Via.sent-by.port,app/payload,0,0.00001,0.00000,-0.00001
+tcp.options.eol,L3/L4 header,0,0.00000,0.00000,-0.00000
+tls.handshake.extension.heartbeat.mode,app/payload,0,0.00003,0.00000,-0.00003
+ip.src#masked,masked(ip/port),1,0.00000,0.00000,+0.00000
+udp.srcport#masked,masked(ip/port),1,0.00000,0.00000,+0.00000
+tcp.srcport#masked,masked(ip/port),1,0.00000,0.00000,+0.00000
+tcp.urgent_pointer,L3/L4 header,0,0.00000,0.00000,+0.00000
+ip.dst#masked,masked(ip/port),1,0.00000,0.00000,+0.00000
+udp.dstport#masked,masked(ip/port),1,0.00000,0.00000,+0.00000
+tcp.dstport#masked,masked(ip/port),1,0.00000,0.00000,+0.00000
+ip.frag_offset,L3/L4 header,1,0.00000,0.00000,+0.00000
+ip.dsfield,L3/L4 header,1,0.00000,0.00000,+0.00000

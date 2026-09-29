@@ -1,0 +1,77 @@
+﻿field,layer,artifact,exp1_refined,exp3_noisy,delta
+udp.payload,L3/L4 header,0,0.09270,0.09896,+0.00627
+tcp.options.timestamp.tsval,L3/L4 header,0,0.08838,0.09770,+0.00932
+tcp.option_len,L3/L4 header,0,0.03768,0.04774,+0.01005
+ip.id,L3/L4 header,1,0.03730,0.04131,+0.00401
+ip.len,L3/L4 header,0,0.03836,0.04021,+0.00185
+tcp.window_size_value,L3/L4 header,0,0.03177,0.03995,+0.00818
+ip.checksum,L3/L4 header,1,0.05473,0.03969,-0.01504
+tcp.option_kind,L3/L4 header,0,0.03327,0.03734,+0.00407
+tcp.checksum,L3/L4 header,1,0.03534,0.03431,-0.00103
+tcp.seq,L3/L4 header,0,0.04126,0.03178,-0.00949
+tcp.options.timestamp.tsecr,L3/L4 header,0,0.03618,0.03136,-0.00482
+tcp.ack,L3/L4 header,0,0.02850,0.02763,-0.00087
+tcp.options.mss_val,L3/L4 header,0,0.01804,0.02719,+0.00915
+ip.src#masked,masked(ip/port),1,0.03509,0.02717,-0.00792
+tcp.options.nop,L3/L4 header,0,0.02435,0.02621,+0.00186
+ip.proto,L3/L4 header,0,0.02708,0.02335,-0.00373
+ip.ttl,L3/L4 header,1,0.02671,0.02093,-0.00577
+ip.frag_offset,L3/L4 header,1,0.02304,0.01947,-0.00357
+<pad>,pad/sep,0,0.01623,0.01941,+0.00318
+gquic.tag_type,app/payload,0,0.01618,0.01896,+0.00278
+tcp.urgent_pointer,L3/L4 header,0,0.01820,0.01885,+0.00064
+gquic.tag_offset_end,app/payload,0,0.01838,0.01765,-0.00073
+stun.id,app/payload,0,0.01224,0.01749,+0.00526
+ip.dsfield,L3/L4 header,1,0.01475,0.01595,+0.00120
+bt-dht.bencoded.string,app/payload,0,0.01579,0.01561,-0.00019
+tcp.options.wscale.shift,L3/L4 header,0,0.01228,0.01477,+0.00249
+ip.dst#masked,masked(ip/port),1,0.01747,0.01440,-0.00307
+ip.flags,L3/L4 header,1,0.01561,0.01362,-0.00199
+gquic.message_authentication_hash,app/payload,0,0.01569,0.01313,-0.00255
+ip.version,L3/L4 header,0,0.01259,0.01176,-0.00083
+tcp.flags.cwr,L3/L4 header,0,0.00946,0.00921,-0.00025
+tcp.hdr_len,L3/L4 header,0,0.00765,0.00916,+0.00151
+gquic.cid,app/payload,0,0.00608,0.00657,+0.00049
+stun.cookie,app/payload,0,0.00736,0.00596,-0.00140
+tcp.dstport#masked,masked(ip/port),1,0.00755,0.00549,-0.00205
+bt-dht.bencoded.dict_entry,app/payload,0,0.00566,0.00504,-0.00062
+tcp.srcport#masked,masked(ip/port),1,0.00550,0.00469,-0.00081
+udp.length,L3/L4 header,0,0.00547,0.00446,-0.00102
+udp.checksum,L3/L4 header,1,0.00698,0.00433,-0.00265
+stun.att.type,app/payload,0,0.00549,0.00429,-0.00120
+stun.att.username,app/payload,0,0.00417,0.00388,-0.00029
+stun.att.length,app/payload,0,0.00493,0.00368,-0.00125
+gquic.tag,app/payload,0,0.00223,0.00334,+0.00111
+stun.att.hmac,app/payload,0,0.00191,0.00247,+0.00056
+udp.dstport#masked,masked(ip/port),1,0.00246,0.00207,-0.00040
+gquic.version,app/payload,0,0.00187,0.00195,+0.00009
+udp.srcport#masked,masked(ip/port),1,0.00161,0.00180,+0.00019
+stun.att.crc32,app/payload,0,0.00165,0.00156,-0.00009
+stun.length,app/payload,0,0.00132,0.00144,+0.00012
+stun.type,app/payload,0,0.00131,0.00129,-0.00002
+payload,app/payload,0,0.00107,0.00127,+0.00020
+gquic.padding,app/payload,0,0.00154,0.00124,-0.00030
+stun.att.tie-breaker,app/payload,0,0.00081,0.00119,+0.00038
+gquic.tag_number,app/payload,0,0.00136,0.00101,-0.00035
+stun.att.lifetime,app/payload,0,0.00083,0.00101,+0.00018
+stun.att.reserved,app/payload,0,0.00095,0.00096,+0.00002
+gquic.data_len,app/payload,0,0.00171,0.00089,-0.00082
+gquic.packet_number,app/payload,0,0.00051,0.00069,+0.00018
+stun.att.priority,app/payload,0,0.00059,0.00064,+0.00005
+gquic.prflags,app/payload,0,0.00054,0.00051,-0.00003
+gquic.puflags,app/payload,0,0.00051,0.00047,-0.00005
+gquic.stream_id,app/payload,0,0.00084,0.00043,-0.00041
+gquic.frame,app/payload,0,0.00054,0.00042,-0.00012
+stun.att.port,app/payload,0,0.00017,0.00037,+0.00020
+bt-dht.bencoded.list.terminator,app/payload,0,0.00023,0.00037,+0.00013
+stun.att.ipv4,app/payload,0,0.00040,0.00035,-0.00005
+gquic.tag_value,app/payload,0,0.00015,0.00034,+0.00019
+stun.att.family,app/payload,0,0.00016,0.00022,+0.00006
+bt-dht.bencoded.dict,app/payload,0,0.00018,0.00022,+0.00004
+stun.att.padding,app/payload,0,0.00035,0.00020,-0.00015
+tcp.options.eol,L3/L4 header,0,0.00014,0.00019,+0.00005
+stun.att.transp,app/payload,0,0.00034,0.00016,-0.00018
+stun.att.error.class,app/payload,0,0.00013,0.00011,-0.00002
+stun.att.ipv4-xord,app/payload,0,0.00003,0.00009,+0.00006
+stun.value,app/payload,0,0.00006,0.00008,+0.00002
+stun.att.port-xord,app/payload,0,0.00004,0.00003,-0.00001

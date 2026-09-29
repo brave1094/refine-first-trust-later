@@ -1,0 +1,17 @@
+﻿sampling_n,2000
+class,noisy,denoised,excluded
+Skype,1000,1000,
+Hangouts,1000,145,
+Facebook,1000,542,
+SCP,1000,46,
+Gmail,1000,235,
+VoIPBuster,1000,180,
+Youtube,1000,223,
+FTPS,952,267,
+Vimeo,579,196,
+Netflix,511,84,
+BitTorrent,477,339,
+ICQ,467,34,
+AIM,451,32,
+Spotify,383,73,
+SFTP,244,81,

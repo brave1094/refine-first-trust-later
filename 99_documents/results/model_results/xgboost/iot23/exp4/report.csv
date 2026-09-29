@@ -1,0 +1,33 @@
+﻿class,precision,recall,f1,support
+ACK-Fragmentation,1.0,0.9251,0.9611,187
+Backdoor-Malware,0.56,0.6087,0.5833,207
+BrowserHijacking,0.4498,0.5961,0.5127,203
+CommandInjection,0.4122,0.5519,0.472,183
+DNS-Spoofing,0.7548,0.8486,0.799,185
+DictionaryBruteForce,0.5686,0.5949,0.5815,195
+Greeth-Flood,0.9393,1.0,0.9687,201
+Greip-Flood,0.9954,1.0,0.9977,216
+HTTP-Flood,0.9815,0.968,0.9747,219
+HostDiscovery,1.0,0.9953,0.9976,212
+ICMP-Flood,0.8261,0.6972,0.7562,218
+ICMP-Fragmentation,0.7513,0.8132,0.781,182
+MITM-ArpSpoofing,0.514,0.6111,0.5584,180
+OSScan,0.9733,0.9146,0.943,199
+PSHACK-Flood,1.0,1.0,1.0,203
+PingSweep,0.7857,0.8128,0.799,203
+PortScan,0.9398,0.8982,0.9186,226
+RSTFIN-Flood,0.9948,1.0,0.9974,191
+SQLInjection,0.8434,0.7487,0.7932,187
+SYN-Flood,0.9835,1.0,0.9917,179
+SlowLoris,0.9657,0.8795,0.9206,224
+SynonymousIP-Flood,1.0,0.9848,0.9923,197
+TCP-Flood,1.0,1.0,1.0,221
+UDP-Flood,1.0,0.9947,0.9973,188
+UDP-Fragmentation,0.0,0.0,0.0,0
+UDPPlain,0.6158,0.6429,0.629,182
+Uploading-Attack,0.6081,0.6338,0.6207,213
+VulnerabilityScan,0.9226,0.8333,0.8757,186
+XSS,0.42,0.5412,0.473,194
+benign,0.0,0.0,0.0,188
+macro avg,0.7602,0.7698,0.7632,5769
+weighted avg,0.7921,0.8005,0.7944,5769

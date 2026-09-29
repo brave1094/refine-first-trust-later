@@ -1,0 +1,110 @@
+﻿field,layer,artifact,exp1_refined,exp3_noisy,delta
+<pad>,pad/sep,0,0.39667,0.41946,+0.02279
+udp.payload,L3/L4 header,0,0.08145,0.08241,+0.00096
+dns.qry.name,app/payload,0,0.08868,0.08158,-0.00710
+ip.id,L3/L4 header,1,0.04397,0.04099,-0.00298
+tcp.window_size_value,L3/L4 header,0,0.02757,0.02832,+0.00076
+tcp.ack,L3/L4 header,0,0.03237,0.02755,-0.00482
+tcp.seq,L3/L4 header,0,0.03334,0.02728,-0.00606
+dns.a,app/payload,0,0.01589,0.02071,+0.00482
+dns.id,app/payload,0,0.02089,0.01829,-0.00260
+tcp.hdr_len,L3/L4 header,0,0.02627,0.01629,-0.00998
+tcp.flags.cwr,L3/L4 header,0,0.01229,0.01553,+0.00325
+dns.resp.name,app/payload,0,0.00880,0.01493,+0.00613
+tcp.options.timestamp.tsval,L3/L4 header,0,0.01428,0.01410,-0.00018
+payload,app/payload,0,0.01198,0.01407,+0.00209
+ip.checksum,L3/L4 header,1,0.02761,0.01351,-0.01409
+dns.cname,app/payload,0,0.01213,0.01319,+0.00107
+ip.flags,L3/L4 header,1,0.01392,0.01312,-0.00080
+ip.ttl,L3/L4 header,1,0.01208,0.01234,+0.00027
+ip.len,L3/L4 header,0,0.00790,0.01189,+0.00399
+tcp.payload,L3/L4 header,0,0.01220,0.01021,-0.00199
+tls.app_data,app/payload,0,0.00877,0.00979,+0.00103
+dns.flags,app/payload,0,0.01025,0.00977,-0.00048
+dns.resp.ttl,app/payload,0,0.00789,0.00766,-0.00023
+tcp.options.mss_val,L3/L4 header,0,0.00314,0.00754,+0.00440
+tcp.options.timestamp.tsecr,L3/L4 header,0,0.00792,0.00621,-0.00171
+udp.length,L3/L4 header,0,0.00561,0.00567,+0.00006
+dns.soa.rname,app/payload,0,0.00399,0.00442,+0.00043
+udp.checksum,L3/L4 header,1,0.00280,0.00391,+0.00111
+dns.soa.mname,app/payload,0,0.00343,0.00388,+0.00045
+dns.qry.type,app/payload,0,0.00364,0.00348,-0.00015
+dns.qry.class,app/payload,0,0.00322,0.00281,-0.00041
+dns.resp.type,app/payload,0,0.00261,0.00268,+0.00006
+dns.resp.class,app/payload,0,0.00249,0.00267,+0.00018
+dns.ptr.domain_name,app/payload,0,0.00258,0.00222,-0.00036
+http.user_agent,app/payload,0,0.00240,0.00212,-0.00028
+tcp.checksum,L3/L4 header,1,0.00228,0.00203,-0.00024
+ip.version,L3/L4 header,0,0.00122,0.00191,+0.00069
+dns.resp.len,app/payload,0,0.00183,0.00190,+0.00007
+dns.count.auth_rr,app/payload,0,0.00174,0.00174,-0.00001
+dns.count.queries,app/payload,0,0.00129,0.00140,+0.00011
+http.request.uri.path,app/payload,0,0.00107,0.00113,+0.00006
+ip.proto,L3/L4 header,0,0.00081,0.00112,+0.00032
+dns.count.answers,app/payload,0,0.00099,0.00104,+0.00005
+http.connection,app/payload,0,0.00089,0.00089,+0.00001
+http.host,app/payload,0,0.00092,0.00083,-0.00009
+ip.dsfield,L3/L4 header,1,0.00033,0.00082,+0.00049
+tcp.option_kind,L3/L4 header,0,0.00046,0.00077,+0.00032
+dns.count.add_rr,app/payload,0,0.00128,0.00077,-0.00051
+tcp.option_len,L3/L4 header,0,0.00047,0.00073,+0.00026
+http.cache_control,app/payload,0,0.00076,0.00072,-0.00004
+http.server,app/payload,0,0.00086,0.00062,-0.00024
+http.request.uri.query.parameter,app/payload,0,0.00086,0.00060,-0.00025
+xml.tag,app/payload,0,0.00087,0.00060,-0.00027
+ip.frag_offset,L3/L4 header,1,0.00058,0.00056,-0.00002
+http.accept,app/payload,0,0.00059,0.00055,-0.00004
+http.content_type,app/payload,0,0.00056,0.00055,-0.00001
+dns.soa.minimum_ttl,app/payload,0,0.00023,0.00046,+0.00023
+ip.dst#masked,masked(ip/port),1,0.00017,0.00045,+0.00028
+http.request.line,app/payload,0,0.00037,0.00043,+0.00005
+rtsp.url,app/payload,0,0.00046,0.00039,-0.00007
+http.request.version,app/payload,0,0.00030,0.00039,+0.00009
+http.response.line,app/payload,0,0.00061,0.00037,-0.00023
+http.request.uri.query,app/payload,0,0.00016,0.00037,+0.00021
+dns.soa.expire_limit,app/payload,0,0.00030,0.00037,+0.00007
+http.request.uri,app/payload,0,0.00052,0.00035,-0.00017
+dns.soa.retry_interval,app/payload,0,0.00026,0.00034,+0.00008
+dns.aaaa,app/payload,0,0.00031,0.00030,-0.00001
+http.date,app/payload,0,0.00058,0.00029,-0.00029
+udp.srcport#masked,masked(ip/port),1,0.00035,0.00029,-0.00007
+tls.record.length,app/payload,0,0.00024,0.00027,+0.00003
+http.content_length_header,app/payload,0,0.00028,0.00027,-0.00001
+http.request.method,app/payload,0,0.00031,0.00024,-0.00007
+dns.soa.refresh_interval,app/payload,0,0.00028,0.00024,-0.00005
+dns.soa.serial_number,app/payload,0,0.00021,0.00020,-0.00001
+ssh.protocol,app/payload,0,0.00027,0.00019,-0.00008
+icmp.unused,L3/L4 header,0,0.00013,0.00016,+0.00003
+rtsp.request,app/payload,0,0.00008,0.00015,+0.00007
+http.response.version,app/payload,0,0.00025,0.00015,-0.00010
+ip.src#masked,masked(ip/port),1,0.00012,0.00014,+0.00003
+http.accept_language,app/payload,0,0.00009,0.00014,+0.00004
+rtsp.cseq,app/payload,0,0.00005,0.00013,+0.00007
+tcp.options.nop,L3/L4 header,0,0.00019,0.00012,-0.00007
+xml.cdata,app/payload,0,0.00027,0.00011,-0.00016
+tls.record.version,app/payload,0,0.00010,0.00011,+0.00001
+http.content_encoding,app/payload,0,0.00010,0.00010,+0.00000
+rtsp.method,app/payload,0,0.00017,0.00010,-0.00007
+tls.record.content_type,app/payload,0,0.00006,0.00006,+0.00000
+tcp.options.sack_le,L3/L4 header,0,0.00004,0.00005,+0.00001
+http.response.code,app/payload,0,0.00005,0.00004,-0.00000
+urlencoded-form.value,app/payload,0,0.00005,0.00004,-0.00000
+udp.dstport#masked,masked(ip/port),1,0.00006,0.00004,-0.00002
+http,app/payload,0,0.00002,0.00004,+0.00002
+tcp.options.sack_re,L3/L4 header,0,0.00007,0.00004,-0.00003
+xml.attribute,app/payload,0,0.00004,0.00003,-0.00001
+http.file_data,app/payload,0,0.00001,0.00002,+0.00001
+urlencoded-form.key,app/payload,0,0.00006,0.00002,-0.00004
+http.set_cookie,app/payload,0,0.00002,0.00002,-0.00000
+tcp.options.wscale.shift,L3/L4 header,0,0.00002,0.00002,-0.00000
+http.response.phrase,app/payload,0,0.00004,0.00001,-0.00003
+tcp.urgent_pointer,L3/L4 header,0,0.00001,0.00001,+0.00000
+json.path_with_value,app/payload,0,0.00000,0.00000,+0.00000
+tcp.srcport#masked,masked(ip/port),1,0.00000,0.00000,+0.00000
+icmp.type,L3/L4 header,0,0.00000,0.00000,+0.00000
+gre.proto,app/payload,0,0.00000,0.00000,+0.00000
+icmp.code,L3/L4 header,0,0.00000,0.00000,+0.00000
+gre.flags_and_version,app/payload,0,0.00000,0.00000,+0.00000
+tcp.dstport#masked,masked(ip/port),1,0.00000,0.00000,+0.00000
+json.array,app/payload,0,0.00000,0.00000,+0.00000
+icmp.checksum,L3/L4 header,1,0.00000,0.00000,+0.00000

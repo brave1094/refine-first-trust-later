@@ -1,0 +1,4 @@
+﻿# iot23 classes excluded from experiments (05_make_filelist EXCLUDE_LABELS)
+# excluded 0 / total 30
+
+(no excluded classes)

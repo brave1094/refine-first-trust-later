@@ -1,0 +1,9 @@
+﻿dataset,"mean Δ(e1-e3,%p)",n_models_refined_better,total
+vpn16,+16.60,7,7
+tor16,-0.55,3,7
+tls1.3,-0.13,5,7
+cispec,-0.27,1,7
+ustc16,-0.13,3,7
+cic17,+0.69,4,7
+cic18,-2.40,2,7
+iot23,+7.15,6,7

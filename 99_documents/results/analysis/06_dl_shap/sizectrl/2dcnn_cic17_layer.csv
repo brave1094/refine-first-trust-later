@@ -1,0 +1,5 @@
+﻿layer,exp1_refined,exp3_noisy,delta
+L3/L4 header,0.49815,0.49094,-0.00721
+app/payload,0.16865,0.17701,+0.00836
+masked(ip/port),0.14278,0.13993,-0.00285
+pad/sep,0.19041,0.19212,+0.00171

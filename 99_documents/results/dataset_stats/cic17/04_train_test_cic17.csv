@@ -1,0 +1,16 @@
+﻿class,train_noisy,train_denoised,test_noisy,test_denoised,excluded
+Benign,791,792,209,208,
+PortScan,815,815,185,185,
+Hulk,794,794,206,206,
+LOIC,807,807,193,193,
+GoldenEye,809,809,191,191,
+FTP-Patator,802,802,198,198,
+Slowloris,806,806,194,194,
+Slowhttptest,800,800,200,200,
+SSH-Patator,793,793,207,207,
+none,0,0,0,0,Y
+Bot,816,816,184,184,
+Brute-Force,818,818,182,182,
+XSS,463,463,113,113,
+Infiltration,17,0,3,0,
+Sql-Injection,11,11,1,1,

@@ -1,0 +1,4 @@
+﻿# cic17 classes excluded from experiments (05_make_filelist EXCLUDE_LABELS)
+# excluded 1 / total 15
+
+none	origin=2698  refined=0  (excluded: too few in origin / untrainable after refinement)

@@ -1,0 +1,9 @@
+﻿dataset,mean silΔ,n_collapsed_models,total,verdict
+vpn16,+0.164,3,3,collapse
+tor16,+0.092,3,3,collapse
+tls1.3,-0.002,1,3,⚠️reversed
+cispec,+0.004,2,3,neutral
+ustc16,-0.002,1,3,⚠️reversed
+cic17,-0.011,1,3,⚠️reversed
+cic18,-0.047,0,3,⚠️reversed
+iot23,+0.041,2,3,collapse

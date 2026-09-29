@@ -1,0 +1,16 @@
+﻿class,count,excluded
+Benign,1142252,
+PortScan,159098,
+Hulk,156953,
+LOIC,84908,
+GoldenEye,7379,
+FTP-Patator,3741,
+Slowloris,3626,
+Slowhttptest,3576,
+SSH-Patator,2951,
+none,2698,Y
+Bot,2208,
+Brute-Force,1246,
+XSS,576,
+Infiltration,20,
+Sql-Injection,12,

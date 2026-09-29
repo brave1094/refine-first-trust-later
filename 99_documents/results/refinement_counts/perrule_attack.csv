@@ -1,0 +1,31 @@
+﻿rule,desc,ustc16,cic17,cic18,iot23
+Aa_2,Capture damage or truncation,62,125,5463,1275425
+Aa_4,Malformed packets,62,125,5465,1277936
+Aa_6,Unlabeled or doubly labeled session,0,2698,0,0
+Bb_5,Attack signature under a benign label (common),—,1,—,—
+Bb_6,Gateway VPN beacon in an attack label (common),—,—,—,—
+Bb_7,Operating-system traffic of the infected VM (ustc16),283,—,—,—
+Bb_8,Infiltration class (cic17),—,20,—,—
+Bb_9,FTP-Patator fingerprint under a benign label (cic17),—,46,—,—
+Bb_10,SSH-Patator tool fingerprint under a benign label (cic17),—,27,—,—
+Bb_11,HULK URI under a benign label (cic17),—,1916,—,—
+Bb_12,GoldenEye URI under a benign label (cic17),—,181,—,—
+Bb_13,Attacker address under a benign label (cic18),—,—,59908,—
+Bb_14,Reconnaissance and scanner traffic under a benign label (cic18),—,—,82298,—
+Bb_15,FTP-Patator without an attack payload (cic18),—,—,190300,—
+Bb_16,Slowhttptest without an attack payload (cic18),—,—,105550,—
+Bb_17,SSH-Patator misfire to port 21 (cic18),—,—,30,—
+Bb_18,LOIC-UDP processed as ICMP (cic18),—,—,85,—
+Bb_19,Empty Slowloris flow (cic18),—,—,2146,—
+Bb_20,Early-reset GoldenEye attempt (cic18),—,—,4248,—
+Bb_21,Page resources in web attacks (cic18),—,—,3,—
+Bb_22,Empty Bot flow (cic18),—,—,258,—
+Bb_23,Internal NMAP scan under a benign label (cic18),—,—,556239,—
+Bb_24,Session with an Internet endpoint in an attack capture (iot23),—,—,—,1684202
+Bb_25,Internal infrastructure protocols in an attack capture (iot23),—,—,—,78543
+Bb_26,"Broadcast, multicast, or link-local destination in an attack capture (iot23)",—,—,—,82789
+Bb_27,nmap UDP probe under a benign label,—,—,—,—
+Bb_28,SYN-only scan in a configured benign class,—,—,—,—
+Bb_29,SYN-only sweep in a configured benign class,—,—,—,—
+Cc_5,"Broadcast, multicast, and link-local destinations",1347,—,—,—
+Cd_2,Windows background traffic,105,—,—,—

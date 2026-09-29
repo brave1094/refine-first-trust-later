@@ -1,30 +1,75 @@
 # Refine First, Trust Later
 
-Code, refinement rules, session lists, and experimental results for the article
-**"Refine First, Trust Later: A Task-Relative Noise Refinement Framework and the Analysis of Five Illusions Noise Casts on Network Traffic Classification"** (under review).
+Code, refinement rules, session lists, and results for the article
+**"Refine First, Trust Later: A Task-Relative Noise Refinement Framework and the Analysis of Five Illusions Noise Casts
+on Network Traffic Classification"** (Yun-Seong Jang, Gyeong-Min Yu, Eun-Hyeok Park, Gyu-Sang Shim, Ui-Jong Jeong,
+Yang-Seo Choi, Myung-Sup Kim; under review at *Computer Networks*).
 
-> This repository is being prepared. The rule engine, preprocessing pipeline, session lists of the eight public datasets,
-> experiment scripts, result tables, and an English guide (`docs/`) will be added before the article is submitted.
+Noise in a traffic dataset is defined relative to the task: a session is noise when it does not carry the target signal
+of the task. The framework organises such noise into three levels and six categories and implements it as 50 rules
+(Aa, Bb, Cc, Cd, De, Df). Refining eight public datasets and training seven models under four conditions, three list
+variants, and five seeds shows five illusions that noise casts on accuracy and its interpretation.
 
-## Planned contents
+A guide with the overview, the pipeline, and a quick start is in [`99_documents/guide_KU.pdf`](99_documents/guide_KU.pdf).
 
-| Folder | Contents |
-|---|---|
-| `rules/` | Common rule engine with the 50 refinement rules (Aa, Bb, Cc, Cd, De, Df) |
-| `preprocess/` | Session split, session statistics, rule marking, file lists, dataset building |
-| `features/` | 1,205 statistical features for the tree models |
-| `models/` | Training adapters for the seven models (links and patches for third-party code) |
-| `experiments/` | Exp1-Exp4 under the full, sizectrl, and sizectrl+strat variants, five seeds |
-| `analysis/` | Scripts that reproduce the tables and figures of the five illusions |
-| `data/` | Refined and noisy session lists and dataset statistics of the eight public datasets |
-| `results/` | Accuracy per model, dataset, experiment, variant, and seed; analysis outputs |
-| `docs/` | Guide (PPTX, PDF) and Supplementary Material S1 (the 50 rules) |
+## Repository layout
+
+```
+00_assets/       downloaded resources
+  datasets/        the official captures, arranged as <dataset dir>/01_pcap/<class>/  (NM_DATASET_ROOT)
+    _tools/          arrange the captures, official labels (cic17, cic18), per-class checks
+  models/          third-party model code and weights, fetched by setup_models.sh; YaTC compatibility shim
+01_dataset/      generated data: session lists, session keys, model inputs, field-name maps
+02_preprocess/   preprocessing: sessions, statistics, the 50-rule engine (noise_rule/), lists, model inputs
+03_model/        training (01_train.py, model/, lib/) and our own model code (own_models/: 1,205 features, 2D-CNN)
+04_analysis/     analyses of the five illusions (a3-a7, 01-05*, seed statistics)
+99_documents/    DATASETS, MODELS, PIPELINE, PAPER_MAP, guide (PPTX/PDF), Supplementary Material S1
+  results/         our numbers: model results, result tables, analysis outputs, dataset statistics, refinement counts
+repo_paths.py    the single definition of this layout, used by every script
+run_pipeline.sh  steps 3-7 with the settings of the article
+```
+In the code, *denoised* means *refined*, the term used in the article.
+
+## Seven steps
+
+| Step | | Where |
+|---|---|---|
+| 1 | download the eight public datasets and arrange them | [`99_documents/DATASETS.md`](99_documents/DATASETS.md), `00_assets/datasets/_tools/` |
+| 2 | fetch the third-party model code and weights | [`99_documents/MODELS.md`](99_documents/MODELS.md), `00_assets/models/setup_models.sh` |
+| 3 | split sessions and compute per-session statistics | `02_preprocess/01_session_split.py`, `03_session_stat.py` |
+| 4 | mark sessions with the 50 rules | `02_preprocess/04_noise_labeling.py`, `02_preprocess/noise_rule/` |
+| 5 | build the session lists (or align the released ones) | `02_preprocess/05_make_filelist.py`, `07_*`, `align_session_lists.py` |
+| 6 | build the model inputs | `02_preprocess/06_make_dataset.py` |
+| 7 | train and analyse | `03_model/`, `04_analysis/`, [`99_documents/PAPER_MAP.md`](99_documents/PAPER_MAP.md) |
+
+## Quick start
+
+```bash
+git clone https://github.com/brave1094/refine-first-trust-later.git && cd refine-first-trust-later
+pip install -r requirements.txt
+bash 00_assets/models/setup_models.sh                                        # step 2
+python 00_assets/datasets/_tools/arrange_pcaps.py --dataset vpn16 --src /path/to/ISCX-VPN-2016   # step 1
+bash run_pipeline.sh 3 vpn16            # sessions + statistics, per-class check
+bash run_pipeline.sh align vpn16        # use the released session lists
+bash run_pipeline.sh 4 vpn16            # 50-rule marking
+bash run_pipeline.sh 6 vpn16            # model inputs
+GPU=0 bash run_pipeline.sh train vpn16  # Exp1-Exp4, three variants, five seeds
+bash run_pipeline.sh 7                  # analyses (99_documents/PAPER_MAP.md)
+```
+Requirements: Python 3.10+, tshark/editcap (Wireshark), and `requirements.txt` for steps 1 and 3-7; each deep model
+needs the environment of its upstream repository (99_documents/MODELS.md). The captures go to `00_assets/datasets/`
+by default; set `NM_DATASET_ROOT` to use another location.
+
+## Data availability
+
+The captures are not redistributed; they are available from their publishers (99_documents/DATASETS.md). The two
+private datasets of the article cannot be shared, and no data, list, or result of them is included here.
 
 ## License
 
-Code: MIT License (`LICENSE`). Session lists, statistics, and results: CC BY 4.0 (`DATA_LICENSE`).
-Session lists derived from CipherSpectrum inherit its CC BY-NC 4.0 terms (non-commercial use only).
+Code: MIT (`LICENSE`). Session lists, statistics, and results: CC BY 4.0 (`DATA_LICENSE`); files derived from
+CipherSpectrum inherit its CC BY-NC 4.0 terms. Third-party model code keeps its own license (99_documents/MODELS.md).
 
 ## Citation
 
-If you use this repository, please cite the article (see `CITATION.cff`, or the "Cite this repository" button on GitHub).
+Please cite the article if you use this repository (`CITATION.cff`, or "Cite this repository" on GitHub).

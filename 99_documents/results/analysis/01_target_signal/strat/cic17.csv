@@ -1,0 +1,4 @@
+﻿model,exp1_refined(%),exp3_noisy(%),"Δ(e1-e3,%p)"
+rf,95.18,95.14,+0.04
+netmamba,97.13,98.85,-1.72
+trafficformer,99.69,99.60,+0.09

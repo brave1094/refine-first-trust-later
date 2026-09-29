@@ -1,0 +1,24 @@
+﻿rule,desc,vpn16,tor16,tls1.3,cispec
+Aa_1,Incomplete TCP 3-way handshake,2215,1011,—,—
+Aa_2,Capture damage or truncation,90,609,—,0
+Aa_4,Malformed packets,90,609,0,0
+Aa_5,Missing TLS Hello,1214,854,—,0
+Aa_6,Unlabeled or doubly labeled session,0,0,0,0
+Bb_1,"Infrastructure management protocols (common, class-aware)",109,2,—,—
+Bb_2,"P2P background (common, class-aware)",1522,0,—,—
+Bb_3,Class-protocol mismatch (common),1686,—,—,—
+Bb_4,SNI-domain label mismatch (common),—,—,0,—
+Cc_1,Layer-3 control and IPv6,122845,2,0,0
+Cc_2,Name resolution and address assignment,272693,17427,0,0
+Cc_3,Windows network services,805,17,0,0
+Cc_4,Infrastructure management,—,—,0,0
+Cc_5,"Broadcast, multicast, and link-local destinations",274256,132,0,0
+Cd_1,P2P DHT and tracker maintenance,—,—,1,0
+Cd_2,Windows background traffic,19,0,0,0
+Cd_3,Microsoft update delivery,0,0,0,0
+Cd_4,Package-manager updates,0,39,0,0
+De_1,Google shared infrastructure and SSO,1059,1707,1,—
+De_2,Mail SSO and CDN,423,—,2,—
+De_3,Advertising and tracking,113,863,0,—
+De_4,Browser infrastructure,322,713,0,—
+Df_1,Browser start page,0,4,0,0

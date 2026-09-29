@@ -1,0 +1,17 @@
+﻿class,precision,recall,f1,support
+Benign,0.5026,1.0,0.6689,196
+Bot,0.0,0.0,0.0,0
+Brute-Force,0.9811,1.0,0.9905,52
+FTP-Patator,0.0,0.0,0.0,192
+GoldenEye,0.0,0.0,0.0,0
+HOIC,1.0,1.0,1.0,210
+Hulk,1.0,1.0,1.0,206
+Infiltration,0.0,0.0,0.0,1
+LOIC-UDP,0.0,0.0,0.0,0
+SSH-Patator,1.0,0.9954,0.9977,218
+Slowhttptest,0.0,0.0,0.0,0
+Slowloris,0.0,0.0,0.0,0
+Sql-Injection,0.9231,0.9231,0.9231,13
+XSS,1.0,0.9583,0.9787,24
+macro avg,0.4576,0.4912,0.4685,1112
+weighted avg,0.737,0.8237,0.7658,1112
