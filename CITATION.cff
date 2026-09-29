@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the article below."
+title: "Refine First, Trust Later: code, refinement rules, session lists, and results"
+authors:
+  - family-names: Jang
+    given-names: Yun-Seong
+    affiliation: Korea University
+  - family-names: Yu
+    given-names: Gyeong-Min
+    affiliation: Korea University
+  - family-names: Park
+    given-names: Eun-Hyeok
+    affiliation: Korea University
+  - family-names: Shim
+    given-names: Gyu-Sang
+    affiliation: Korea University
+  - family-names: Jeong
+    given-names: Ui-Jong
+    affiliation: Korea University
+  - family-names: Choi
+    given-names: Yang-Seo
+    affiliation: Electronics and Telecommunications Research Institute (ETRI)
+  - family-names: Kim
+    given-names: Myung-Sup
+    affiliation: Korea University
+license: MIT
+preferred-citation:
+  type: article
+  title: "Refine First, Trust Later: A Task-Relative Noise Refinement Framework and the Analysis of Five Illusions Noise Casts on Network Traffic Classification"
+  authors:
+    - family-names: Jang
+      given-names: Yun-Seong
+    - family-names: Yu
+      given-names: Gyeong-Min
+    - family-names: Park
+      given-names: Eun-Hyeok
+    - family-names: Shim
+      given-names: Gyu-Sang
+    - family-names: Jeong
+      given-names: Ui-Jong
+    - family-names: Choi
+      given-names: Yang-Seo
+    - family-names: Kim
+      given-names: Myung-Sup
+  journal: "Computer Networks"
+  year: 2026
+  notes: "Under review"

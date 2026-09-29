@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.log
+*.zip
+*.pcap
+*.pcapng
+*.pt
+*.pth
+*.ckpt
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+backup_*

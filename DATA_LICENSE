@@ -1,0 +1,11 @@
+The session lists, dataset statistics, and experimental results in the data/ and results/ folders
+are licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0):
+https://creativecommons.org/licenses/by/4.0/
+
+You may share and adapt them for any purpose, provided that you give appropriate credit by citing the article
+(see CITATION.cff) and indicate if changes were made.
+
+Exception: files derived from the CipherSpectrum dataset (data/*/cispec*) inherit the CC BY-NC 4.0 license
+of the original dataset (https://cgi.cse.unsw.edu.au/~cspectrum/) and may be used for non-commercial purposes only.
+
+The original traffic captures are not redistributed here; obtain them from their publishers.
