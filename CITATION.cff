@@ -8,18 +8,18 @@ authors:
   - family-names: Yu
     given-names: Gyeong-Min
     affiliation: Korea University
-  - family-names: Park
-    given-names: Eun-Hyeok
+  - family-names: Nam
+    given-names: Seung-Woo
     affiliation: Korea University
-  - family-names: Shim
-    given-names: Gyu-Sang
-    affiliation: Korea University
-  - family-names: Jeong
-    given-names: Ui-Jong
+  - family-names: Kim
+    given-names: Ju-Sung
     affiliation: Korea University
   - family-names: Choi
     given-names: Yang-Seo
     affiliation: Electronics and Telecommunications Research Institute (ETRI)
+  - family-names: Baek
+    given-names: Ui-Jun
+    affiliation: Korea Institute of Science and Technology Information (KISTI)
   - family-names: Kim
     given-names: Myung-Sup
     affiliation: Korea University
@@ -32,14 +32,14 @@ preferred-citation:
       given-names: Yun-Seong
     - family-names: Yu
       given-names: Gyeong-Min
-    - family-names: Park
-      given-names: Eun-Hyeok
-    - family-names: Shim
-      given-names: Gyu-Sang
-    - family-names: Jeong
-      given-names: Ui-Jong
+    - family-names: Nam
+      given-names: Seung-Woo
+    - family-names: Kim
+      given-names: Ju-Sung
     - family-names: Choi
       given-names: Yang-Seo
+    - family-names: Baek
+      given-names: Ui-Jun
     - family-names: Kim
       given-names: Myung-Sup
   journal: "Computer Networks"

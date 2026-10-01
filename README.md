@@ -2,8 +2,8 @@
 
 Code, refinement rules, session lists, and results for the article
 **"Refine First, Trust Later: A Task-Relative Noise Refinement Framework and the Analysis of Five Illusions Noise Casts
-on Network Traffic Classification"** (Yun-Seong Jang, Gyeong-Min Yu, Eun-Hyeok Park, Gyu-Sang Shim, Ui-Jong Jeong,
-Yang-Seo Choi, Myung-Sup Kim; under review at *Computer Networks*).
+on Network Traffic Classification"** (Yun-Seong Jang, Gyeong-Min Yu, Seung-Woo Nam, Ju-Sung Kim, Yang-Seo Choi,
+Ui-Jun Baek, Myung-Sup Kim; under review at *Computer Networks*).
 
 Noise in a traffic dataset is defined relative to the task: a session is noise when it does not carry the target signal
 of the task. The framework organises such noise into three levels and six categories and implements it as 50 rules
@@ -25,6 +25,7 @@ A guide with the overview, the pipeline, and a quick start is in [`99_documents/
 04_analysis/     analyses of the five illusions (a3-a7, 01-05*, seed statistics)
 99_documents/    DATASETS, MODELS, PIPELINE, PAPER_MAP, guide (PPTX/PDF), Supplementary Material S1
   results/         our numbers: model results, result tables, analysis outputs, dataset statistics, refinement counts
+  survey/          the coded list of the 68 surveyed NTC model papers (Table 4, Fig. 1, Table A.1)
 repo_paths.py    the single definition of this layout, used by every script
 run_pipeline.sh  steps 3-7 with the settings of the article
 ```
