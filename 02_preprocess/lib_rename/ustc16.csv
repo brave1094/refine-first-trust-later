@@ -1,0 +1,25 @@
+archive,official_file,class,our_file,match,cut_to_bytes,size,packets,first_packet_us
+repository,BitTorrent.pcap,benign_none_BitTorrent,benign_none_BitTorrent.pcap,identical,,7686388,15000,27991263871
+repository,FTP.pcap,benign_none_FTP,benign_none_FTP.pcap,identical,,63166447,360000,22464511789
+repository,Facetime.pcap,benign_none_Facetime,benign_none_Facetime.pcap,identical,,2519073,6000,188027032158
+repository,Gmail.pcap,benign_none_Gmail,benign_none_Gmail.pcap,identical,,9497320,25000,183657248935
+repository,MySQL.pcap,benign_none_MySQL,benign_none_MySQL.pcap,identical,,23450490,200000,184178676585
+repository,Outlook.pcap,benign_none_Outlook,benign_none_Outlook.pcap,identical,,11711492,15000,183137371558
+Benign/SMB.7z,SMB-1.pcap,benign_none_SMB,benign_none_SMB.pcap,merged with the other SMB-* parts in time order (mergecap -F pcap),,1301052008,925453,18845635242
+Benign/SMB.7z,SMB-2.pcap,benign_none_SMB,benign_none_SMB.pcap,merged with the other SMB-* parts in time order (mergecap -F pcap),,1301052008,925453,18845635242
+repository,Skype.pcap,benign_none_Skype,benign_none_Skype.pcap,identical,,4433982,12000,182605234675
+Benign/Weibo.7z,Weibo-1.pcap,benign_none_Weibo,benign_none_Weibo.pcap,merged with the other Weibo-* parts in time order (mergecap -F pcap),,1734400327,1210060,17400800373
+Benign/Weibo.7z,Weibo-2.pcap,benign_none_Weibo,benign_none_Weibo.pcap,merged with the other Weibo-* parts in time order (mergecap -F pcap),,1734400327,1210060,17400800373
+Benign/Weibo.7z,Weibo-3.pcap,benign_none_Weibo,benign_none_Weibo.pcap,merged with the other Weibo-* parts in time order (mergecap -F pcap),,1734400327,1210060,17400800373
+Benign/Weibo.7z,Weibo-4.pcap,benign_none_Weibo,benign_none_Weibo.pcap,merged with the other Weibo-* parts in time order (mergecap -F pcap),,1734400327,1210060,17400800373
+repository,WorldOfWarcraft.pcap,benign_none_WorldOfWarcraft,benign_none_WorldOfWarcraft.pcap,identical,,15631895,140000,187382087410
+Malware/Cridex.7z,Cridex.pcap,malware_none_Cridex,malware_none_Cridex.pcap,identical,,99353677,461548,15
+Malware/Geodo.7z,Geodo.pcap,malware_none_Geodo,malware_none_Geodo.pcap,identical,,30271627,250000,20
+Malware/Htbot.7z,Htbot.pcap,malware_none_Htbot,malware_none_Htbot.pcap,identical,,87674586,171569,21
+repository,Miuref.pcap,malware_none_Miuref,malware_none_Miuref.pcap,identical,,17196739,88560,17
+Malware/Neris.7z,Neris.pcap,malware_none_Neris,malware_none_Neris.pcap,identical,,94527961,499218,1312966900475792
+Malware/Nsis-ay.7z,Nsis-ay.pcap,malware_none_Nsis-ay,malware_none_Nsis-ay.pcap,identical,,294902378,352266,1313743308659572
+Malware/Shifu.7z,Shifu.pcap,malware_none_Shifu,malware_none_Shifu.pcap,identical,,60753746,500000,15
+repository,Tinba.pcap,malware_none_Tinba,malware_none_Tinba.pcap,identical,,2680243,22000,20
+Malware/Virut.7z,Virut.pcap,malware_none_Virut,malware_none_Virut.pcap,identical,,114572014,440625,1313421425350965
+repository,Zeus.pcap,malware_none_Zeus,malware_none_Zeus.pcap,identical,,14094482,93141,1338265171909061

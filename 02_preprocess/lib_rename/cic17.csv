@@ -1,0 +1,6 @@
+archive,official_file,class,our_file,match,cut_to_bytes,size,packets,first_packet_us
+PCAPs,Monday-WorkingHours.pcap,01_Monday,01_Monday.pcap,same name per day (not compared with a download; size and first packet are checked),,10620455148,,1499082958598308
+PCAPs,Tuesday-WorkingHours.pcap,02_Tuesday,02_Tuesday.pcap,same name per day (not compared with a download; size and first packet are checked),,10848634318,,1499169212364079
+PCAPs,Wednesday-workingHours.pcap,03_Wednesday,03_Wednesday.pcap,same name per day (not compared with a download; size and first packet are checked),,13181414837,,1499254962084372
+PCAPs,Thursday-WorkingHours.pcap,04_Thursday,04_Thursday.pcap,same name per day (not compared with a download; size and first packet are checked),,8141786793,,1499342338492265
+PCAPs,Friday-WorkingHours.pcap,05_Friday,05_Friday.pcap,same name per day (not compared with a download; size and first packet are checked),,8667370092,,1499428779599128

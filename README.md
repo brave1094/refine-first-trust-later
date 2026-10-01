@@ -48,7 +48,7 @@ In the code, *denoised* means *refined*, the term used in the article.
 git clone https://github.com/brave1094/refine-first-trust-later.git && cd refine-first-trust-later
 pip install -r requirements.txt
 bash 00_assets/models/setup_models.sh                                        # step 2
-python 00_assets/datasets/_tools/arrange_pcaps.py --dataset vpn16 --src /path/to/ISCX-VPN-2016   # step 1
+python 02_preprocess/00_rename.py --dataset vpn16 --src /path/to/ISCX-VPN-2016   # step 1: official files -> our names
 bash run_pipeline.sh 3 vpn16            # sessions + statistics, per-class check
 bash run_pipeline.sh align vpn16        # use the released session lists
 bash run_pipeline.sh 4 vpn16            # 50-rule marking

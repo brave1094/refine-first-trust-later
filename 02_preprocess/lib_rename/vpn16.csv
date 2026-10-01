@@ -1,0 +1,141 @@
+archive,official_file,class,our_file,match,cut_to_bytes,size,packets,first_packet_us
+VPN-PCAPS-01.zip,vpn_aim_chat1a.pcap,VPN_Chat_AIM_none,VPN_Chat_AIM_none_1.pcap,identical,,178417,1168,1433356821839550
+VPN-PCAPS-01.zip,vpn_aim_chat1b.pcap,VPN_Chat_AIM_none,VPN_Chat_AIM_none_2.pcap,identical,,190525,1287,1433356821628036
+VPN-PCAPS-01.zip,vpn_facebook_chat1a.pcap,VPN_Chat_Facebook_none,VPN_Chat_Facebook_none_1.pcap,identical,,3396317,8801,1433354223394007
+VPN-PCAPS-01.zip,vpn_facebook_chat1b.pcap,VPN_Chat_Facebook_none,VPN_Chat_Facebook_none_2.pcap,identical,,2594284,7567,1433354223695303
+VPN-PCAPS-01.zip,vpn_hangouts_chat1a.pcap,VPN_Chat_Hangouts_none,VPN_Chat_Hangouts_none_1.pcap,identical,,13708539,27408,1433361120956828
+VPN-PCAPS-01.zip,vpn_hangouts_chat1b.pcap,VPN_Chat_Hangouts_none,VPN_Chat_Hangouts_none_2.pcap,identical,,6194348,17543,1433361118554357
+VPN-PCAPs-02.zip,vpn_icq_chat1a.pcap,VPN_Chat_ICQ_none,VPN_Chat_ICQ_none_1.pcap,identical,,486616,4196,1433358055779434
+VPN-PCAPs-02.zip,vpn_icq_chat1b.pcap,VPN_Chat_ICQ_none,VPN_Chat_ICQ_none_2.pcap,identical,,419214,3681,1433358054865487
+VPN-PCAPs-02.zip,vpn_skype_chat1a.pcap,VPN_Chat_Skype_none,VPN_Chat_Skype_none_1.pcap,identical,,849211,6973,1433352683448876
+VPN-PCAPs-02.zip,vpn_skype_chat1b.pcap,VPN_Chat_Skype_none,VPN_Chat_Skype_none_2.pcap,identical,,1004428,7602,1433352680558934
+VPN-PCAPS-01.zip,vpn_email2a.pcap,VPN_Email_Gmail_none,VPN_Email_Gmail_none_1.pcap,identical,,559048,2707,1433773441161554
+VPN-PCAPS-01.zip,vpn_email2b.pcap,VPN_Email_Gmail_none,VPN_Email_Gmail_none_2.pcap,identical,,7626146,18874,1433773497344933
+VPN-PCAPS-01.zip,vpn_ftps_A.pcap,VPN_FileTransfer_FTPS_none,VPN_FileTransfer_FTPS_none_1.pcap,identical,,94380369,102569,1432323621926090
+VPN-PCAPS-01.zip,vpn_ftps_B.pcap,VPN_FileTransfer_FTPS_none,VPN_FileTransfer_FTPS_none_2.pcap,identical,,82635430,88685,1432323993926589
+VPN-PCAPs-02.zip,vpn_sftp_A.pcap,VPN_FileTransfer_SFTP_none,VPN_FileTransfer_SFTP_none_1.pcap,identical,,82275894,90905,1432322487926257
+VPN-PCAPs-02.zip,vpn_sftp_B.pcap,VPN_FileTransfer_SFTP_none,VPN_FileTransfer_SFTP_none_2.pcap,identical,,17982779,20177,1432322830726692
+VPN-PCAPs-02.zip,vpn_skype_files1a.pcap,VPN_FileTransfer_Skype_file,VPN_FileTransfer_Skype_file_1.pcap,identical,,9036193,42936,1433512221636504
+VPN-PCAPs-02.zip,vpn_skype_files1b.pcap,VPN_FileTransfer_Skype_file,VPN_FileTransfer_Skype_file_2.pcap,identical,,6690677,32817,1433512219150701
+VPN-PCAPS-01.zip,vpn_bittorrent.pcap,VPN_P2P_BitTorrent_none,VPN_P2P_BitTorrent_none_1.pcap,identical,,376187475,422098,1433421189142354
+VPN-PCAPs-02.zip,vpn_netflix_A.pcap,VPN_Streaming_Netflix_none,VPN_Streaming_Netflix_none_1.pcap,identical,,806459199,870018,1432487004222647
+VPN-PCAPs-02.zip,vpn_spotify_A.pcap,VPN_Streaming_Spotify_none,VPN_Streaming_Spotify_none_1.pcap,identical,,103342155,115939,1432482076078647
+VPN-PCAPs-02.zip,vpn_vimeo_A.pcap,VPN_Streaming_Vimeo_none,VPN_Streaming_Vimeo_none_1.pcap,identical,,124614526,104874,1432489707117166
+VPN-PCAPs-02.zip,vpn_vimeo_B.pcap,VPN_Streaming_Vimeo_none,VPN_Streaming_Vimeo_none_2.pcap,identical,,254576115,215102,1432491298614722
+VPN-PCAPs-02.zip,vpn_youtube_A.pcap,VPN_Streaming_Youtube_none,VPN_Streaming_Youtube_none_1.pcap,identical,,182232350,208355,1432492337828880
+VPN-PCAPS-01.zip,vpn_facebook_audio2.pcap,VPN_VoIP_Facebook_audio,VPN_VoIP_Facebook_audio_1.pcap,identical,,6501918,15094,1429038183230311
+VPN-PCAPS-01.zip,vpn_hangouts_audio1.pcap,VPN_VoIP_Hangouts_audio,VPN_VoIP_Hangouts_audio_1.pcap,identical,,71870096,446669,1429042476405887
+VPN-PCAPs-02.zip,vpn_skype_audio1.pcap,VPN_VoIP_Skype_audio,VPN_VoIP_Skype_audio_1.pcap,identical,,49536856,375980,1429034142417995
+VPN-PCAPs-02.zip,vpn_skype_audio2.pcap,VPN_VoIP_Skype_audio,VPN_VoIP_Skype_audio_2.pcap,identical,,49336707,372383,1429034100389150
+VPN-PCAPs-02.zip,vpn_voipbuster1a.pcap,VPN_VoIP_VoIPBuster_none,VPN_VoIP_VoIPBuster_none_1.pcap,identical,,51729420,361469,1432312400722088
+VPN-PCAPs-02.zip,vpn_voipbuster1b.pcap,VPN_VoIP_VoIPBuster_none,VPN_VoIP_VoIPBuster_none_2.pcap,identical,,51572271,363041,1432312402886088
+NonVPN-PCAPs-01.zip,AIMchat1.pcapng,nonVPN_Chat_AIM_none,nonVPN_Chat_AIM_none_1.pcap,same packets,,60166,404,1429107263001672
+NonVPN-PCAPs-01.zip,AIMchat2.pcapng,nonVPN_Chat_AIM_none,nonVPN_Chat_AIM_none_2.pcap,same packets,,60008,366,1429126792403723
+NonVPN-PCAPs-01.zip,aim_chat_3a.pcap,nonVPN_Chat_AIM_none,nonVPN_Chat_AIM_none_3.pcap,identical,,766138,1243,1430325788001040
+NonVPN-PCAPs-01.zip,aim_chat_3b.pcap,nonVPN_Chat_AIM_none,nonVPN_Chat_AIM_none_4.pcap,identical,,450816,2856,1430325787134464
+NonVPN-PCAPs-01.zip,facebookchat1.pcapng,nonVPN_Chat_Facebook_none,nonVPN_Chat_Facebook_none_1.pcap,same packets,,434595,1061,1428954876560664
+NonVPN-PCAPs-01.zip,facebookchat2.pcapng,nonVPN_Chat_Facebook_none,nonVPN_Chat_Facebook_none_2.pcap,same packets,,165158,434,1429023526895129
+NonVPN-PCAPs-01.zip,facebookchat3.pcapng,nonVPN_Chat_Facebook_none,nonVPN_Chat_Facebook_none_3.pcap,same packets,,631529,1726,1429117977534903
+NonVPN-PCAPs-01.zip,facebook_chat_4a.pcap,nonVPN_Chat_Facebook_none,nonVPN_Chat_Facebook_none_4.pcap,identical,,877992,2192,1430326873887123
+NonVPN-PCAPs-01.zip,facebook_chat_4b.pcap,nonVPN_Chat_Facebook_none,nonVPN_Chat_Facebook_none_5.pcap,identical,,1696402,5527,1430326872796690
+NonVPN-PCAPs-02.zip,gmailchat1.pcapng,nonVPN_Chat_Gmail_none,nonVPN_Chat_Gmail_none_1.pcap,same packets,,754099,1800,1428936575426480
+NonVPN-PCAPs-02.zip,gmailchat2.pcapng,nonVPN_Chat_Gmail_none,nonVPN_Chat_Gmail_none_2.pcap,same packets,,1440093,3143,1429022698393052
+NonVPN-PCAPs-02.zip,gmailchat3.pcapng,nonVPN_Chat_Gmail_none,nonVPN_Chat_Gmail_none_3.pcap,same packets,,3008650,7329,1429120474532425
+NonVPN-PCAPs-02.zip,hangouts_chat_4a.pcap,nonVPN_Chat_Hangouts_none,nonVPN_Chat_Hangouts_none_1.pcap,identical,,3128608,5675,1430328026116246
+NonVPN-PCAPs-02.zip,hangout_chat_4b.pcap,nonVPN_Chat_Hangouts_none,nonVPN_Chat_Hangouts_none_2.pcap,identical,,2719023,7587,1430328022664533
+NonVPN-PCAPs-02.zip,ICQchat1.pcapng,nonVPN_Chat_ICQ_none,nonVPN_Chat_ICQ_none_1.pcap,same packets,,50335,487,1429035451001596
+NonVPN-PCAPs-02.zip,ICQchat2.pcapng,nonVPN_Chat_ICQ_none,nonVPN_Chat_ICQ_none_2.pcap,same packets,,42590,280,1429126192153322
+NonVPN-PCAPs-02.zip,icq_chat_3a.pcap,nonVPN_Chat_ICQ_none,nonVPN_Chat_ICQ_none_3.pcap,identical,,125759,755,1430324727323512
+NonVPN-PCAPs-02.zip,icq_chat_3b.pcap,nonVPN_Chat_ICQ_none,nonVPN_Chat_ICQ_none_4.pcap,identical,,366438,2721,1430324746253146
+NonVPN-PCAPs-03.zip,skype_chat1a.pcap,nonVPN_Chat_Skype_none,nonVPN_Chat_Skype_none_1.pcap,identical,,9632453,53996,1432573638449294
+NonVPN-PCAPs-03.zip,skype_chat1b.pcap,nonVPN_Chat_Skype_none,nonVPN_Chat_Skype_none_2.pcap,identical,,9679510,53869,1432573638521803
+NonVPN-PCAPs-01.zip,email1a.pcap,nonVPN_Email_Gmail_none,nonVPN_Email_Gmail_none_1.pcap,identical,,3207205,30410,1432572763216776
+NonVPN-PCAPs-01.zip,email1b.pcap,nonVPN_Email_Gmail_none,nonVPN_Email_Gmail_none_2.pcap,identical,,3259057,32566,1432572758760046
+NonVPN-PCAPs-01.zip,email2a.pcap,nonVPN_Email_Gmail_none,nonVPN_Email_Gmail_none_3.pcap,identical,,808096,4417,1433528069045060
+NonVPN-PCAPs-01.zip,email2b.pcap,nonVPN_Email_Gmail_none,nonVPN_Email_Gmail_none_4.pcap,identical,,967539,7686,1433528069023203
+NonVPN-PCAPs-02.zip,ftps_down_1a.pcap,nonVPN_FileTransfer_FTPS_none,nonVPN_FileTransfer_FTPS_none_1.pcap,identical,,5835295240,5743493,1430491025291335
+NonVPN-PCAPs-02.zip,ftps_down_1b.pcap,nonVPN_FileTransfer_FTPS_none,nonVPN_FileTransfer_FTPS_none_2.pcap,identical,,4544763906,1942866,1430491034574524
+NonVPN-PCAPs-02.zip,ftps_up_2a.pcap,nonVPN_FileTransfer_FTPS_none,nonVPN_FileTransfer_FTPS_none_3.pcap,identical,,90256484,93433,1430497467030016
+NonVPN-PCAPs-02.zip,ftps_up_2b.pcap,nonVPN_FileTransfer_FTPS_none,nonVPN_FileTransfer_FTPS_none_4.pcap,identical,,90760090,93191,1430497470648003
+NonVPN-PCAPs-03.zip,scp1.pcapng,nonVPN_FileTransfer_SCP_none,nonVPN_FileTransfer_SCP_none_1.pcap,same packets,,3255359210,393360,1429110991920001
+NonVPN-PCAPs-03.zip,scpUp3.pcap,nonVPN_FileTransfer_SCP_none,nonVPN_FileTransfer_SCP_none_10.pcap,identical,,96363,144,1427977035432140
+NonVPN-PCAPs-03.zip,scpUp5.pcap,nonVPN_FileTransfer_SCP_none,nonVPN_FileTransfer_SCP_none_11.pcap,identical,,99444,198,1427977069893041
+NonVPN-PCAPs-03.zip,scpUp6.pcap,nonVPN_FileTransfer_SCP_none,nonVPN_FileTransfer_SCP_none_12.pcap,identical,,380016035,56508,1427977117024333
+NonVPN-PCAPs-03.zip,scpDown1.pcap,nonVPN_FileTransfer_SCP_none,nonVPN_FileTransfer_SCP_none_2.pcap,identical,,10546941,1931,1427976338419887
+NonVPN-PCAPs-03.zip,scpDown2.pcap,nonVPN_FileTransfer_SCP_none,nonVPN_FileTransfer_SCP_none_3.pcap,identical,,8478799,3576,1427976404222402
+NonVPN-PCAPs-03.zip,scpDown3.pcap,nonVPN_FileTransfer_SCP_none,nonVPN_FileTransfer_SCP_none_4.pcap,identical,,87456365,15390,1427976482540146
+NonVPN-PCAPs-03.zip,scpDown4.pcap,nonVPN_FileTransfer_SCP_none,nonVPN_FileTransfer_SCP_none_5.pcap,identical,,96292,166,1427977237037120
+NonVPN-PCAPs-03.zip,scpDown5.pcap,nonVPN_FileTransfer_SCP_none,nonVPN_FileTransfer_SCP_none_6.pcap,identical,,382679400,85018,1427977263044607
+NonVPN-PCAPs-03.zip,scpDown6.pcap,nonVPN_FileTransfer_SCP_none,nonVPN_FileTransfer_SCP_none_7.pcap,identical,,410899001,82941,1427977304608549
+NonVPN-PCAPs-03.zip,scpUp1.pcap,nonVPN_FileTransfer_SCP_none,nonVPN_FileTransfer_SCP_none_8.pcap,identical,,409751275,71326,1427976604943366
+NonVPN-PCAPs-03.zip,scpUp2.pcap,nonVPN_FileTransfer_SCP_none,nonVPN_FileTransfer_SCP_none_9.pcap,identical,,780334975,130938,1427976642524450
+NonVPN-PCAPs-03.zip,sftp1.pcapng,nonVPN_FileTransfer_SFTP_none,nonVPN_FileTransfer_SFTP_none_1.pcap,same packets,,909341995,446947,1429108282764041
+NonVPN-PCAPs-03.zip,sftpDown1.pcap,nonVPN_FileTransfer_SFTP_none,nonVPN_FileTransfer_SFTP_none_2.pcap,identical,,6302021,1995,1427978352770645
+NonVPN-PCAPs-03.zip,sftpDown2.pcap,nonVPN_FileTransfer_SFTP_none,nonVPN_FileTransfer_SFTP_none_3.pcap,identical,,22320455,4729,1427978559978696
+NonVPN-PCAPs-03.zip,sftp_down_3a.pcap,nonVPN_FileTransfer_SFTP_none,nonVPN_FileTransfer_SFTP_none_4.pcap,identical,,93636206,95868,1430756436798163
+NonVPN-PCAPs-03.zip,sftp_down_3b.pcap,nonVPN_FileTransfer_SFTP_none,nonVPN_FileTransfer_SFTP_none_5.pcap,identical,,92048316,49526,1430763258073774
+NonVPN-PCAPs-03.zip,sftpUp1.pcap,nonVPN_FileTransfer_SFTP_none,nonVPN_FileTransfer_SFTP_none_6.pcap,identical,,98838730,62966,1427978820174429
+NonVPN-PCAPs-03.zip,sftp_up_2a.pcap,nonVPN_FileTransfer_SFTP_none,nonVPN_FileTransfer_SFTP_none_7.pcap,identical,,95815452,107234,1430763253970951
+NonVPN-PCAPs-03.zip,sftp_up_2b.pcap,nonVPN_FileTransfer_SFTP_none,nonVPN_FileTransfer_SFTP_none_8.pcap,identical,,93324250,95785,1430756444290569
+NonVPN-PCAPs-03.zip,skype_file1.pcap,nonVPN_FileTransfer_Skype_file,nonVPN_FileTransfer_Skype_file_1.pcap,identical,,360880,780,1427826783585782
+NonVPN-PCAPs-03.zip,skype_file2.pcap,nonVPN_FileTransfer_Skype_file,nonVPN_FileTransfer_Skype_file_2.pcap,identical,,3531443,4607,1427827331979349
+NonVPN-PCAPs-03.zip,skype_file3.pcap,nonVPN_FileTransfer_Skype_file,nonVPN_FileTransfer_Skype_file_3.pcap,identical,,47390417,65323,1427828235913720
+NonVPN-PCAPs-03.zip,skype_file4.pcapng,nonVPN_FileTransfer_Skype_file,nonVPN_FileTransfer_Skype_file_4.pcap,same packets,,338094,455,1427827309986942
+NonVPN-PCAPs-03.zip,skype_file5.pcapng,nonVPN_FileTransfer_Skype_file,nonVPN_FileTransfer_Skype_file_5.pcap,same packets,,406287,1236,1427826770309114
+NonVPN-PCAPs-03.zip,skype_file6.pcapng,nonVPN_FileTransfer_Skype_file,nonVPN_FileTransfer_Skype_file_6.pcap,same packets,,47680641,66566,1427828219182230
+NonVPN-PCAPs-03.zip,skype_file7.pcapng,nonVPN_FileTransfer_Skype_file,nonVPN_FileTransfer_Skype_file_7.pcap,same packets,,382332322,511268,1429101327509886
+NonVPN-PCAPs-03.zip,skype_file8.pcapng,nonVPN_FileTransfer_Skype_file,nonVPN_FileTransfer_Skype_file_8.pcap,same packets,,407230068,777401,1429100412751071
+NonVPN-PCAPs-02.zip,netflix1.pcap,nonVPN_Streaming_Netflix_none,nonVPN_Streaming_Netflix_none_1.pcap,identical,,110248111,51932,1427910511648872
+NonVPN-PCAPs-02.zip,netflix2.pcap,nonVPN_Streaming_Netflix_none,nonVPN_Streaming_Netflix_none_2.pcap,identical,,118957137,51826,1427910781970518
+NonVPN-PCAPs-02.zip,netflix3.pcap,nonVPN_Streaming_Netflix_none,nonVPN_Streaming_Netflix_none_3.pcap,identical,,248582655,122380,1427911115208989
+NonVPN-PCAPs-02.zip,netflix4.pcap,nonVPN_Streaming_Netflix_none,nonVPN_Streaming_Netflix_none_4.pcap,identical,,165131367,73147,1427911570391392
+NonVPN-PCAPs-03.zip,spotify1.pcap,nonVPN_Streaming_Spotify_none,nonVPN_Streaming_Spotify_none_1.pcap,identical,,25782652,14442,1427912272853542
+NonVPN-PCAPs-03.zip,spotify2.pcap,nonVPN_Streaming_Spotify_none,nonVPN_Streaming_Spotify_none_2.pcap,identical,,482825,737,1427912892957673
+NonVPN-PCAPs-03.zip,spotify3.pcap,nonVPN_Streaming_Spotify_none,nonVPN_Streaming_Spotify_none_3.pcap,identical,,6452883,3320,1427913461175736
+NonVPN-PCAPs-03.zip,spotify4.pcap,nonVPN_Streaming_Spotify_none,nonVPN_Streaming_Spotify_none_4.pcap,identical,,40693798,22755,1427914286119521
+NonVPN-PCAPs-03.zip,vimeo1.pcap,nonVPN_Streaming_Vimeo_none,nonVPN_Streaming_Vimeo_none_1.pcap,identical,,297256384,92705,1427908322976846
+NonVPN-PCAPs-03.zip,vimeo2.pcap,nonVPN_Streaming_Vimeo_none,nonVPN_Streaming_Vimeo_none_2.pcap,identical,,8475918,3038,1427909243984496
+NonVPN-PCAPs-03.zip,vimeo3.pcap,nonVPN_Streaming_Vimeo_none,nonVPN_Streaming_Vimeo_none_3.pcap,identical,,112365310,31903,1427909345929823
+NonVPN-PCAPs-03.zip,vimeo4.pcap,nonVPN_Streaming_Vimeo_none,nonVPN_Streaming_Vimeo_none_4.pcap,identical,,53739782,18755,1427909880122564
+NonVPN-PCAPs-03.zip,youtube1.pcap,nonVPN_Streaming_Youtube_none,nonVPN_Streaming_Youtube_none_1.pcap,identical,,12139573,7932,1427896951520844
+NonVPN-PCAPs-03.zip,youtube2.pcap,nonVPN_Streaming_Youtube_none,nonVPN_Streaming_Youtube_none_2.pcap,identical,,22540747,12738,1427904297524905
+NonVPN-PCAPs-03.zip,youtube3.pcap,nonVPN_Streaming_Youtube_none,nonVPN_Streaming_Youtube_none_3.pcap,identical,,12437561,7288,1427904360640865
+NonVPN-PCAPs-03.zip,youtube4.pcap,nonVPN_Streaming_Youtube_none,nonVPN_Streaming_Youtube_none_4.pcap,identical,,65084037,39742,1427904546041598
+NonVPN-PCAPs-03.zip,youtube5.pcap,nonVPN_Streaming_Youtube_none,nonVPN_Streaming_Youtube_none_5.pcap,identical,,253263531,135087,1427905015130755
+NonVPN-PCAPs-03.zip,youtube6.pcap,nonVPN_Streaming_Youtube_none,nonVPN_Streaming_Youtube_none_6.pcap,identical,,13822693,7948,1427905769641100
+NonVPN-PCAPs-03.zip,youtubeHTML5_1.pcap,nonVPN_Streaming_Youtube_none,nonVPN_Streaming_Youtube_none_7.pcap,identical,,77298864,41380,1427906022267618
+NonVPN-PCAPs-01.zip,facebook_audio1a.pcap,nonVPN_VoIP_Facebook_audio,nonVPN_VoIP_Facebook_audio_1.pcap,identical,,8550782,46061,1427721102209749
+NonVPN-PCAPs-01.zip,facebook_audio1b.pcapng,nonVPN_VoIP_Facebook_audio,nonVPN_VoIP_Facebook_audio_2.pcap,same packets,,8694478,47677,1427721055565768
+NonVPN-PCAPs-01.zip,facebook_audio2a.pcap,nonVPN_VoIP_Facebook_audio,nonVPN_VoIP_Facebook_audio_3.pcap,identical,,16469907,91815,1427722230785451
+NonVPN-PCAPs-01.zip,facebook_audio2b.pcapng,nonVPN_VoIP_Facebook_audio,nonVPN_VoIP_Facebook_audio_4.pcap,same packets,,16173783,94092,1427722200909479
+NonVPN-PCAPs-01.zip,facebook_audio3.pcapng,nonVPN_VoIP_Facebook_audio,nonVPN_VoIP_Facebook_audio_5.pcap,same packets,,93951086,643049,1429026770695331
+NonVPN-PCAPs-01.zip,facebook_audio4.pcapng,nonVPN_VoIP_Facebook_audio,nonVPN_VoIP_Facebook_audio_6.pcap,same packets,,132442950,1040037,1429026738882397
+NonVPN-PCAPs-01.zip,facebook_video1a.pcap,nonVPN_VoIP_Facebook_video,nonVPN_VoIP_Facebook_video_1.pcap,identical,,146929062,156989,1427719317277719
+NonVPN-PCAPs-01.zip,facebook_video1b.pcapng,nonVPN_VoIP_Facebook_video,nonVPN_VoIP_Facebook_video_2.pcap,same packets,,87763909,92692,1427719447718548
+NonVPN-PCAPs-01.zip,facebook_video2a.pcap,nonVPN_VoIP_Facebook_video,nonVPN_VoIP_Facebook_video_3.pcap,identical,,230631530,244619,1427721652858442
+NonVPN-PCAPs-01.zip,facebook_video2b.pcapng,nonVPN_VoIP_Facebook_video,nonVPN_VoIP_Facebook_video_4.pcap,same packets,,230383195,245777,1427721618258206
+NonVPN-PCAPs-02.zip,hangouts_audio1a.pcap,nonVPN_VoIP_Hangouts_audio,nonVPN_VoIP_Hangouts_audio_1.pcap,identical,,16434295,87334,1427724096666135
+NonVPN-PCAPs-02.zip,hangouts_audio1b.pcapng,nonVPN_VoIP_Hangouts_audio,nonVPN_VoIP_Hangouts_audio_2.pcap,same packets,,16499610,82393,1427724077051354
+NonVPN-PCAPs-02.zip,hangouts_audio2a.pcap,nonVPN_VoIP_Hangouts_audio,nonVPN_VoIP_Hangouts_audio_3.pcap,identical,,17458173,85281,1427726615031298
+NonVPN-PCAPs-02.zip,hangouts_audio2b.pcapng,nonVPN_VoIP_Hangouts_audio,nonVPN_VoIP_Hangouts_audio_4.pcap,same packets,,14920418,75008,1427726595421122
+NonVPN-PCAPs-02.zip,hangouts_audio3.pcapng,nonVPN_VoIP_Hangouts_audio,nonVPN_VoIP_Hangouts_audio_5.pcap,same packets,,106749141,609720,1429033648185566
+NonVPN-PCAPs-02.zip,hangouts_audio4.pcapng,nonVPN_VoIP_Hangouts_audio,nonVPN_VoIP_Hangouts_audio_6.pcap,same packets,,147565650,1019454,1429033633039706
+NonVPN-PCAPs-02.zip,hangouts_video1b.pcapng,nonVPN_VoIP_Hangouts_video,nonVPN_VoIP_Hangouts_video_1.pcap,same packets,,380966501,439402,1427723083656937
+NonVPN-PCAPs-02.zip,hangouts_video2a.pcap,nonVPN_VoIP_Hangouts_video,nonVPN_VoIP_Hangouts_video_2.pcap,identical,,732534042,808344,1427725125658397
+NonVPN-PCAPs-02.zip,hangouts_video2b.pcapng,nonVPN_VoIP_Hangouts_video,nonVPN_VoIP_Hangouts_video_3.pcap,same packets,,649563737,742988,1427725106111832
+NonVPN-PCAPs-03.zip,skype_audio1a.pcap,nonVPN_VoIP_Skype_audio,nonVPN_VoIP_Skype_audio_1.pcap,identical,,9558347,60207,1427825205806435
+NonVPN-PCAPs-03.zip,skype_audio1b.pcapng,nonVPN_VoIP_Skype_audio,nonVPN_VoIP_Skype_audio_2.pcap,same packets,,12266459,65212,1427825135747368
+NonVPN-PCAPs-03.zip,skype_audio2a.pcap,nonVPN_VoIP_Skype_audio,nonVPN_VoIP_Skype_audio_3.pcap,identical,,9336216,58569,1427826070312337
+NonVPN-PCAPs-03.zip,skype_audio2b.pcapng,nonVPN_VoIP_Skype_audio,nonVPN_VoIP_Skype_audio_4.pcap,same packets,,10263664,64184,1427826048527571
+NonVPN-PCAPs-03.zip,skype_audio3.pcapng,nonVPN_VoIP_Skype_audio,nonVPN_VoIP_Skype_audio_5.pcap,same packets,,54662489,420634,1429021190168172
+NonVPN-PCAPs-03.zip,skype_audio4.pcapng,nonVPN_VoIP_Skype_audio,nonVPN_VoIP_Skype_audio_6.pcap,same packets,,39351676,256641,1429021189229854
+NonVPN-PCAPs-03.zip,skype_video1a.pcap,nonVPN_VoIP_Skype_video,nonVPN_VoIP_Skype_video_1.pcap,identical,,100554811,140569,1427821117455079
+NonVPN-PCAPs-03.zip,skype_video1b.pcapng,nonVPN_VoIP_Skype_video,nonVPN_VoIP_Skype_video_2.pcap,same packets,,222423912,255533,1427821075554842
+NonVPN-PCAPs-03.zip,skype_video2a.pcap,nonVPN_VoIP_Skype_video,nonVPN_VoIP_Skype_video_3.pcap,identical,,203926588,283356,1427822278864688
+NonVPN-PCAPs-03.zip,skype_video2b.pcapng,nonVPN_VoIP_Skype_video,nonVPN_VoIP_Skype_video_4.pcap,same packets,,851410120,842212,1427822249554880
+NonVPN-PCAPs-03.zip,voipbuster1b.pcapng,nonVPN_VoIP_VoIPBuster_none,nonVPN_VoIP_VoIPBuster_none_1.pcap,same packets,,5173937,35469,1427914524811423
+NonVPN-PCAPs-03.zip,voipbuster2b.pcapng,nonVPN_VoIP_VoIPBuster_none,nonVPN_VoIP_VoIPBuster_none_2.pcap,same packets,,4923758,34667,1427915101770049
+NonVPN-PCAPs-03.zip,voipbuster3b.pcapng,nonVPN_VoIP_VoIPBuster_none,nonVPN_VoIP_VoIPBuster_none_3.pcap,same packets,,4902221,34510,1427915571818961
+NonVPN-PCAPs-03.zip,voipbuster_4a.pcap,nonVPN_VoIP_VoIPBuster_none,nonVPN_VoIP_VoIPBuster_none_4.pcap,identical,,52230444,370043,1430315223183581
+NonVPN-PCAPs-03.zip,voipbuster_4b.pcap,nonVPN_VoIP_VoIPBuster_none,nonVPN_VoIP_VoIPBuster_none_5.pcap,identical,,52123941,369820,1430315416592682
+VPN-PCAPS-01.zip,vpn_hangouts_audio2.pcap,,,unused,,97785336,479063,1429042349477136

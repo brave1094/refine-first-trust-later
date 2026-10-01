@@ -1,0 +1,107 @@
+archive,official_file,class,our_file,match,cut_to_bytes,size,packets,first_packet_us
+Tor.zip,Tor/AUDIO_spotifygateway.pcap,Tor_Audio-Streaming_Spotify_none,Tor_Audio-Streaming_Spotify_none_1.pcap,identical,,31282763,35485,1437494738355210
+Tor.zip,Tor/AUDIO_tor_spotify.pcap,Tor_Audio-Streaming_Spotify_none,Tor_Audio-Streaming_Spotify_none_2.pcap,identical,,34402304,35493,1456328168816682
+Tor.zip,Tor/tor_spotify2-2.pcap,Tor_Audio-Streaming_Spotify_none,Tor_Audio-Streaming_Spotify_none_3.pcap,identical,,154092026,159018,1456330662793946
+Tor.zip,Tor/tor_spotify2-1.pcap,Tor_Audio-Streaming_Spotify_none,Tor_Audio-Streaming_Spotify_none_4.pcap,identical,,34402304,35493,1456328168816682
+Tor.zip,Tor/AUDIO_tor_spotify2.pcap,Tor_Audio-Streaming_Spotify_none,Tor_Audio-Streaming_Spotify_none_5.pcap,identical,,154092026,159018,1456330662793946
+Tor.zip,Tor/BROWSING_gate_SSL_Browsing.pcap,Tor_Browsing_Browser_none,Tor_Browsing_Browser_none_1.pcap,identical,,98695000,117531,1438105368681608
+Tor.zip,Tor/BROWSING_ssl_browsing_gateway.pcap,Tor_Browsing_Browser_none,Tor_Browsing_Browser_none_2.pcap,identical,,31296081,41235,1438014176290697
+Tor.zip,Tor/BROWSING_tor_browsing_ara.pcap,Tor_Browsing_Browser_none,Tor_Browsing_Browser_none_3.pcap,identical,,82669250,99878,1456333628736877
+Tor.zip,Tor/BROWSING_tor_browsing_ger.pcap,Tor_Browsing_Browser_none,Tor_Browsing_Browser_none_4.pcap,identical,,123536452,154079,1456403606193693
+Tor.zip,Tor/BROWSING_tor_browsing_mam.pcap,Tor_Browsing_Browser_none,Tor_Browsing_Browser_none_5.pcap,identical,,137189751,170612,1456249977242956
+Tor.zip,Tor/BROWSING_tor_browsing_mam2.pcap,Tor_Browsing_Browser_none,Tor_Browsing_Browser_none_6.pcap,identical,,32773528,43062,1456336332394319
+Tor.zip,Tor/torFacebook.pcap,Tor_Browsing_Facebook_none,Tor_Browsing_Facebook_none_1.pcap,identical,,22182136,21146,1427991171506696
+Tor.zip,Tor/torGoogle.pcap,Tor_Browsing_Google_none,Tor_Browsing_Google_none_1.pcap,identical,,11209214,10678,1427992082211230
+Tor.zip,Tor/torTwitter.pcap,Tor_Browsing_Twitter_none,Tor_Browsing_Twitter_none_1.pcap,identical,,15377747,14654,1427991513234779
+Tor.zip,Tor/CHAT_aimchatgateway.pcap,Tor_Chat_AIM_none,Tor_Chat_AIM_none_1.pcap,identical,,115894,227,1437585315797950
+Tor.zip,Tor/CHAT_gate_AIM_chat.pcap,Tor_Chat_AIM_none,Tor_Chat_AIM_none_2.pcap,identical,,336397,580,1437585311498373
+Tor.zip,Tor/CHAT_facebookchatgateway.pcap,Tor_Chat_Facebook_none,Tor_Chat_Facebook_none_1.pcap,identical,,3497664,5406,1436447648641097
+Tor.zip,Tor/CHAT_gate_facebook_chat.pcap,Tor_Chat_Facebook_none,Tor_Chat_Facebook_none_2.pcap,identical,,1418755,2902,1436448347745775
+Tor.zip,Tor/CHAT_gate_hangout_chat.pcap,Tor_Chat_Hangouts_none,Tor_Chat_Hangouts_none_1.pcap,identical,,2117164,3566,1436451396671033
+Tor.zip,Tor/CHAT_hangoutschatgateway.pcap,Tor_Chat_Hangouts_none,Tor_Chat_Hangouts_none_2.pcap,identical,,1830192,2948,1436451406194394
+Tor.zip,Tor/CHAT_gate_ICQ_chat.pcap,Tor_Chat_ICQ_none,Tor_Chat_ICQ_none_1.pcap,identical,,193818,417,1437584010285804
+Tor.zip,Tor/CHAT_icqchatgateway.pcap,Tor_Chat_ICQ_none,Tor_Chat_ICQ_none_2.pcap,identical,,239329,534,1437583986206264
+Tor.zip,Tor/CHAT_gate_skype_chat.pcap,Tor_Chat_Skype_none,Tor_Chat_Skype_none_1.pcap,identical,,773515,1907,1436450511982006
+Tor.zip,Tor/CHAT_skypechatgateway.pcap,Tor_Chat_Skype_none,Tor_Chat_Skype_none_2.pcap,identical,,944639,2135,1436450530966650
+Tor.zip,Tor/MAIL_gate_Email_IMAP_filetransfer.pcap,Tor_Email_Gmail_none,Tor_Email_Gmail_none_1.pcap,identical,,80519433,95748,1436804539184636
+Tor.zip,Tor/MAIL_gate_POP_filetransfer.pcap,Tor_Email_Gmail_none,Tor_Email_Gmail_none_2.pcap,identical,,66854158,77794,1436814915199421
+Tor.zip,Tor/MAIL_Gateway_Thunderbird_Imap.pcap,Tor_Email_Gmail_none,Tor_Email_Gmail_none_3.pcap,identical,,111758159,133752,1436804517143183
+Tor.zip,Tor/MAIL_Gateway_Thunderbird_POP.pcap,Tor_Email_Gmail_none,Tor_Email_Gmail_none_4.pcap,identical,,107175936,84118,1436814855284255
+Tor.zip,Tor/FILE-TRANSFER_gate_FTP_transfer.pcap,Tor_FileTransfer_FTP_none,Tor_FileTransfer_FTP_none_1.pcap,identical,,2434115449,2952252,1437147827005970
+Tor.zip,Tor/FILE-TRANSFER_gate_SFTP_filetransfer.pcap,Tor_FileTransfer_SFTP_none,Tor_FileTransfer_SFTP_none_1.pcap,identical,,766557341,929868,1437145394815130
+Tor.zip,Tor/FILE-TRANSFER_tor_skype_transfer.pcap,Tor_FileTransfer_Skype_file,Tor_FileTransfer_Skype_file_1.pcap,identical,,76088419,123862,1456414673416796
+Tor.zip,Tor/P2P_tor_p2p_multipleSpeed.pcap,Tor_P2P_BitTorrent_none,Tor_P2P_BitTorrent_none_1.pcap,identical,,1194827551,1342497,1456321646925902
+Tor.zip,Tor/tor_p2p_vuze-2-1.pcap,Tor_P2P_BitTorrent_none,Tor_P2P_BitTorrent_none_2.pcap,identical,,1320186375,1448963,1456261608503812
+Tor.zip,Tor/tor_p2p_multipleSpeed2-1.pcap,Tor_P2P_BitTorrent_none,Tor_P2P_BitTorrent_none_3.pcap,identical,,1194827551,1342497,1456321646925902
+Tor.zip,Tor/P2P_tor_p2p_vuze.pcap,Tor_P2P_BitTorrent_none,Tor_P2P_BitTorrent_none_4.pcap,identical,,1320186375,1448963,1456261608503812
+Tor.zip,Tor/Torrent01.pcapng,Tor_P2P_BitTorrent_none,Tor_P2P_BitTorrent_none_5.pcap,"same packets, cut at 16 MiB (19,016 of 108,541 packets)",16777216,16777216,19016,1427898189204740
+Tor.zip,Tor/VIDEO_Vimeo_Gateway.pcap,Tor_Video-Streaming_Vimeo_none,Tor_Video-Streaming_Vimeo_none_1.pcap,identical,,1213138676,1355043,1437137005902959
+Tor.zip,Tor/torVimeo1.pcap,Tor_Video-Streaming_Vimeo_none,Tor_Video-Streaming_Vimeo_none_2.pcap,identical,,79688569,70960,1427985964386170
+Tor.zip,Tor/torVimeo2.pcap,Tor_Video-Streaming_Vimeo_none,Tor_Video-Streaming_Vimeo_none_3.pcap,identical,,103760455,90247,1427986320830510
+Tor.zip,Tor/torVimeo3.pcap,Tor_Video-Streaming_Vimeo_none,Tor_Video-Streaming_Vimeo_none_4.pcap,identical,,37834830,32990,1427986550829228
+Tor.zip,Tor/VIDEO_Youtube_Flash_Gateway.pcap,Tor_Video-Streaming_Youtube_none,Tor_Video-Streaming_Youtube_none_1.pcap,identical,,448867645,502737,1436966022803391
+Tor.zip,Tor/VIDEO_Youtube_HTML5_Gateway.pcap,Tor_Video-Streaming_Youtube_none,Tor_Video-Streaming_Youtube_none_2.pcap,identical,,237341004,270387,1436962234252548
+Tor.zip,Tor/torYoutube1.pcap,Tor_Video-Streaming_Youtube_none,Tor_Video-Streaming_Youtube_none_3.pcap,identical,,11177160,10204,1427984928155152
+Tor.zip,Tor/torYoutube2.pcap,Tor_Video-Streaming_Youtube_none,Tor_Video-Streaming_Youtube_none_4.pcap,identical,,61286154,54294,1427985067342451
+Tor.zip,Tor/torYoutube3.pcap,Tor_Video-Streaming_Youtube_none,Tor_Video-Streaming_Youtube_none_5.pcap,identical,,24087955,21354,1427985352511452
+Tor.zip,Tor/VOIP_gate_facebook_Audio.pcap,Tor_VoIP_Facebook_audio,Tor_VoIP_Facebook_audio_1.pcap,identical,,96059828,220995,1437759613725589
+Tor.zip,Tor/VOIP_Facebook_Voice_Gateway.pcap,Tor_VoIP_Facebook_audio,Tor_VoIP_Facebook_audio_2.pcap,identical,,121098035,317194,1437759452312683
+Tor.zip,Tor/VOIP_gate_hangout_audio.pcap,Tor_VoIP_Hangouts_audio,Tor_VoIP_Hangouts_audio_1.pcap,identical,,125212860,266986,1437764950348381
+Tor.zip,Tor/VOIP_Hangouts_voice_Gateway.pcap,Tor_VoIP_Hangouts_audio,Tor_VoIP_Hangouts_audio_2.pcap,identical,,136365177,312869,1437764968712532
+Tor.zip,Tor/VOIP_gate_Skype_Audio.pcap,Tor_VoIP_Skype_audio,Tor_VoIP_Skype_audio_1.pcap,identical,,88870039,213763,1438008759833091
+Tor.zip,Tor/VOIP_Skype_Voice_Gateway.pcap,Tor_VoIP_Skype_audio,Tor_VoIP_Skype_audio_2.pcap,identical,,88628239,217814,1438008595910370
+NonTor.tar.xz,NonTor/spotify.pcap,nonTor_Audio-Streaming_Spotify_none,nonTor_Audio-Streaming_Spotify_none_1.pcap,identical,,34066432,42947,1456328155510334
+NonTor.tar.xz,NonTor/spotify2.pcap,nonTor_Audio-Streaming_Spotify_none,nonTor_Audio-Streaming_Spotify_none_2.pcap,identical,,143100440,165372,1456330650376133
+NonTor.tar.xz,NonTor/spotify2-1.pcap,nonTor_Audio-Streaming_Spotify_none,nonTor_Audio-Streaming_Spotify_none_3.pcap,identical,,34066432,42947,1456328155510334
+NonTor.tar.xz,NonTor/spotify2-2.pcap,nonTor_Audio-Streaming_Spotify_none,nonTor_Audio-Streaming_Spotify_none_4.pcap,identical,,143100440,165372,1456330650376133
+NonTor.tar.xz,NonTor/spotifyAndrew.pcap,nonTor_Audio-Streaming_Spotify_none,nonTor_Audio-Streaming_Spotify_none_5.pcap,identical,,28921856,34480,1437494736756233
+NonTor.tar.xz,NonTor/browsing.pcap,nonTor_Browsing_Browser_none,nonTor_Browsing_Browser_none_1.pcap,identical,,113116179,219535,1456250084670082
+NonTor.tar.xz,NonTor/browsing2.pcap,nonTor_Browsing_Browser_none,nonTor_Browsing_Browser_none_2.pcap,identical,,23940727,54933,1456336331446555
+NonTor.tar.xz,NonTor/browsing2-1.pcap,nonTor_Browsing_Browser_none,nonTor_Browsing_Browser_none_3.pcap,identical,,113116179,219535,1456250084670082
+NonTor.tar.xz,NonTor/browsing2-2.pcap,nonTor_Browsing_Browser_none,nonTor_Browsing_Browser_none_4.pcap,identical,,23940727,54933,1456336331446555
+NonTor.tar.xz,NonTor/browsing_ara.pcap,nonTor_Browsing_Browser_none,nonTor_Browsing_Browser_none_5.pcap,identical,,69600285,118384,1456333624702133
+NonTor.tar.xz,NonTor/browsing_ara2.pcap,nonTor_Browsing_Browser_none,nonTor_Browsing_Browser_none_6.pcap,identical,,45281452,88520,1456326418382863
+NonTor.tar.xz,NonTor/browsing_ger.pcap,nonTor_Browsing_Browser_none,nonTor_Browsing_Browser_none_7.pcap,identical,,104485644,185055,1456403617184687
+NonTor.tar.xz,NonTor/ssl.pcap,nonTor_Browsing_Browser_none,nonTor_Browsing_Browser_none_8.pcap,identical,,25624576,52855,1438013811149362
+NonTor.tar.xz,NonTor/SSL_Browsing.pcap,nonTor_Browsing_Browser_none,nonTor_Browsing_Browser_none_9.pcap,identical,,65183744,97926,1438105368900473
+NonTor.tar.xz,NonTor/aimchat.pcap,nonTor_Chat_AIM_none,nonTor_Chat_AIM_none_1.pcap,identical,,78520,190,1437585316661650
+NonTor.tar.xz,NonTor/AIM_Chat.pcap,nonTor_Chat_AIM_none,nonTor_Chat_AIM_none_2.pcap,identical,,278477,526,1437585311219998
+NonTor.tar.xz,NonTor/facebook_chat.pcap,nonTor_Chat_Facebook_none,nonTor_Chat_Facebook_none_1.pcap,identical,,1038582,2969,1436448346538715
+NonTor.tar.xz,NonTor/facebookchat.pcap,nonTor_Chat_Facebook_none,nonTor_Chat_Facebook_none_2.pcap,identical,,2722893,5814,1436447646896573
+NonTor.tar.xz,NonTor/hangout_chat.pcap,nonTor_Chat_Hangouts_none,nonTor_Chat_Hangouts_none_1.pcap,identical,,1592245,3510,1436451393962663
+NonTor.tar.xz,NonTor/hangoutschat.pcap,nonTor_Chat_Hangouts_none,nonTor_Chat_Hangouts_none_2.pcap,identical,,1448987,2994,1436451404489935
+NonTor.tar.xz,NonTor/icqchat.pcap,nonTor_Chat_ICQ_none,nonTor_Chat_ICQ_none_1.pcap,identical,,147956,532,1437583986785655
+NonTor.tar.xz,NonTor/ICQ_Chat.pcap,nonTor_Chat_ICQ_none,nonTor_Chat_ICQ_none_2.pcap,identical,,104368,386,1437584010492120
+NonTor.tar.xz,NonTor/skype_chat.pcap,nonTor_Chat_Skype_none,nonTor_Chat_Skype_none_1.pcap,identical,,392460,2121,1436450510311921
+NonTor.tar.xz,NonTor/skypechat.pcap,nonTor_Chat_Skype_none,nonTor_Chat_Skype_none_2.pcap,identical,,413308,2415,1436450529215299
+NonTor.tar.xz,NonTor/Email_IMAP_filetransfer.pcap,nonTor_Email_Gmail_none,nonTor_Email_Gmail_none_1.pcap,identical,,72344113,71235,1436804537058557
+NonTor.tar.xz,NonTor/POP_filetransfer.pcap,nonTor_Email_Gmail_none,nonTor_Email_Gmail_none_2.pcap,identical,,60343300,58913,1436814915359131
+NonTor.tar.xz,NonTor/Workstation_Thunderbird_Imap.pcap,nonTor_Email_Gmail_none,nonTor_Email_Gmail_none_3.pcap,identical,,99909030,81653,1436804517296436
+NonTor.tar.xz,NonTor/Workstation_Thunderbird_POP.pcap,nonTor_Email_Gmail_none,nonTor_Email_Gmail_none_4.pcap,identical,,109237834,113529,1436814853826327
+NonTor.tar.xz,NonTor/FTP_filetransfer.pcap,nonTor_FileTransfer_FTP_none,nonTor_FileTransfer_FTP_none_1.pcap,identical,,2263899387,1710680,1437147826359071
+NonTor.tar.xz,NonTor/SFTP_filetransfer.pcap,nonTor_FileTransfer_SFTP_none,nonTor_FileTransfer_SFTP_none_1.pcap,identical,,680248694,526882,1437145394169853
+NonTor.tar.xz,NonTor/skype_transfer.pcap,nonTor_FileTransfer_Skype_file,nonTor_FileTransfer_Skype_file_1.pcap,identical,,51204021,143083,1456414672866141
+NonTor.tar.xz,NonTor/p2p_multipleSpeed2-1.pcap,nonTor_P2P_BitTorrent_none,nonTor_P2P_BitTorrent_none_1.pcap,identical,,1008251246,1328955,1456321692609334
+NonTor.tar.xz,NonTor/p2p_multipleSpeed.pcap,nonTor_P2P_BitTorrent_none,nonTor_P2P_BitTorrent_none_2.pcap,identical,,1008251246,1328955,1456321692609334
+NonTor.tar.xz,NonTor/p2p_vuze2-1.pcap,nonTor_P2P_BitTorrent_none,nonTor_P2P_BitTorrent_none_3.pcap,identical,,1150001823,1109575,1456262107339328
+NonTor.tar.xz,NonTor/p2p_vuze.pcap,nonTor_P2P_BitTorrent_none,nonTor_P2P_BitTorrent_none_4.pcap,identical,,1150001823,1109575,1456262107339328
+NonTor.tar.xz,NonTor/Vimeo_Workstation.pcap,nonTor_Video-Streaming_Vimeo_none,nonTor_Video-Streaming_Vimeo_none_1.pcap,identical,,1098941400,984223,1437136997219024
+NonTor.tar.xz,NonTor/Youtube_Flash_Workstation.pcap,nonTor_Video-Streaming_Youtube_none,nonTor_Video-Streaming_Youtube_none_1.pcap,identical,,417902504,494769,1436966019328113
+NonTor.tar.xz,NonTor/Youtube_HTML5_Workstation.pcap,nonTor_Video-Streaming_Youtube_none,nonTor_Video-Streaming_Youtube_none_2.pcap,identical,,218111461,265313,1436962234138359
+NonTor.tar.xz,NonTor/facebook_Audio.pcap,nonTor_VoIP_Facebook_audio,nonTor_VoIP_Facebook_audio_1.pcap,identical,,41484741,218800,1437759635741984
+NonTor.tar.xz,NonTor/Facebook_Voice_Workstation.pcap,nonTor_VoIP_Facebook_audio,nonTor_VoIP_Facebook_audio_2.pcap,identical,,44215092,253691,1437759451085870
+NonTor.tar.xz,NonTor/Hangout_Audio.pcap,nonTor_VoIP_Hangouts_audio,nonTor_VoIP_Hangouts_audio_1.pcap,identical,,50265799,244039,1437764985151313
+NonTor.tar.xz,NonTor/Hangouts_voice_Workstation.pcap,nonTor_VoIP_Hangouts_audio,nonTor_VoIP_Hangouts_audio_2.pcap,identical,,52454120,261894,1437764968774413
+NonTor.tar.xz,NonTor/Skype_Audio.pcap,nonTor_VoIP_Skype_audio,nonTor_VoIP_Skype_audio_1.pcap,identical,,26135712,199036,1438008760528520
+NonTor.tar.xz,NonTor/Skype_Voice_Workstation.pcap,nonTor_VoIP_Skype_audio,nonTor_VoIP_Skype_audio_2.pcap,identical,,25691071,194319,1438008585577411
+(01_pcap),Tor_Audio-Streaming_Spotify_none/Tor_Audio-Streaming_Spotify_none_2.pcap,Tor_Audio-Streaming_Spotify_none,.salvaged/Tor_Audio-Streaming_Spotify_none_2.salvaged.pcap,repaired copy: complete packets before the damaged end,34402261,34402261,35493,1456328168816682
+(01_pcap),Tor_Audio-Streaming_Spotify_none/Tor_Audio-Streaming_Spotify_none_4.pcap,Tor_Audio-Streaming_Spotify_none,.salvaged/Tor_Audio-Streaming_Spotify_none_4.salvaged.pcap,repaired copy: complete packets before the damaged end,34402261,34402261,35493,1456328168816682
+(01_pcap),Tor_Browsing_Browser_none/Tor_Browsing_Browser_none_3.pcap,Tor_Browsing_Browser_none,.salvaged/Tor_Browsing_Browser_none_3.salvaged.pcap,repaired copy: complete packets before the damaged end,80965912,80965912,99878,1456333628736877
+(01_pcap),Tor_Email_Gmail_none/Tor_Email_Gmail_none_4.pcap,Tor_Email_Gmail_none,.salvaged/Tor_Email_Gmail_none_4.salvaged.pcap,repaired copy: complete packets before the damaged end,76726597,76726597,84118,1436814855284255
+(01_pcap),Tor_P2P_BitTorrent_none/Tor_P2P_BitTorrent_none_5.pcap,Tor_P2P_BitTorrent_none,.salvaged/Tor_P2P_BitTorrent_none_5.salvaged.pcap,repaired copy: complete packets before the damaged end,16776641,16776641,19016,1427898189204740
+(01_pcap),nonTor_Audio-Streaming_Spotify_none/nonTor_Audio-Streaming_Spotify_none_1.pcap,nonTor_Audio-Streaming_Spotify_none,.salvaged/nonTor_Audio-Streaming_Spotify_none_1.salvaged.pcap,repaired copy: complete packets before the damaged end,34066109,34066109,42947,1456328155510334
+(01_pcap),nonTor_Audio-Streaming_Spotify_none/nonTor_Audio-Streaming_Spotify_none_3.pcap,nonTor_Audio-Streaming_Spotify_none,.salvaged/nonTor_Audio-Streaming_Spotify_none_3.salvaged.pcap,repaired copy: complete packets before the damaged end,34066109,34066109,42947,1456328155510334
+(01_pcap),nonTor_Audio-Streaming_Spotify_none/nonTor_Audio-Streaming_Spotify_none_5.pcap,nonTor_Audio-Streaming_Spotify_none,.salvaged/nonTor_Audio-Streaming_Spotify_none_5.salvaged.pcap,repaired copy: complete packets before the damaged end,28921401,28921401,34480,1437494736756233
+(01_pcap),nonTor_Browsing_Browser_none/nonTor_Browsing_Browser_none_8.pcap,nonTor_Browsing_Browser_none,.salvaged/nonTor_Browsing_Browser_none_8.salvaged.pcap,repaired copy: complete packets before the damaged end,25624550,25624550,52855,1438013811149362
+(01_pcap),nonTor_Browsing_Browser_none/nonTor_Browsing_Browser_none_9.pcap,nonTor_Browsing_Browser_none,.salvaged/nonTor_Browsing_Browser_none_9.salvaged.pcap,repaired copy: complete packets before the damaged end,65183646,65183646,97926,1438105368900473
+(01_pcap),nonTor_Email_Gmail_none/nonTor_Email_Gmail_none_3.pcap,nonTor_Email_Gmail_none,.salvaged/nonTor_Email_Gmail_none_3.salvaged.pcap,repaired copy: complete packets before the damaged end,88817683,88817683,81653,1436804517296436

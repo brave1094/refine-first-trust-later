@@ -16,7 +16,7 @@ is included.
 | tor16 | ISCX Tor-nonTor 2016 | Lashkari et al., ICISSP 2017 | <https://www.unb.ca/cic/datasets/tor.html> | 15 | 62,593 |
 | tls1.3 | CSTNET-TLS 1.3 | Lin et al., WWW 2022 (ET-BERT) | <https://github.com/linwhitehat/ET-BERT> (folder `CSTNET-TLS 1.3`) | 120 | 46,382 |
 | cispec | CipherSpectrum | Wickramasinghe et al., IEEE S&P 2025 | <https://cgi.cse.unsw.edu.au/~cspectrum/> (short form, CC BY-NC 4.0) | 41 | 123,000 |
-| ustc16 | USTC-TFC2016 | Wang et al., ICOIN 2017 | <https://github.com/yungshenglu/USTC-TFC2016> | 20 | 595,783 |
+| ustc16 | USTC-TFC2016 | Wang et al., ICOIN 2017 | <https://github.com/davidyslu/USTC-TFC2016> | 20 | 595,783 |
 | cic17 | CIC-IDS2017 | Sharafaldin et al., ICISSP 2018 | <https://www.unb.ca/cic/datasets/ids-2017.html> | 15 | 1,571,244 |
 | cic18 | CSE-CIC-IDS2018 | Sharafaldin et al., ICISSP 2018 | <https://www.unb.ca/cic/datasets/ids-2018.html> (AWS) | 14 | 51,234,354 |
 | iot23 | CIC IoT Dataset 2023 | Neto et al., Sensors 2023 | <https://www.unb.ca/cic/datasets/iotdataset-2023.html> | 30 | 1,155,285,412 |
@@ -37,14 +37,14 @@ Steps 3-6 write `02_session/`, `03_session_stat/`, `04_session_noisy_labeled/` n
 
 | ID | What to download | How to arrange | Rule reliability |
 |---|---|---|---|
-| vpn16 | the VPN and NonVPN PCAP archives | `python 00_assets/datasets/_tools/arrange_pcaps.py --dataset vpn16 --src <extracted>` | reconstructed keyword rules — check with `verify_counts.py` |
-| tor16 | the Tor and NonTor PCAP archives (keep the `Tor/`, `NonTor/` folders) | `arrange_pcaps.py --dataset tor16 --src <extracted>` | reconstructed keyword rules — check with `verify_counts.py` |
-| tls1.3 | the CSTNET-TLS 1.3 pcaps (one folder per domain) | `arrange_pcaps.py --dataset tls1.3 --src <extracted>` | exact (domain folders) |
-| cispec | `aes-128-gcm.zip`, `aes-256-gcm.zip`, `chacha20-poly1305.zip` | `python 00_assets/datasets/_tools/cispec/relabel_cispec.py`, then `cispec/fix_chacha20.py` and `cispec/verify_sni.py` | exact; the release holds **41** domains (the paper and page state 40) |
-| ustc16 | `Benign/` and `Malware/` (extract the `.7z` files) | `arrange_pcaps.py --dataset ustc16 --src <repository clone>` | exact |
-| cic17 | the five `*-WorkingHours*.pcap` files and the labelled flows (`TrafficLabelling` CSVs, "GeneratedLabelledFlows") | `arrange_pcaps.py --dataset cic17 --src <pcaps>`; labels are joined in step 3 (`CIC17_LABELS=<csv folder>`) | exact |
-| cic18 | `Original Network Traffic and Log data/<Day>/pcap.zip` for the nine days (e.g. `aws s3 sync --no-sign-request "s3://cse-cic-ids2018/Original Network Traffic and Log data/" <dst>`) | `python 00_assets/datasets/_tools/cic18/apply_rename_map.py --src <extracted day folders>`; labels from the official attack schedule in step 3 | exact (4,006-row name map) |
-| iot23 | the PCAP folders (one per attack, plus benign) | `arrange_pcaps.py --dataset iot23 --src <extracted>` | normalised folder-name match — check with `verify_counts.py` |
+| vpn16 | the five archives NonVPN-PCAPs-01..03.zip, VPN-PCAPS-01.zip, VPN-PCAPs-02.zip | `python 02_preprocess/00_rename.py --dataset vpn16 --src <extracted>` | exact: `02_preprocess/lib_rename/vpn16.csv` (140 official files; all 139 placed files byte-identical to ours) |
+| tor16 | Tor.zip and NonTor.tar.xz | `python 02_preprocess/00_rename.py --dataset tor16 --src <extracted>` | exact: `02_preprocess/lib_rename/tor16.csv` (95 official files; 106 placed files byte-identical to ours, incl. one capture cut at 16 MiB and 11 repaired copies in `.salvaged/`) |
+| tls1.3 | the Google Drive folder `cstnet-tls 1.3` linked from the ET-BERT repository (one folder per domain; e.g. `rclone copy`) | `python 02_preprocess/00_rename.py --dataset tls1.3 --src <downloaded folder>` | exact: `02_preprocess/lib_rename/tls1.3.csv` (all 46,372 files byte-identical to ours) |
+| cispec | `aes-128-gcm.zip`, `aes-256-gcm.zip`, `chacha20-poly1305.zip` | `python 02_preprocess/00_rename.py --dataset cispec --src <extracted>` (the scripts in `00_assets/datasets/_tools/cispec/` are the ones we used; the map gives the same result) | exact: `02_preprocess/lib_rename/cispec.csv.gz` (all 123,000 placed files byte-identical to ours; the folder `chacha20` of aes-256-gcm.zip is getpocket.com, verified by SNI); the release holds **41** domains (the paper and page state 40) |
+| ustc16 | `Benign/` and `Malware/` of github.com/davidyslu/USTC-TFC2016 (extract every `.7z`) | `python 02_preprocess/00_rename.py --dataset ustc16 --src <repository clone>` | exact: `02_preprocess/lib_rename/ustc16.csv` (all 20 placed files byte-identical to ours; SMB and Weibo are the official parts merged in time order with mergecap) |
+| cic17 | the five `*-WorkingHours*.pcap` files and the labelled flows (`TrafficLabelling` CSVs, "GeneratedLabelledFlows") | `python 02_preprocess/00_rename.py --dataset cic17 --src <pcaps>`; labels are joined in step 3 (`CIC17_LABELS=<csv folder>`) | one file per day (`02_preprocess/lib_rename/cic17.csv`: `<Day>-WorkingHours.pcap` -> `0N_<Day>.pcap`; size and first packet are checked) |
+| cic18 | `Original Network Traffic and Log data/<Day>/pcap.zip` for the nine days (e.g. `aws s3 sync --no-sign-request "s3://cse-cic-ids2018/Original Network Traffic and Log data/" <dst>`) | `python 02_preprocess/00_rename.py --dataset cic18 --src <extracted day folders>`; labels from the official attack schedule in step 3 | name map made when we placed the captures (`02_preprocess/lib_rename/cic18.csv`, 4,006 rows) |
+| iot23 | the 34 folders of `PCAP/` (registration on the download page; 309 files, 588 GB) | `python 02_preprocess/00_rename.py --dataset iot23 --src <PCAP folder>` | `02_preprocess/lib_rename/iot23.csv`: every official file identified by its first 64 KiB (pcap header and first packets, all 309 distinct); size and first packet are checked when placed |
 
 pcapng files are converted to classic pcap with `python 00_assets/datasets/_tools/convert_pcapng.py --dataset <id>` (needs
 `editcap`), because the session statistics use dpkt.
@@ -52,8 +52,8 @@ pcapng files are converted to classic pcap with `python 00_assets/datasets/_tool
 ## Checking the arrangement
 
 After step 3, `python 00_assets/datasets/_tools/verify_counts.py --dataset <id>` compares your per-class session counts with
-ours. Differences point to captures that are misplaced, missing, or extra; files that `arrange_pcaps.py` could not
-assign are listed by it and can be placed by hand (the file name does not matter).
+ours. Differences point to captures that are misplaced, missing, or extra; `02_preprocess/00_rename.py` already lists the
+official files it could not find (missing) or does not know (not in the map), and checks size and first packet of every file.
 
 ## Using the released session lists with your file names
 
