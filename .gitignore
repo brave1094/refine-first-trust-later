@@ -16,6 +16,7 @@ backup_*
 00_assets/datasets/*
 !00_assets/datasets/_tools/
 00_assets/models/0[4-7]_*/*
+00_assets/tools/SplitCap/
 !00_assets/models/05_yatc/apply_timm_compat.py
 !00_assets/models/0[5-7]_*/INTEGRATION_SPEC.md
 

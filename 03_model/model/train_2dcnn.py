@@ -5,7 +5,7 @@ train_2dcnn.py — 2D-CNN (Wang et al. 2017) training.
 
 Input: 01_dataset/{ds}/2dcnn/{split_mode}/x_data.npy (N,28,28) float32
 Model: 03_model/own_models/03_2dcnn/model.py CNN2D
-Hyperparams: same as KNOM (epochs 40, batch 64, lr 1e-3, test_interval 5)
+Default hyperparameters: epochs 40, batch 64, lr 1e-3, test_interval 5 (the article: run_pipeline.sh)
 """
 import sys as _sys, pathlib as _pl  # noqa: E401  (repository layout: repo_paths.py at the root)
 _sys.path.insert(0, str(next(p for p in _pl.Path(__file__).resolve().parents if (p / "repo_paths.py").exists())))

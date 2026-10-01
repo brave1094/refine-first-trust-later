@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-02_preprocess/convert_pcapng.py
+00_assets/datasets/_tools/convert_pcapng.py (02_preprocess/00_rename.py already converts the official pcapng files)
 ─────────────────────────────────────────────────────────────────────────────
 Checks every file under a dataset's 01_pcap/ and converts only the pcapng ones to classic pcap
 (dpkt cannot read pcapng, so feature extraction would fail -> unify to pcap beforehand).

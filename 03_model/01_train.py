@@ -15,12 +15,12 @@ Data location (06_make_dataset outputs):
   01_dataset/{dataset}/{model}/{train_noisy|train_denoised|test_noisy|test_denoised}/
   01_dataset/{dataset}/00_filelist/label_map.json
 
-Outputs:
-  results/{model}/{dataset}/{model}_{dataset}_exp{N}.csv
+Outputs (<v> = --variant, plus _seed<s> for seeds other than 42):
+  99_documents/results/model_results/<v>/{model}/{dataset}/{model}_{dataset}_exp{N}.csv
       (epoch, train_loss, train_accuracy, test_loss, test_accuracy)
-  param/{model}/{dataset}/exp{N}/            ← saved only when test performance reaches a new best
-  wrong_list/{model}/{dataset}/exp{N}_wrong.csv  ← list of misclassified sessions (for Exp.2 analysis)
-  result_table/{model}.csv                   ← dataset | exp1 | exp2 | exp3 | exp4
+  03_model/param/<v>/{model}/{dataset}/exp{N}/                 ← saved only when test performance reaches a new best
+  99_documents/results/wrong_lists/<v>/{model}/{dataset}/exp{N}_wrong.csv  ← misclassified sessions (Illusion 4)
+  99_documents/results/result_tables/<v>/{model}.csv          ← dataset | exp1 | exp2 | exp3 | exp4
 
 Usage:
   python3 01_train.py --model xgboost --dataset vpn16 --exp 1
@@ -30,7 +30,6 @@ Usage:
   python3 01_train.py --model yatc    --dataset ustc16 --exp 1 --gpu 2
   python3 01_train.py --model netmamba --dataset ustc16 --exp 1 --gpu 3
   python3 01_train.py --model trafficformer --dataset vpn16 --exp 1 --gpu 0
-  python3 01_train.py --model mm4flow --dataset vpn16 --exp 1 --gpu 1
 """
 import argparse
 import os
@@ -47,8 +46,7 @@ EX_MAP = {
     4: ("noisy",    "noisy"),
 }
 
-MODELS = ["rf", "xgboost", "2dcnn", "etbert", "yatc", "netmamba",
-          "trafficformer", "mm4flow", "netfound"]
+MODELS = ["rf", "xgboost", "2dcnn", "etbert", "yatc", "netmamba", "trafficformer"]
 
 
 VARIANT_FL = {"full": "00_filelist", "sizectrl": "00_filelist_sm", "strat": "00_filelist_strat"}
@@ -73,7 +71,7 @@ def main():
     ap.add_argument("--variant", choices=["full", "sizectrl", "strat"], default="full",
                     help="dataset variant to read + output separation folder (SCIE_VARIANT)")
     # common
-    ap.add_argument("--gpu",           type=int, default=0, choices=[0, 1, 2, 3])
+    ap.add_argument("--gpu",           type=int, default=0)
     ap.add_argument("--epochs",        type=int, default=None)
     ap.add_argument("--batch_size",    type=int, default=None)
     ap.add_argument("--lr",            type=float, default=None)

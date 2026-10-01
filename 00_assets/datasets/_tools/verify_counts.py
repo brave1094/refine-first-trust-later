@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 """Compare your per-class session counts with ours (run after step 3, or after step 4).
 
-Counts sessions per class (task3) in <root>/<dataset dir>/03_session_stat/ and compares them with
+Counts sessions per class (task3) in <root>/<dataset dir>/03_session_stat/ (03_session_stat_labeled/ for cic17 and
+cic18, whose classes come from the official labels) and compares them with
 99_documents/results/dataset_stats/<dataset>/01_origin_<dataset>.csv, the counts behind the article's dataset tables.
 A class that differs points to a capture that was placed in the wrong class, is missing, or is extra.
 
@@ -24,7 +25,8 @@ a = ap.parse_args()
 ref = {r["class"]: int(r["count"]) for r in csv.DictReader(open(
     os.path.join(str(RP.DATASET_STATS), a.dataset, f"01_origin_{a.dataset}.csv"), encoding="utf-8-sig"))}
 mine = Counter()
-for f in glob.glob(os.path.join(a.root, LAYOUT[a.dataset]["dir"], "03_session_stat", f"session_stat_{a.dataset}_*.csv")):
+sub = "03_session_stat_labeled" if a.dataset in ("cic17", "cic18") else "03_session_stat"
+for f in glob.glob(os.path.join(a.root, LAYOUT[a.dataset]["dir"], sub, f"session_stat_{a.dataset}_*.csv")):
     with open(f, encoding="utf-8-sig", newline="") as fh:
         for r in csv.DictReader(fh):
             mine[r["task3"]] += 1

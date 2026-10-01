@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 HERE = Path(__file__).resolve().parent
-WORK = RP.ROOT                       # 02_SCIE_NOISE
+WORK = RP.ROOT
 M03  = WORK / "03_model"; DSROOT = WORK / "01_dataset"; AN = RP.ANALYSIS_OUT
 MODELS = ["rf","xgboost","2dcnn","etbert","netmamba","trafficformer","yatc"]
 DL     = ["2dcnn","etbert","netmamba","trafficformer","yatc"]

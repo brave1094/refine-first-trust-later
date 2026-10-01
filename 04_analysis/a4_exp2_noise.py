@@ -14,10 +14,12 @@ import re
 import csv
 import pandas as pd
 
-HERE   = os.path.dirname(os.path.abspath(__file__))          # …/03_model
-DSROOT = os.path.normpath(os.path.join(HERE, "..", "01_dataset"))
-WRONG  = str(RP.WRONG_LIST)
-RT     = str(RP.RESULT_TABLES)
+HERE   = os.path.dirname(os.path.abspath(__file__))
+DSROOT = str(RP.DATASET)
+VARIANT = os.environ.get("SCIE_VARIANT", "sizectrl")  # the article uses sizectrl
+WRONG  = str(RP.WRONG_LIST / VARIANT)
+RT     = str(RP.RESULT_TABLES / VARIANT)
+LISTS  = {"full": "00_filelist", "sizectrl": "00_filelist_sm", "strat": "00_filelist_strat"}[VARIANT]
 MODELS = ["rf", "xgboost", "2dcnn", "etbert", "netmamba", "trafficformer", "yatc"]
 DSS = ["vpn16", "tor16", "cispec", "tls1.3",
        "ustc16", "cic17", "cic18", "iot23"]
@@ -30,7 +32,7 @@ def _num(s):
 
 def noise_keys(ds):
     """noise = test_noisy − test_denoised (zero-leakage split guarantees denoised ⊆ noisy)."""
-    fl = os.path.join(DSROOT, ds, "00_filelist")
+    fl = os.path.join(DSROOT, ds, LISTS)
     fn_n = os.path.join(fl, "list_test_noisy.csv")
     fn_d = os.path.join(fl, "list_test_denoised.csv")
     if not (os.path.exists(fn_n) and os.path.exists(fn_d)):

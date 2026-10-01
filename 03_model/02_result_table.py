@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-02_result_table.py — scans results/ and rebuilds result_table/{model}.csv.
+02_result_table.py — scans model_results/<variant>/ and rebuilds result_tables/<variant>/{model}.csv.
 
 train_common.update_result_table updates it incrementally during training, but
 run this when you want to rebuild the whole table from the result CSVs.
 
-  python3 02_result_table.py                 # all models
-  python3 02_result_table.py --model xgboost
+  python3 02_result_table.py                 # all variants and models
+  python3 02_result_table.py --variant sizectrl --model xgboost
 
 Table format: dataset | exp1 | exp2 | exp3 | exp4  (value = best test_accuracy)
 """
@@ -49,34 +49,34 @@ def best_acc(csv_path: Path):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--model", default=None, help="only a specific model (default all)")
+    ap.add_argument("--variant", default=None, help="only a specific variant folder, e.g. sizectrl_seed7 (default all)")
     args = ap.parse_args()
 
     if not RESULTS.exists():
         print(f"results directory not found: {RESULTS}")
         return
 
-    tables = {}          # model → {dataset → {expN: acc}}
-    for model_dir in sorted(RESULTS.iterdir()):
-        if not model_dir.is_dir():
+    tables = {}          # (variant, model) → {dataset → {expN: acc}}
+    for var_dir in sorted(RESULTS.iterdir()):           # model_results/<variant[_seedN]>/<model>/<dataset>/
+        if not var_dir.is_dir() or (args.variant and var_dir.name != args.variant):
             continue
-        model = model_dir.name
-        if args.model and model != args.model:
-            continue
-        for ds_dir in sorted(model_dir.iterdir()):
-            if not ds_dir.is_dir():
+        for model_dir in sorted(var_dir.iterdir()):
+            if not model_dir.is_dir() or (args.model and model_dir.name != args.model):
                 continue
-            for f in ds_dir.glob("*.csv"):
-                m = PAT.match(f.name)
-                if not m:
+            for ds_dir in sorted(model_dir.iterdir()):
+                if not ds_dir.is_dir():
                     continue
-                acc = best_acc(f)
-                if acc is None:
-                    continue
-                tables.setdefault(model, {}).setdefault(
-                    m["dataset"], {})[f"exp{m['exp']}"] = acc
+                for f in ds_dir.glob("*.csv"):
+                    m = PAT.match(f.name)
+                    if not m:
+                        continue
+                    acc = best_acc(f)
+                    if acc is None:
+                        continue
+                    tables.setdefault((var_dir.name, model_dir.name), {}).setdefault(
+                        m["dataset"], {})[f"exp{m['exp']}"] = acc
 
-    TABLE_DIR.mkdir(exist_ok=True)
-    for model, per_ds in tables.items():
+    for (variant, model), per_ds in tables.items():
         rows = []
         for dataset in sorted(per_ds):
             row = {"dataset": dataset}
@@ -84,7 +84,8 @@ def main():
                 v = per_ds[dataset].get(e)
                 row[e] = f"{v:.4f}" if v is not None else ""
             rows.append(row)
-        out = TABLE_DIR / f"{model}.csv"
+        (TABLE_DIR / variant).mkdir(parents=True, exist_ok=True)
+        out = TABLE_DIR / variant / f"{model}.csv"
         pd.DataFrame(rows, columns=["dataset", "exp1", "exp2", "exp3", "exp4"]) \
             .to_csv(out, index=False, encoding="utf-8")
         print(f"[write] {out}  ({len(rows)} datasets)")

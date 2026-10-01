@@ -53,6 +53,7 @@ def append_long(path, model, ds, exp, split, emb, y):
     """Append 1 long-format row (model,dataset,exp,split,silhouette,davies_bouldin,sep_ratio,n,classes)."""
     sil, db, sep, n, nc = compute(emb, y)
     new = not os.path.exists(path)
+    os.makedirs(os.path.dirname(path), exist_ok=True)   # embeddings/ is not in a fresh clone
     with open(path, "a", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f)
         if new:

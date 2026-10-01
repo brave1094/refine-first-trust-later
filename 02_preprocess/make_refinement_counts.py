@@ -175,10 +175,12 @@ def main():
         r = process(tag, subdir, nrfile, is_app)
         if r: results[tag] = r
     # summary
-    sp = os.path.join(OUTDIR, "summary.csv"); head = not os.path.exists(sp)
-    with open(sp, "a", newline="", encoding="utf-8-sig") as fp:
+    sp = os.path.join(OUTDIR, "summary.csv")
+    old = list(csv.reader(open(sp, encoding="utf-8-sig")))[1:] if os.path.exists(sp) else []
+    with open(sp, "w", newline="", encoding="utf-8-sig") as fp:   # a rerun replaces the rows of its datasets
         w = csv.writer(fp)
-        if head: w.writerow(["tag","is_app","n_class","before","after","refinement_rate(%)","n_vanished","rules"])
+        w.writerow(["tag","is_app","n_class","before","after","refinement_rate(%)","n_vanished","rules"])
+        w.writerows(r for r in old if r and r[0] not in results)
         for tag in results:
             r = results[tag]
             w.writerow([tag, r["is_app"], r["n_class"], r["before"], r["after"],

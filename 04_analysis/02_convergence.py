@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 
 HERE = Path(__file__).resolve().parent
 WORK = RP.ROOT
-RES = WORK / "03_model" / "results" / "sizectrl"
+RES = RP.MODEL_RESULTS / "sizectrl"
 OUT = RP.ANALYSIS_OUT / "02_convergence"
 DL = ["2dcnn","etbert","netmamba","trafficformer","yatc"]
 DSS = ["vpn16","tor16","tls1.3","cispec","ustc16","cic17","cic18","iot23"]

@@ -22,7 +22,7 @@ Called by 06_make_dataset.py via build_all(...), or runnable as a standalone CLI
 
 Standalone run:
   python3 extractor.py --feat a \
-      --list 01_dataset/vpn16/task2/noisy/list_train.csv \
+      --list 01_dataset/vpn16/00_filelist/list_train_noisy.csv \
       --session-dir datasets/21_ISCX-VPN-2016/02_session \
       --out train_features.csv --workers 16
 """

@@ -23,7 +23,7 @@
    "malware_none_Virut": 1,
    "malware_none_Zeus": 1
   },
-  "note": "file counts exclude *.salvaged.pcap copies written by 03_session_stat"
+  "note": "file counts exclude the *.salvaged.pcap copies (repaired copies; 02_preprocess/00_rename.py places those of tor16)"
  },
  "cic17": {
   "dir": "02_CIC-IDS-2017",
@@ -34,7 +34,7 @@
    "04_Thursday": 1,
    "05_Friday": 1
   },
-  "note": "file counts exclude *.salvaged.pcap copies written by 03_session_stat"
+  "note": "file counts exclude the *.salvaged.pcap copies (repaired copies; 02_preprocess/00_rename.py places those of tor16)"
  },
  "cic18": {
   "dir": "03_CIC-IDS-2018",
@@ -49,7 +49,7 @@
    "Wednesday-21-02-2018": 447,
    "Wednesday-28-02-2018": 437
   },
-  "note": "file counts exclude *.salvaged.pcap copies written by 03_session_stat"
+  "note": "file counts exclude the *.salvaged.pcap copies (repaired copies; 02_preprocess/00_rename.py places those of tor16)"
  },
  "iot23": {
   "dir": "04_CIC_IoT_Dataset_2023",
@@ -89,7 +89,7 @@
    "attack_Web-based_XSS": 1,
    "benign_benign_benign": 4
   },
-  "note": "file counts exclude *.salvaged.pcap copies written by 03_session_stat"
+  "note": "file counts exclude the *.salvaged.pcap copies (repaired copies; 02_preprocess/00_rename.py places those of tor16)"
  },
  "vpn16": {
   "dir": "21_ISCX-VPN-2016",
@@ -135,7 +135,7 @@
    "nonVPN_VoIP_Skype_video": 4,
    "nonVPN_VoIP_VoIPBuster_none": 5
   },
-  "note": "file counts exclude *.salvaged.pcap copies written by 03_session_stat"
+  "note": "file counts exclude the *.salvaged.pcap copies (repaired copies; 02_preprocess/00_rename.py places those of tor16)"
  },
  "tor16": {
   "dir": "22_ISCX-TOR-2016",
@@ -178,7 +178,7 @@
    "nonTor_VoIP_Hangouts_audio": 2,
    "nonTor_VoIP_Skype_audio": 2
   },
-  "note": "file counts exclude *.salvaged.pcap copies written by 03_session_stat"
+  "note": "file counts exclude the *.salvaged.pcap copies (repaired copies; 02_preprocess/00_rename.py places those of tor16)"
  },
  "tls1.3": {
   "dir": "23_CSTNET_TLS1.3",
@@ -304,7 +304,7 @@
    "none_none_yy.com": 491,
    "none_none_zhihu.com": 487
   },
-  "note": "file counts exclude *.salvaged.pcap copies written by 03_session_stat"
+  "note": "file counts exclude the *.salvaged.pcap copies (repaired copies; 02_preprocess/00_rename.py places those of tor16)"
  },
  "cispec": {
   "dir": "24_CipherSpectrum",
@@ -433,6 +433,6 @@
    "none_chacha20poly1305_yahoo.co.jp": 1000,
    "none_chacha20poly1305_yimg.jp": 1000
   },
-  "note": "file counts exclude *.salvaged.pcap copies written by 03_session_stat"
+  "note": "file counts exclude the *.salvaged.pcap copies (repaired copies; 02_preprocess/00_rename.py places those of tor16)"
  }
 }

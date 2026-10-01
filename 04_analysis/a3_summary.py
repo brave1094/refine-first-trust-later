@@ -9,10 +9,13 @@ import os
 import csv
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-LONG = os.path.join(str(RP.EMB_DIR), "a3_emb_long.csv")
-OUT = os.path.join(str(RP.EMB_DIR), "a3_emb_summary.csv")
+VARIANT = os.environ.get("SCIE_VARIANT", "sizectrl")
+LONG = os.path.join(str(RP.EMB_DIR), f"a3_emb_long_{VARIANT}.csv")
+OUT = os.path.join(str(RP.EMB_DIR), f"a3_emb_summary_{VARIANT}.csv")
 
 d = {}
+if not os.path.exists(LONG):                      # nothing embedded yet (a3_extract_emb*.py)
+    print(f"[a3_summary] skip: {LONG} not found"); raise SystemExit(0)
 with open(LONG, encoding="utf-8-sig") as f:
     for r in csv.DictReader(f):
         d[(r["model"], r["dataset"], r["exp"])] = r

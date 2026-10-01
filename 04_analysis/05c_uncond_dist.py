@@ -18,7 +18,7 @@ import os
 import numpy as np
 import pandas as pd
 
-BASE = os.environ.get("SCIE_WORK", os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..")))
+BASE = str(RP.ROOT)
 OUT = os.path.join(str(RP.ANALYSIS_OUT), "07_uncond_dist")
 os.makedirs(OUT, exist_ok=True)
 

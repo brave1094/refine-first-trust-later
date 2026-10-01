@@ -21,15 +21,16 @@ import torch
 HERE = os.path.dirname(os.path.abspath(__file__))
 WORK = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
+sys.path.insert(0, str(RP.MODEL))                       # lib.train_common lives in 03_model
 from lib.train_common import load_label_map, load_npy_split
 import a3_metrics
 
 DATA = os.path.join(WORK, "01_dataset")
 PARAM = str(RP.PARAM)
 CODES = str(RP.UPSTREAM)
-VARIANT = os.environ.get("SCIE_VARIANT", "")          # full|sizectrl → separate paths/outputs
-VARIANT_FL = {"full": "00_filelist", "sizectrl": "00_filelist_sm"}.get(VARIANT, "00_filelist")
-LONG = os.path.join(str(RP.EMB_DIR), f"a3_emb_long_{VARIANT}.csv" if VARIANT else "a3_emb_long.csv")
+VARIANT = os.environ.get("SCIE_VARIANT", "sizectrl")  # full|sizectrl|strat; the article uses sizectrl
+VARIANT_FL = {"full": "00_filelist", "sizectrl": "00_filelist_sm", "strat": "00_filelist_strat"}[VARIANT]
+LONG = os.path.join(str(RP.EMB_DIR), f"a3_emb_long_{VARIANT}.csv")
 NPY_MODELS = ["2dcnn", "yatc", "netmamba"]
 DSS = ["vpn16", "tor16", "tls1.3", "cispec", 
        "ustc16", "cic17", "cic18", "iot23"]
@@ -104,7 +105,7 @@ def main():
                     continue
                 if args.tsne:                       # t-SNE coordinates (for figures)
                     a3_metrics.save_tsne_coords(
-                        os.path.join(HERE, "a3_tsne", VARIANT, ds, f"{m}_exp{e}.csv"), emb, y)
+                        os.path.join(str(RP.EMB_DIR), "a3_tsne", VARIANT, ds, f"{m}_exp{e}.csv"), emb, y)
                 # Quantitative metrics (silhouette/sep) are always recorded on the original embeddings
                 sil, sep = a3_metrics.append_long(LONG, m, ds, e, args.split, emb, y)
                 print(f"  {m:<10} {ds:<9} exp{e}  sil={sil:.3f} sep={sep:.2f}")

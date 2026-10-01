@@ -40,9 +40,9 @@ from tqdm import tqdm
 
 ROOT = RP.DATASETS
 
-# ./tool/SplitCap.exe relative to the script (00_to_use)
+# SplitCap (Netresec, run with mono) is not redistributed: bash 00_assets/tools/setup_splitcap.sh fetches it.
 SCRIPT_DIR = Path(__file__).resolve().parent
-SPLITCAP = str(SCRIPT_DIR / "tool" / "SplitCap.exe")
+SPLITCAP = os.environ.get("SPLITCAP", str(RP.TOOLS / "SplitCap" / "SplitCap.exe"))
 
 NUM_WORKERS = 16
 
@@ -328,6 +328,10 @@ def main():
     ap.add_argument("--workers", type=int, default=NUM_WORKERS,
                     help=f"number of parallel workers (default {NUM_WORKERS})")
     args = ap.parse_args()
+    if not os.path.exists(SPLITCAP) or shutil.which("mono") is None:
+        sys.exit(f"[ERROR] SplitCap ({SPLITCAP}) and mono are needed: run  bash 00_assets/tools/setup_splitcap.sh  "
+                 "(downloads SplitCap from https://www.netresec.com/?page=SplitCap) and install mono "
+                 "(https://www.mono-project.com/download/stable/), or set SPLITCAP to SplitCap.exe")
 
     set_ulimit()
 

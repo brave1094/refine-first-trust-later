@@ -23,7 +23,10 @@ authors:
   - family-names: Kim
     given-names: Myung-Sup
     affiliation: Korea University
-license: MIT
+license:
+  - MIT
+  - CC-BY-4.0
+repository-code: "https://github.com/brave1094/refine-first-trust-later"
 preferred-citation:
   type: article
   title: "Refine First, Trust Later: A Task-Relative Noise Refinement Framework and the Analysis of Five Illusions Noise Casts on Network Traffic Classification"

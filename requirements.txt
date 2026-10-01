@@ -1,5 +1,6 @@
 # Steps 1 and 3-7 (host side). The deep models additionally need the environment of their upstream repositories
-# (PyTorch, timm, mamba-ssm, ...; see docs/MODELS.md). External tools: tshark and editcap (Wireshark), 7z.
+# (PyTorch, timm, mamba-ssm, ...; see 99_documents/MODELS.md). External tools: tshark, editcap and mergecap
+# (Wireshark), mono with SplitCap (00_assets/tools/setup_splitcap.sh), 7z.
 dpkt
 scapy
 numpy

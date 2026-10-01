@@ -11,7 +11,7 @@ import matplotlib; matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 HERE = Path(__file__).resolve().parent
-WORK = RP.ROOT                      # 02_SCIE_NOISE
+WORK = RP.ROOT
 M03 = WORK / "03_model"; OUT = RP.ANALYSIS_OUT / "01_target_signal"
 MODELS = ["rf","xgboost","2dcnn","etbert","netmamba","trafficformer","yatc"]
 DSS = ["vpn16","tor16","tls1.3","cispec","ustc16","cic17","cic18","iot23"]

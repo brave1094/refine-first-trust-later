@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parent
 ASSETS = ROOT / "00_assets"
 DATASETS = Path(os.environ.get("NM_DATASET_ROOT", ASSETS / "datasets"))   # <dataset dir>/01_pcap, 02_session, 03_..., 04_...
 DATASET_TOOLS = ASSETS / "datasets" / "_tools"                            # arrange, label, and check the official captures
+TOOLS = ASSETS / "tools"                                                # SplitCap (setup_splitcap.sh)
 UPSTREAM = ASSETS / "models"                                              # 04_etbert 05_yatc 06_netmamba 07_trafficformer
 
 DATASET = ROOT / "01_dataset"                                             # <ds>/00_filelist*, session_keys.csv, <variant>/<model>/

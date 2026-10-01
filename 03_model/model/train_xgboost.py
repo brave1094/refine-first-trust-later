@@ -335,8 +335,9 @@ def run(args):
 
     train_dir = Path(args.dataset_dir)
     test_dir  = Path(getattr(args, "test_dataset_dir", args.dataset_dir))
-    # detailed outputs are saved under results/{model}/{dataset}/exp{N}/
-    result_dir = (RP.MODEL_RESULTS / args.model / args.dataset
+    # detailed outputs are saved under model_results/<variant>/{model}/{dataset}/exp{N}/
+    from lib.train_common import _vroot
+    result_dir = (_vroot("results") / args.model / args.dataset
                   / f"exp{args.exp}")
     param_dir  = Path(args.param_dir)
     # if featset is not all/None, put results in a featset subfolder (avoid overwriting).

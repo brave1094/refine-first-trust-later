@@ -3,9 +3,8 @@
 """
 a6_audit.py — integrity audit of shap_dl outputs + automatic deletion of contaminated files.
 
-Background: tmux kill does not kill the Python process inside docker exec. If an old-version (head sample)
-process survives inside the container and writes files to the same directory as the stratified rerun,
-head/stratified samples get mixed. This script compares the pred.csv y_true column of each exp output
+Background: if a run is restarted while an earlier process still writes into the same output folder,
+outputs drawn from different samples can get mixed. This script compares the pred.csv y_true column of each exp output
 with 'the expected values recomputed from the deterministic stratified indices' and deletes mismatches.
 
 Detection principle (deterministic reproduction):

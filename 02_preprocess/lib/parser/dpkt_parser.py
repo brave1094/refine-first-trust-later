@@ -221,34 +221,6 @@ def masked_header_payload(view: PktView, **mask_kw):
     return ints[:h], ints[h:]
 
 
-def mask_wrap_to_ethernet(in_path: str, out_path: str, ip_mask=False,
-                          port_mask=False, l3_mask=False, l4_mask=False) -> int:
-    """Session pcap → (same masked_ints masking as the byte models) + Ethernet-wrapped pcap.
-    For NetFound input: extract data with the 'same parser and same masking' as other models, then set only L2 to Ethernet.
-    Returns: number of (IP) packets written. Non-IP packets are excluded by parse_session (same criterion as the byte models)."""
-    import struct as _st
-    with open(in_path, "rb") as f:
-        rdr = dpkt.pcap.Reader(f)
-        try:
-            lt = rdr.datalink()
-        except Exception:
-            lt = DLT_EN10MB
-        pkts = [(ts, bytes(buf), lt) for ts, buf in rdr]
-    views = parse_session(pkts)                       # strip L2 + IP-only (same as the byte models)
-    n = 0
-    with open(out_path, "wb") as f:
-        w = dpkt.pcap.Writer(f, linktype=DLT_EN10MB)
-        for v in views:
-            ints = masked_ints(v, ip_mask=ip_mask, port_mask=port_mask,
-                               l3_mask=l3_mask, l4_mask=l4_mask)
-            l3 = bytes((0 if b == MASKED else (b & 0xFF)) for b in ints)
-            etype = 0x86DD if v.ipver == 6 else 0x0800
-            frame = b"\x00" * 12 + _st.pack(">H", etype) + l3   # dummy MAC + ethertype + L3
-            w.writepkt(frame, ts=v.ts)
-            n += 1
-    return n
-
-
 def parse_session(packets, parser_name: str = "dpkt",
                   max_packets: int = 0, max_bytes: int = 0):
     """(ts, buf, linktype) list → PktView list (non-IP packets excluded).

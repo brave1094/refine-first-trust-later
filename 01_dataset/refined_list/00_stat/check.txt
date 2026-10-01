@@ -1,0 +1,8 @@
+vpn16: rules 21 | sessions 305,301 -> refined 4,768 in 1 file(s) | Table 8 total 4,768 | classes differing 0 [] | 0.0 min
+tor16: rules 19 | sessions 62,593 -> refined 40,842 in 1 file(s) | Table 8 total 40,842 | classes differing 0 [] | 0.0 min
+tls1.3: rules 19 | sessions 46,382 -> refined 46,378 in 1 file(s) | Table 8 total 46,378 | classes differing 0 [] | 0.0 min
+cispec: rules 15 | sessions 123,000 -> refined 123,000 in 1 file(s) | Table 8 total 123,000 | classes differing 0 [] | 0.0 min
+ustc16: rules 7 | sessions 595,783 -> refined 594,198 in 1 file(s) | Table 8 total 594,198 | classes differing 0 [] | 0.1 min
+cic17: rules 10 | sessions 1,571,244 -> refined 1,566,230 in 2 file(s) | Table 8 total 1,566,230 | classes differing 0 [] | 0.1 min
+cic18: rules 15 | sessions 51,234,354 -> refined 50,081,816 in 51 file(s) | Table 8 total 50,081,816 | classes differing 0 [] | 3.8 min
+iot23: rules 7 | sessions 1,155,285,412 -> refined 1,152,187,614 in 1153 file(s) | Table 8 total 1,152,187,614 | classes differing 0 [] | 94.3 min

@@ -9,11 +9,12 @@ import repo_paths as RP  # noqa: E402
 import os, re, csv
 import pandas as pd
 
-WORK   = os.environ.get("SCIE_WORK", os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")))   # repository root
-DSROOT = os.path.join(WORK, "01_dataset")
-WRONG  = str(RP.WRONG_LIST)
-RT     = str(RP.RESULT_TABLES)
-OUT    = os.path.join(str(RP.ANALYSIS_OUT), "04_fail_to_eval", "a4_eval_sizectrl")
+VARIANT = os.environ.get("SCIE_VARIANT", "sizectrl")  # the article uses sizectrl
+DSROOT = str(RP.DATASET)
+WRONG  = str(RP.WRONG_LIST / VARIANT)
+RT     = str(RP.RESULT_TABLES / VARIANT)
+LISTS  = {"full": "00_filelist", "sizectrl": "00_filelist_sm", "strat": "00_filelist_strat"}[VARIANT]
+OUT    = os.path.join(str(RP.ANALYSIS_OUT), "04_fail_to_eval", f"a4_eval_{VARIANT}")
 MODELS = ["rf", "xgboost", "2dcnn", "etbert", "netmamba", "trafficformer", "yatc"]
 DSS = ["vpn16", "tor16", "cispec", "tls1.3"]
 
@@ -21,7 +22,7 @@ def _num(s):
     m = re.search(r"\d+", str(s)); return m.group(0) if m else ""
 
 def noise_keys(ds):
-    fl = os.path.join(DSROOT, ds, "00_filelist")
+    fl = os.path.join(DSROOT, ds, LISTS)
     n = pd.read_csv(os.path.join(fl, "list_test_noisy.csv"), dtype=str, na_filter=False, encoding="utf-8-sig")
     d = pd.read_csv(os.path.join(fl, "list_test_denoised.csv"), dtype=str, na_filter=False, encoding="utf-8-sig")
     n.columns = [c.strip().lstrip("\ufeff") for c in n.columns]

@@ -295,11 +295,11 @@ def run(args):
         _emb = _np.concatenate(_f)
         if os.environ.get("A3_TSNE"):
             a3_metrics.save_tsne_coords(
-                str(CODE_DIR.parent / "a3_tsne" / args.dataset
+                str(RP.EMB_DIR / "a3_tsne" / os.environ.get("SCIE_VARIANT", "sizectrl") / args.dataset
                     / f"{args.model}_exp{args.exp}.csv"), _emb, _y)
             print(f"[A3-tsne] {args.model}/{args.dataset} exp{args.exp}")
         else:
-            _sil, _sep = a3_metrics.append_long(str(RP.EMB_DIR / "a3_emb_long.csv"),
+            _sil, _sep = a3_metrics.append_long(str(RP.EMB_DIR / f"a3_emb_long_{os.environ.get('SCIE_VARIANT', 'sizectrl')}.csv"),
                                                 args.model, args.dataset, args.exp,
                                                 "test_denoised", _emb, _y)
             print(f"[A3] {args.model}/{args.dataset} exp{args.exp} sil={_sil:.3f} sep={_sep:.2f}")

@@ -91,7 +91,10 @@ def main():
                 continue
             fn, sid, n2 = m
             pk += str(ours[(r["filename"], r["session_id"])][1]) != str(n2)
-            out.append({**r, "filename": fn, "session_id": sid})
+            row = {**r, "filename": fn, "session_id": sid}
+            if "stream" in r:                                    # proto/stream locate the session in whole captures
+                row["proto"], row["stream"] = sid.split("_", 1)
+            out.append(row)
         report.append(f"  {os.path.relpath(lf, ds_dir)}: {len(out)}/{len(rows)} aligned | missing {miss} | pkt_count mismatch {pk}")
         if a.dry_run:
             continue

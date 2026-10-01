@@ -54,4 +54,4 @@ for variant in ("full", "sizectrl"):
         ax.tick_params(axis="x", rotation=25, labelsize=8); ax.grid(axis="y", alpha=0.3)
         fig.tight_layout(); fig.savefig(OUT / "figure" / f"artifact_delta_{variant}.png", dpi=130); plt.close(fig)
     print(f"[05] {variant}: {len(summ)} items (rf-impurity) → {OUT}")
-print("[05 done]  (TODO: TreeSHAP + DL SHAP 3-view byte→field profiles)")
+print("[05 done]")

@@ -93,7 +93,7 @@ def main():
 
     long_path = RP.EMB_DIR / f"a3_emb_long_{args.variant}.csv"
     done = load_done(long_path, args.split)
-    tsne_dir = HERE / "a3_tsne" / args.variant
+    tsne_dir = RP.EMB_DIR / "a3_tsne" / args.variant
 
     for ds in [d.strip() for d in args.datasets.split(",") if d.strip()]:
         need_long = [e for e in (1, 3) if (args.model, ds, str(e)) not in done]

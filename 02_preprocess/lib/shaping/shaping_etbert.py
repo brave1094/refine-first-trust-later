@@ -5,8 +5,8 @@ shaping_etbert.py — ET-BERT (WWW 2022) input conversion.
 
 Concatenates all packets of the session (L3→L4→payload order = raw bytes from L3) and
 generates an overlapping byte-bigram (4-hex-digit) token sequence.
-  - MAX_TOKENS=128, PAD_TOKEN="0000" (same as KNOM 07_make_dataset_etbert.py)
-  - masked bytes are replaced with "00" (same as KNOM is_sii handling)
+  - MAX_TOKENS=128, PAD_TOKEN="0000"
+  - masked bytes are replaced with "00"
 Output: data.tsv (label \t text_a, with header) / files.csv
 """
 import csv

@@ -14,8 +14,8 @@ Each pinned commit was checked file by file (169 files) against the copy used in
 | NetMamba | Wang et al., ICNP 2024 | [wangtz19/NetMamba](https://github.com/wangtz19/NetMamba) @ `bef641e` | no license file | [Hugging Face](https://huggingface.co/wangtz/NetMamba) | none |
 | TrafficFormer | Zhou et al., IEEE S&P 2025 | [IDP-code/TrafficFormer](https://github.com/IDP-code/TrafficFormer) @ `6d0ba64` | MIT | [Google Drive](https://drive.google.com/file/d/1pR6ZaWE7MWFDQWiF4LDzSyjSq0Gj3kV7) | none |
 
-Full commit hashes are in `00_assets/models/setup_models.sh`. `00_assets/models/<model>/INTEGRATION_SPEC.md` documents how each model is
-wired to our inputs (the model-specific shaping is in `02_preprocess/lib/shaping/`, training in `03_model/model/`).
+Full commit hashes are in `00_assets/models/setup_models.sh`. `00_assets/models/<model>/INTEGRATION_SPEC.md` (YaTC, NetMamba, TrafficFormer) documents how
+the model is wired to our inputs (the model-specific shaping is in `02_preprocess/lib/shaping/`, training in `03_model/model/`).
 
 ## Training settings of the article
 

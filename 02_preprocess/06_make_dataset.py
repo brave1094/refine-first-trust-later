@@ -12,7 +12,7 @@ A single run builds all splits used by the 4 experiment groups:
 8 models:
   rf / xgboost          : 1,205 statistical features (03_model/own_models/02_xgboost/extractor.py, direct pcap parsing)
                           rf uses the same features as xgboost → reuses (copies) the xgboost output if present
-  2dcnn / etbert / yatc / netmamba / trafficformer / mm4flow
+  2dcnn / etbert / yatc / netmamba / trafficformer
                         : dpkt parser (lib/parser) + per-model shaping (lib/shaping) path
 
 Extraction (extract):
@@ -29,9 +29,8 @@ Masking (byte-based models):
 Transformation (shaping): 02_preprocess/lib/shaping/shaping_{model}.py (saved in the
   shape/format (npy/tsv/csv.gz) each model expects. See the docstring at the top of each file)
 
-Input : 01_dataset/{dataset}/00_filelist/list_{train|test}_{noisy|denoised}.csv
-       01_dataset/{dataset}/00_filelist/label_map.json
-Output : 01_dataset/{dataset}/{model}/{train_noisy|train_denoised|test_noisy|test_denoised}/...
+Input : 01_dataset/{dataset}/00_filelist{,_sm,_strat}/list_{train|test}_{noisy|denoised}.csv and label_map.json
+Output : 01_dataset/{dataset}/{full|sizectrl|strat}/{model}/{train_noisy|train_denoised|test_noisy|test_denoised}/...
 
 Usage:
   python3 06_make_dataset.py --dataset vpn16 --model xgboost --workers 16
@@ -63,7 +62,7 @@ MODEL_CODE_BASE = RP.OWN_MODELS
 sys.path.insert(0, str(CODE_DIR))
 from lib import datasets as ds                         # noqa: E402
 from lib.parser import pcap_source                     # noqa: E402
-from lib.shaping import ALL_MODELS, BYTE_MODELS, FEAT_MODELS, NETFOUND_MODELS  # noqa: E402
+from lib.shaping import ALL_MODELS, BYTE_MODELS, FEAT_MODELS  # noqa: E402
 
 SPLIT_MODES = ["train_noisy", "train_denoised", "test_noisy", "test_denoised"]
 
@@ -189,101 +188,6 @@ def build_feat_model(args, dataset: str, fl_dir: Path, out_base: Path,
     # record build settings (rf/xgboost do not apply the byte mask → applied=False)
     _save_config(out_base / args.model, args, dataset,
                  extract_mode, masked=False)
-
-
-def _nf_mask_worker(task):
-    """One session: masked_ints masking via the framework parser (dpkt) + Ethernet wrapping → dst pcap.
-    (data extracted with the 'same parser and same masking' as the byte models. Parallel worker.)"""
-    src, dst, ipm, pm, l3m, l4m = task
-    try:
-        from lib.parser.dpkt_parser import mask_wrap_to_ethernet
-        n = mask_wrap_to_ethernet(src, dst, ip_mask=ipm, port_mask=pm,
-                                  l3_mask=l3m, l4_mask=l4m)
-        return 1 if n > 0 else 0
-    except Exception:
-        return 0
-
-
-def build_netfound(args, dataset: str, fl_dir: Path, out_base: Path,
-                   label_map: dict, splits: list):
-    """NetFound: filelist sessions → {int_label}/raw/*.pcap → (container) preprocess_data.py → arrow.
-    Output: {out_base}/netfound/{split}/_input/final/combined/*.arrow  (used as train_dir for training).
-    ※ NetFound preprocess runs via docker exec since the C++/tokenizer lives in the torch_netfound container.
-      Only session mode (vpn16 etc.) is supported — session pcap extraction for whole mode (cic18 etc.) is TODO."""
-    import subprocess
-    from lib.parser.pcap_source import build_pcap_index
-    NF_REPO = os.environ.get(
-        "NETFOUND_REPO",
-        "netFound-main")
-    CONT = os.environ.get("NETFOUND_CONTAINER", "torch_netfound")
-    TOK_CONF = "configs/DefaultConfigNoTCPOptions.json"
-    extract_mode = (args.extract_mode if args.extract_mode != "auto"
-                    else DATASET_EXTRACT_MODE.get(dataset, "session"))
-    if extract_mode != "session":
-        print(f"  [netfound] {dataset}: whole-mode session pcap extraction not implemented (TODO) — session mode only")
-        return
-    pcap_index = build_pcap_index(ds.session_dir(dataset))
-    for split_mode in splits:
-        list_csv = _list_path(fl_dir, split_mode)
-        if not list_csv.exists():
-            print(f"  [{split_mode}] no filelist → skipped ({list_csv.name})")
-            continue
-        nf_dir = out_base / args.model / split_mode
-        work = nf_dir / "_input"
-        if work.exists():
-            shutil.rmtree(work)
-        import pandas as _pd
-        from concurrent.futures import ProcessPoolExecutor
-        lst = _pd.read_csv(list_csv, dtype=str, na_filter=False, encoding="utf-8-sig")
-        lst.columns = [c.strip().lstrip("﻿") for c in lst.columns]
-        n_miss = n_unk = 0
-        tasks = []
-        for _, r in lst.iterrows():
-            gk = str(r["group_key"])
-            if gk not in label_map:
-                n_unk += 1; continue
-            src = pcap_index.get(r["filename"])
-            if src is None:
-                n_miss += 1; continue
-            raw = work / "raw" / str(label_map[gk])   # NetFound finetune layout: raw/{int_label}/*.pcap
-            raw.mkdir(parents=True, exist_ok=True)
-            tasks.append((str(src), str(raw / r["filename"]),
-                          bool(args.ip_mask), bool(args.port_mask),
-                          bool(args.l3_mask), bool(args.l4_mask)))
-        if not tasks:
-            print(f"  [{split_mode}] netfound: 0 valid sessions (missing={n_miss} unk={n_unk}) → skip")
-            continue
-        # ★ host-side parallel: masked_ints masking via the framework parser (dpkt) + Ethernet wrapping
-        #   → data extracted with the 'same parser and same masking' as the byte models (extraction identical, only tokenization is netfound)
-        print(f"  [{split_mode}] netfound: sessions {len(tasks)} (miss={n_miss} unk={n_unk}) "
-              f"→ dpkt masking+Ethernet (ip={args.ip_mask} port={args.port_mask}, workers={args.workers})")
-        n_ok = 0
-        with ProcessPoolExecutor(max_workers=args.workers) as ex:
-            for ok in ex.map(_nf_mask_worker, tasks, chunksize=16):
-                n_ok += ok
-        print(f"    → masking done {n_ok}/{len(tasks)}")
-        par = os.path.join(str(CODE_DIR), "nf_preprocess_par.py")   # parallel preprocessing (per-session Tokenize)
-        cmd = ["docker", "exec", "-w", NF_REPO, CONT, "python3", par,
-               os.path.abspath(str(work)), os.path.join(NF_REPO, TOK_CONF),
-               str(args.workers), NF_REPO]
-        import time
-        logf = nf_dir / "preprocess.log"
-        comb = work / "final" / "combined"
-        print(f"    running preprocess (progress=arrow files created/{n_ok}, details→{logf.name})")
-        with open(logf, "w") as lg:
-            proc = subprocess.Popen(cmd, stdout=lg, stderr=subprocess.STDOUT)
-            t0 = time.time()
-            while proc.poll() is None:
-                time.sleep(3)
-                done = len(list(comb.glob("*.arrow"))) if comb.exists() else 0
-                el = int(time.time() - t0)
-                print(f"\r      arrow {done}/{n_ok}  ({el}s)   ", end="", flush=True)
-            proc.wait()
-        n_arrow = len(list(comb.glob("*.arrow"))) if comb.exists() else 0
-        print(f"\r    → rc={proc.returncode}  arrow {n_arrow} files @ {comb}"
-              + ("" if n_arrow else f"  (if 0, check {logf})") + " " * 10)
-    _save_config(out_base / args.model, args, dataset, extract_mode,
-                 masked=any([args.ip_mask, args.port_mask]))
 
 
 def build_byte_model(args, dataset: str, fl_dir: Path, out_base: Path,
@@ -453,8 +357,7 @@ def main():
 
         import copy
         feat = [m for m in args.model if m in FEAT_MODELS]
-        nf   = [m for m in args.model if m in NETFOUND_MODELS]
-        byte = [m for m in args.model if m not in FEAT_MODELS and m not in NETFOUND_MODELS]
+        byte = [m for m in args.model if m not in FEAT_MODELS]
 
         print(f"\n{'='*64}")
         print(f"  dataset  : {dataset}")
@@ -465,16 +368,13 @@ def main():
         print(f"  masks    : ip={args.ip_mask} port={args.port_mask} "
               f"l3={args.l3_mask} l4={args.l4_mask}")
         print(f"  classes  : {len(label_map)}")
-        print(f"  groups   : feat={feat}  nf={nf}  byte={byte}")
+        print(f"  groups   : feat={feat}  byte={byte}")
         print(f"{'='*64}")
 
         # feat: xgboost first (rf reuses it)
         for m in sorted(feat, key=lambda x: 0 if x == "xgboost" else 1):
             a2 = copy.copy(args); a2.model = m
             build_feat_model(a2, dataset, fl_dir, out_base, label_map, args.splits)
-        for m in nf:
-            a2 = copy.copy(args); a2.model = m
-            build_netfound(a2, dataset, fl_dir, out_base, label_map, args.splits)
         if byte:                                  # ★ N byte models = built together with a single parse
             build_byte_multi(args, dataset, fl_dir, out_base, label_map, args.splits, byte)
 

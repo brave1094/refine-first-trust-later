@@ -16,7 +16,7 @@ import pandas as pd
 
 HERE  = os.path.dirname(os.path.abspath(__file__))
 DATA  = os.path.normpath(os.path.join(HERE, "..", "01_dataset"))
-VARIANT = os.environ.get("SCIE_VARIANT", "")          # full|sizectrl → separate paths/outputs
+VARIANT = os.environ.get("SCIE_VARIANT", "sizectrl")  # full|sizectrl|strat; the article uses sizectrl
 PARAM = str(RP.PARAM)
 OUT   = os.path.join(str(RP.SHAP_TREE), VARIANT); os.makedirs(OUT, exist_ok=True)
 

@@ -5,7 +5,8 @@
 #     step: 3 | align | 4 | 5 | 6 | train | 7 | all      datasets: default = all eight public datasets
 #
 #   environment:
-#     NM_DATASET_ROOT   dataset root (default <repo>/00_assets/datasets), arranged by step 1 (00_assets/datasets/_tools/)
+#     NM_DATASET_ROOT   dataset root (default <repo>/00_assets/datasets), filled by step 1 (02_preprocess/00_rename.py)
+#     SPLITCAP          SplitCap.exe for step 3 (default 00_assets/tools/SplitCap/; bash 00_assets/tools/setup_splitcap.sh)
 #     CIC17_LABELS      folder with the official CIC-IDS2017 "TrafficLabelling" CSVs (cic17 labelling in step 3)
 #     WORKERS           parallel workers for steps 3-6 (default 16)
 #     GPU               GPU index for training (default 0)
@@ -64,12 +65,12 @@ step5() {   # session lists: full (1,000 per class, hash split 8:2, seed 42), si
     run python3 make_dataset_stat.py --dataset "$ds"
   done
 }
-step6() {   # model inputs for the seven models and the three variants
+step6() {   # model inputs for the seven models and the three variants (the five byte models share one parse)
   cd "$REPO/02_preprocess"
-  for ds in $DATASETS; do for v in $VARIANTS; do for m in $MODELS; do
-    mask=""; [[ "$BYTE_MODELS" == *" $m "* ]] && mask="--ip_mask --port_mask"
-    run python3 06_make_dataset.py --dataset "$ds" --model "$m" --variant "$v" $mask --workers "$WORKERS"
-  done; done; done
+  for ds in $DATASETS; do for v in $VARIANTS; do
+    run python3 06_make_dataset.py --dataset "$ds" --model xgboost rf --variant "$v" --workers "$WORKERS"
+    run python3 06_make_dataset.py --dataset "$ds" --model $BYTE_MODELS --variant "$v" --ip_mask --port_mask --workers "$WORKERS"
+  done; done
 }
 step_train() {   # Exp1-Exp4 x variants x seeds x models
   cd "$REPO/03_model"
@@ -80,20 +81,23 @@ step_train() {   # Exp1-Exp4 x variants x seeds x models
   run python3 02_result_table.py
 }
 step7() {   # analyses behind Illusions 1-5 (99_documents/PAPER_MAP.md maps each table and figure to its script)
+  export SCIE_VARIANT=sizectrl                  # Illusions 3-5 are analysed on the sizectrl variant
+  cd "$REPO/02_preprocess"
+  run python3 08_make_field_map.py --dataset $DATASETS --variant sizectrl --split test --mode denoised --workers "$WORKERS"
   cd "$REPO/04_analysis"
   run python3 seed_stats.py
-  run python3 a3_extract_emb.py --gpu "$GPU"
-  run python3 a3_extract_emb_uer.py --gpu "$GPU"
-  run python3 a3_metrics.py
+  run python3 a3_extract_emb.py --gpu "$GPU" --tsne
+  for m in etbert trafficformer; do run python3 a3_extract_emb_uer.py --model "$m" --gpu "$GPU" --tsne; done
   run python3 a3_summary.py
   run python3 a4_exp2_noise.py
   run python3 a4_eval_gen.py
-  run python3 a5_treeshap.py
-  run python3 a6_dlshap.py --gpu "$GPU"
-  run python3 a6_dlshap_uer.py --gpu "$GPU"
+  for m in rf xgboost; do run python3 a5_treeshap.py --model "$m"; done
+  for m in 2dcnn yatc netmamba; do run python3 a6_dlshap.py --model "$m" --gpu "$GPU"; done
+  for m in etbert trafficformer; do run python3 a6_dlshap_uer.py --model "$m" --gpu "$GPU"; done
   run python3 a6_audit.py
   run python3 a7_field_agg.py
-  for s in 01_target_signal 02_convergence 03_boundary 04_fail_to_eval 05_feat_importance 05b_treeshap 05c_uncond_dist; do
+  for s in 01_target_signal 02_convergence 03_boundary 04_fail_to_eval 05_feat_importance 05b_treeshap 05c_uncond_dist \
+           strat_analysis compare_sz_strat; do
     run python3 "$s.py"
   done
 }

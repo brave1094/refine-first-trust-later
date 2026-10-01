@@ -23,9 +23,6 @@ Masking convention for byte-based models:
 xgboost / rf do not go through shaping and use the 1,205-feature extraction path
 of 03_model/own_models/02_xgboost/extractor.py as is (see 06_make_dataset.py).
 """
-BYTE_MODELS = ["2dcnn", "etbert", "yatc", "netmamba", "trafficformer", "mm4flow"]
+BYTE_MODELS = ["2dcnn", "etbert", "yatc", "netmamba", "trafficformer"]
 FEAT_MODELS = ["xgboost", "rf"]
-# NetFound: separate pcap→arrow (HF tokenizer) pipeline. Instead of the make_sample contract,
-#   06 build_netfound arranges filelist sessions into {int_label}/raw/ → container preprocess → arrow.
-NETFOUND_MODELS = ["netfound"]
-ALL_MODELS = FEAT_MODELS + BYTE_MODELS + NETFOUND_MODELS
+ALL_MODELS = FEAT_MODELS + BYTE_MODELS

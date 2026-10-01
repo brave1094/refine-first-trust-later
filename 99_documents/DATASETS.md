@@ -21,7 +21,7 @@ is included.
 | cic18 | CSE-CIC-IDS2018 | Sharafaldin et al., ICISSP 2018 | <https://www.unb.ca/cic/datasets/ids-2018.html> (AWS) | 14 | 51,234,354 |
 | iot23 | CIC IoT Dataset 2023 | Neto et al., Sensors 2023 | <https://www.unb.ca/cic/datasets/iotdataset-2023.html> | 30 | 1,155,285,412 |
 
-\* task-3 classes and sessions before refinement (Table 1 of the article); per-class counts are in
+\* classes of task 3 (the finest of the three label levels task1 > task2 > task3) and sessions before refinement (Table 1 of the article); per-class counts are in
 `99_documents/results/dataset_stats/<dataset>/01_origin_<dataset>.csv`.
 
 ## Layout expected by the pipeline
@@ -29,9 +29,11 @@ is included.
 ```
 <NM_DATASET_ROOT>/                     default: <repository>/00_assets/datasets
 └── <dataset dir>/                     e.g. 21_ISCX-VPN-2016 (see 00_assets/datasets/_tools/expected_layout.json)
-    └── 01_pcap/<class>/<class>_<i>.pcap        class = <task1>_<task2>_<task3>, e.g. VPN_Chat_AIM_none
+    └── 01_pcap/<class>/<class>_<i>.pcap        class = <task1>_<task2>_<task3> (each part may contain "_"),
+                                                e.g. VPN_Chat_AIM_none: task1 VPN, task2 Chat, task3 AIM
 ```
-Steps 3-6 write `02_session/`, `03_session_stat/`, `04_session_noisy_labeled/` next to `01_pcap/`.
+Steps 3-4 write `02_session/`, `03_session_stat/` (`03_session_stat_labeled/` for cic17 and cic18) and
+`04_session_noisy_labeled/` next to `01_pcap/`; step 6 writes the model inputs to `01_dataset/`.
 
 ## Per dataset
 
@@ -46,8 +48,14 @@ Steps 3-6 write `02_session/`, `03_session_stat/`, `04_session_noisy_labeled/` n
 | cic18 | `Original Network Traffic and Log data/<Day>/pcap.zip` for the nine days (e.g. `aws s3 sync --no-sign-request "s3://cse-cic-ids2018/Original Network Traffic and Log data/" <dst>`) | `python 02_preprocess/00_rename.py --dataset cic18 --src <extracted day folders>`; labels from the official attack schedule in step 3 | name map made when we placed the captures (`02_preprocess/lib_rename/cic18.csv`, 4,006 rows) |
 | iot23 | the 34 folders of `PCAP/` (registration on the download page; 309 files, 588 GB) | `python 02_preprocess/00_rename.py --dataset iot23 --src <PCAP folder>` | `02_preprocess/lib_rename/iot23.csv`: every official file identified by its first 64 KiB (pcap header and first packets, all 309 distinct); size and first packet are checked when placed |
 
-pcapng files are converted to classic pcap with `python 00_assets/datasets/_tools/convert_pcapng.py --dataset <id>` (needs
-`editcap`), because the session statistics use dpkt.
+`00_rename.py` converts the official pcapng files to classic pcap (the session statistics use dpkt). Captures placed
+without it can be converted with `python 00_assets/datasets/_tools/convert_pcapng.py --dataset <id>` (needs `editcap`).
+
+## Refined session lists
+
+`01_dataset/refined_list/` lists, for every public dataset, the sessions that remain after its default refinement rules
+(`filename, proto, stream`; the refined sets of Table 8, identical per class). cic18 and iot23 are on Zenodo:
+[doi:10.5281/zenodo.23082133](https://doi.org/10.5281/zenodo.23082133). See `01_dataset/refined_list/README.md`.
 
 ## Checking the arrangement
 

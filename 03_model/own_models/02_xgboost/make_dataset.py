@@ -16,9 +16,9 @@ Feature composition (edit only the constants below to swap the feature set):
   Options      : --use-port (src/dst port), --use-l4 (tcp/udp one-hot)
 
 Input :
-  4 filelists    : 01_dataset/{dataset}/{task}/list_{split}.csv
+  4 filelists    : 01_dataset/{dataset}/00_filelist{,_sm,_strat}/list_{train|test}_{noisy|denoised}.csv
   Feature source : <dataset_root>/04_session_noisy_labeled/session_stat_{dataset}_*_labeled.csv
-Output : 01_dataset/{dataset}/{task}/xgboost/
+Output : 01_dataset/{dataset}/{full|sizectrl|strat}/xgboost/
   x_{split}.npy          (N, F) float32
   y_{split}.npy          (N,)   int64
   feature_names.json     feature names (column order)

@@ -4,8 +4,8 @@
 shaping_2dcnn.py — Wang et al. 2017 (2D-CNN) input conversion.
 
 Concatenates all packets of the session (from L3) → first 784 bytes → 28×28 image.
-  - normalization: /256.0 (keeps the KNOM convention)
-  - masking/padding value: 257 (257/256 after normalization) — same as KNOM 06_make_dataset_cnn.py
+  - normalization: /256.0
+  - masking/padding value: 257 (257/256 after normalization)
 Output: x_data.npy (N,28,28) float32 / y_data.npy (N,) int64 / files.csv
 """
 import csv

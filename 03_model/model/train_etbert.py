@@ -7,10 +7,9 @@ Input : 01_dataset/{ds}/etbert/{split_mode}/data.tsv (label \t text_a, with head
 Upstream : 00_assets/models/04_etbert/ (uer/, original repo)
 Pretrained: 00_assets/models/04_etbert/models/pre-trained_model.bin
 Vocab : 00_assets/models/04_etbert/models/encryptd_vocab.txt
-Config: 00_assets/models/04_etbert/bert_base_config.json
-(if missing, copy from the KNOM folder with 00_setup_assets.sh)
+Config: 00_assets/models/04_etbert/bert_base_config.json (part of the ET-BERT repository)
 
-Hyperparameters (same as KNOM): epochs 10, batch 32, lr 2e-5, seq 128, warmup 0.1
+Default hyperparameters: epochs 10, batch 32, lr 2e-5, seq 128, warmup 0.1 (the article: run_pipeline.sh)
 """
 import sys as _sys, pathlib as _pl  # noqa: E401  (repository layout: repo_paths.py at the root)
 _sys.path.insert(0, str(next(p for p in _pl.Path(__file__).resolve().parents if (p / "repo_paths.py").exists())))
@@ -253,11 +252,11 @@ def run(args):
         _emb = _np.concatenate(_f)
         if os.environ.get("A3_TSNE"):
             a3_metrics.save_tsne_coords(
-                str(CODE_DIR.parent / "a3_tsne" / args.dataset
+                str(RP.EMB_DIR / "a3_tsne" / os.environ.get("SCIE_VARIANT", "sizectrl") / args.dataset
                     / f"{args.model}_exp{args.exp}.csv"), _emb, _y)
             print(f"[A3-tsne] {args.model}/{args.dataset} exp{args.exp}")
         else:
-            _sil, _sep = a3_metrics.append_long(str(RP.EMB_DIR / "a3_emb_long.csv"),
+            _sil, _sep = a3_metrics.append_long(str(RP.EMB_DIR / f"a3_emb_long_{os.environ.get('SCIE_VARIANT', 'sizectrl')}.csv"),
                                                 args.model, args.dataset, args.exp,
                                                 "test_denoised", _emb, _y)
             print(f"[A3] {args.model}/{args.dataset} exp{args.exp} sil={_sil:.3f} sep={_sep:.2f}")

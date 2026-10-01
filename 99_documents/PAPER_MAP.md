@@ -13,7 +13,7 @@ repository (their data cannot be shared); every other number can be traced below
 | Fig. 3 | experimental design (Exp1-Exp4, three list variants) | `02_preprocess/05_make_filelist.py`, `07_make_sm_filelist.py`, `07b_make_inject_sm.py` | `01_dataset/<ds>/00_filelist*/` |
 | Tables 7-9 | accuracy of Exp1 and Exp3 (full, sizectrl, sizectrl+strat) | `03_model/01_train.py`, `03_model/02_result_table.py` | `99_documents/results/model_results/`, `99_documents/results/result_tables/` |
 | Table 10 | Illusion 1: Delta = Exp1 - Exp3 per model, five-seed statistics | `04_analysis/01_target_signal.py`, `04_analysis/seed_stats.py` | `99_documents/results/analysis/01_target_signal/sizectrl/`, `99_documents/results/analysis/08_seed_stats/` |
-| Section 4.2 (dose-response) | sizectrl+strat injection | `04_analysis/strat_analysis.py`, `compare_sz_strat.py` | `04_analysis/0*/strat/` |
+| Section 4.2 (dose-response) | sizectrl+strat injection | `04_analysis/strat_analysis.py`, `compare_sz_strat.py` | `99_documents/results/analysis/0*/strat/` |
 | Figs. 4-5 | Illusion 2: underfitting / memorisation / no effect | `04_analysis/02_convergence.py` | `99_documents/results/analysis/02_convergence/` |
 | Fig. 6 | Illusion 3: silhouette (and Davies-Bouldin) of penultimate-layer embeddings | `04_analysis/a3_extract_emb.py`, `a3_extract_emb_uer.py`, `a3_metrics.py`, `a3_summary.py`, `04_analysis/03_boundary.py` | `99_documents/results/analysis/03_boundary/` |
 | Table 11, Fig. 7, Tables C.1-C.2 | Illusion 4: Exp1 - Exp4, error decomposition with Exp2 | `04_analysis/a4_exp2_noise.py`, `a4_eval_gen.py`, `04_analysis/04_fail_to_eval.py` | `99_documents/results/analysis/04_fail_to_eval/` |

@@ -87,7 +87,6 @@ _TRACK_PAT = r"\.gif\?|/pd\?|/i/1\.gif"
 #  Numbering follows dataset order (ustc16 → cic17 → cic18 → iot23); Bb_27 ~ Bb_29 are rules for scans mixed into benign captures.
 #    Bb_7        ustc16
 #    Bb_9 ~ 11   cic17
-#    (cic18 rules to be added in this block once finalized)
 #    Bb_24 ~ 14  iot23
 # ══════════════════════════════════════════════════════════════════════════
 

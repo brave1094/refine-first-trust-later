@@ -1,0 +1,16 @@
+class,sessions_before,sessions_after
+Benign,47837580,46987662
+Hulk,1803379,1803379
+HOIC,1074379,1074379
+FTP-Patator,190300,0
+Slowhttptest,105550,0
+Bot,96154,95896
+SSH-Patator,92648,92618
+GoldenEye,26860,22612
+Slowloris,6979,4833
+Brute-Force,260,260
+XSS,116,113
+LOIC-UDP,94,9
+Sql-Injection,50,50
+Infiltration,5,5
+(total),51234354,50081816

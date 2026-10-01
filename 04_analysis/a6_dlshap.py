@@ -39,6 +39,7 @@ import torch
 HERE = os.path.dirname(os.path.abspath(__file__))
 WORK = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
+sys.path.insert(0, str(RP.MODEL))                       # lib.train_common lives in 03_model
 from lib.train_common import load_label_map, load_npy_split, load_files_csv  # noqa: E402
 
 DATA = os.path.join(WORK, "01_dataset")

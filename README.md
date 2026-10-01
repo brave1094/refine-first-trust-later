@@ -17,10 +17,12 @@ A guide with the overview, the pipeline, and a quick start is in [`99_documents/
 ```
 00_assets/       downloaded resources
   datasets/        the official captures, arranged as <dataset dir>/01_pcap/<class>/  (NM_DATASET_ROOT)
-    _tools/          arrange the captures, official labels (cic17, cic18), per-class checks
+    _tools/          official labels (cic17, cic18), pcapng conversion, per-class checks
+  tools/           SplitCap for step 3, fetched by setup_splitcap.sh (not redistributed)
   models/          third-party model code and weights, fetched by setup_models.sh; YaTC compatibility shim
-01_dataset/      generated data: session lists, session keys, model inputs, field-name maps
-02_preprocess/   preprocessing: sessions, statistics, the 50-rule engine (noise_rule/), lists, model inputs
+01_dataset/      generated data: session lists, session keys, refined session lists (refined_list/), model inputs,
+                 field-name maps
+02_preprocess/   00_rename.py (step 1) and lib_rename/; sessions, statistics, the 50-rule engine (noise_rule/), lists, model inputs
 03_model/        training (01_train.py, model/, lib/) and our own model code (own_models/: 1,205 features, 2D-CNN)
 04_analysis/     analyses of the five illusions (a3-a7, 01-05*, seed statistics)
 99_documents/    DATASETS, MODELS, PIPELINE, PAPER_MAP, guide (PPTX/PDF), Supplementary Material S1
@@ -33,10 +35,10 @@ In the code, *denoised* means *refined*, the term used in the article.
 
 ## Seven steps
 
-| Step | | Where |
+| Step | What | Where |
 |---|---|---|
-| 1 | download the eight public datasets and arrange them | [`99_documents/DATASETS.md`](99_documents/DATASETS.md), `00_assets/datasets/_tools/` |
-| 2 | fetch the third-party model code and weights | [`99_documents/MODELS.md`](99_documents/MODELS.md), `00_assets/models/setup_models.sh` |
+| 1 | download the eight public datasets and give their files our names | [`99_documents/DATASETS.md`](99_documents/DATASETS.md), `02_preprocess/00_rename.py` |
+| 2 | fetch the third-party model code and weights, and SplitCap | [`99_documents/MODELS.md`](99_documents/MODELS.md), `00_assets/models/setup_models.sh`, `00_assets/tools/setup_splitcap.sh` |
 | 3 | split sessions and compute per-session statistics | `02_preprocess/01_session_split.py`, `03_session_stat.py` |
 | 4 | mark sessions with the 50 rules | `02_preprocess/04_noise_labeling.py`, `02_preprocess/noise_rule/` |
 | 5 | build the session lists (or align the released ones) | `02_preprocess/05_make_filelist.py`, `07_*`, `align_session_lists.py` |
@@ -49,15 +51,16 @@ In the code, *denoised* means *refined*, the term used in the article.
 git clone https://github.com/brave1094/refine-first-trust-later.git && cd refine-first-trust-later
 pip install -r requirements.txt
 bash 00_assets/models/setup_models.sh                                        # step 2
+bash 00_assets/tools/setup_splitcap.sh                                       # SplitCap for step 3 (needs mono)
 python 02_preprocess/00_rename.py --dataset vpn16 --src /path/to/ISCX-VPN-2016   # step 1: official files -> our names
 bash run_pipeline.sh 3 vpn16            # sessions + statistics, per-class check
 bash run_pipeline.sh align vpn16        # use the released session lists
-bash run_pipeline.sh 4 vpn16            # 50-rule marking
+bash run_pipeline.sh 4 vpn16            # 50-rule marking (step 5 is skipped: LISTS=published uses the released lists)
 bash run_pipeline.sh 6 vpn16            # model inputs
 GPU=0 bash run_pipeline.sh train vpn16  # Exp1-Exp4, three variants, five seeds
 bash run_pipeline.sh 7                  # analyses (99_documents/PAPER_MAP.md)
 ```
-Requirements: Python 3.10+, tshark/editcap (Wireshark), and `requirements.txt` for steps 1 and 3-7; each deep model
+Requirements: Python 3.10+, tshark/editcap/mergecap (Wireshark), mono (SplitCap), and `requirements.txt` for steps 1 and 3-7; each deep model
 needs the environment of its upstream repository (99_documents/MODELS.md). The captures go to `00_assets/datasets/`
 by default; set `NM_DATASET_ROOT` to use another location.
 

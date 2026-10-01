@@ -124,7 +124,9 @@ def main():
             continue
         if os.path.lexists(dst):
             kept += 1
-        elif not a.dry_run:
+        elif a.dry_run:
+            placed += 1                                   # would be placed
+        else:
             os.makedirs(os.path.dirname(dst), exist_ok=True)
             cut = int(r["cut_to_bytes"]) if r["cut_to_bytes"] else None
             src = srcs[0]
@@ -145,7 +147,7 @@ def main():
             if got != want:
                 bad.append(f"{cls}/{our}: size/packets/first-packet {got} != map {want}")
     n_t = len(targets)
-    print(f"{a.dataset}: targets {n_t} | placed {placed}{' (dry run)' if a.dry_run else ''} | already there {kept} | "
+    print(f"{a.dataset}: targets {n_t} | {'would place' if a.dry_run else 'placed'} {placed} | already there {kept} | "
           f"official files not used in the article {unused} | not in the map {len(unknown)} | missing {len(missing)} | "
           f"check failures {len(bad)}")
     for x in missing[:30]:

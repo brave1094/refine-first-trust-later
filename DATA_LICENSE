@@ -1,11 +1,14 @@
-The session lists, dataset statistics, and experimental results in the data/ and results/ folders
-are licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0):
-https://creativecommons.org/licenses/by/4.0/
+The session lists, rename maps, dataset statistics, and experimental results of this repository -- 01_dataset/,
+02_preprocess/lib_rename/, and 99_documents/results/ -- are licensed under the Creative Commons Attribution 4.0
+International License (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
 
 You may share and adapt them for any purpose, provided that you give appropriate credit by citing the article
 (see CITATION.cff) and indicate if changes were made.
 
-Exception: files derived from the CipherSpectrum dataset (data/*/cispec*) inherit the CC BY-NC 4.0 license
-of the original dataset (https://cgi.cse.unsw.edu.au/~cspectrum/) and may be used for non-commercial purposes only.
+Exception: files derived from the CipherSpectrum dataset inherit the CC BY-NC 4.0 license of the original dataset
+(https://cgi.cse.unsw.edu.au/~cspectrum/) and may be used for non-commercial purposes only. These are 01_dataset/cispec/,
+02_preprocess/lib_rename/cispec.csv.gz, the cispec folders and rows in 99_documents/results/, and the cispec entry of
+00_assets/datasets/_tools/expected_layout.json.
 
-The original traffic captures are not redistributed here; obtain them from their publishers.
+The code is licensed under the MIT License (LICENSE). The original traffic captures are not redistributed here;
+obtain them from their publishers (99_documents/DATASETS.md).
