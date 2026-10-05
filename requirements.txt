@@ -12,4 +12,6 @@ xgboost
 optuna
 joblib
 shap
+cleanlab
+cleanlab
 matplotlib

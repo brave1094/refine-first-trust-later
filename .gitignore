@@ -24,6 +24,8 @@ backup_*
 01_dataset/*/full/
 01_dataset/*/sizectrl/
 01_dataset/*/strat/
+01_dataset/*/cl_*/
+99_documents/results/analysis/09_cl_compare/keys/
 03_model/param/
 99_documents/results/wrong_lists/
 99_documents/results/embeddings/

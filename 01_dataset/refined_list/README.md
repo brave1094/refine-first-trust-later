@@ -2,14 +2,14 @@
 
 The sessions of each public dataset that remain after the default refinement rules of the dataset, with the rule
 engine of this repository (`02_preprocess/noise_rule/`, rules listed in `default_clean_rules` of
-`noise_rule/<NN>_noise_rule_<ds>.py`). They are the refined sets behind Table 8 of the article; the per-class counts
+`noise_rule/<NN>_noise_rule_<ds>.py`). They are the refined sets behind Table 4 of the article; the per-class counts
 match `99_documents/results/dataset_stats/<ds>/02_refined_<ds>.csv` exactly (`00_stat/check.txt`).
 
 | Folder | Content |
 |---|---|
 | `<ds>/refined_<ds>_<k>.csv` | `filename`, `proto`, `stream` of every refined session, 1,000,000 rows per file (`k` = 1, 2, ...) |
 | `00_stat/<ds>.csv` | per class (task 3): sessions before and after refinement, and the total |
-| `00_stat/check.txt` | comparison with the released Table 8 counts |
+| `00_stat/check.txt` | comparison with the released Table 4 counts |
 
 A session is identified by the capture file and its transport stream:
 - `filename`: the file in `01_pcap/` (cic17, cic18, iot23, ustc16: one capture holds many sessions) or the session file

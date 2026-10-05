@@ -57,7 +57,12 @@ def common_paths(args):
     base = WORK_DIR / "01_dataset" / args.dataset
     train_dir = base / variant / args.model / f"train_{args.train_mode}"
     test_dir = base / variant / args.model / f"test_{args.test_mode}"
-    label_map = base / VARIANT_FL[variant] / "label_map.json"
+    # cl_* = variants of the confident-learning comparison (04_analysis/cl_compare): subsets of the sizectrl sample,
+    # so they share the sizectrl label map
+    fl = VARIANT_FL.get(variant) or ("00_filelist_sm" if variant.startswith("cl_") else None)
+    if fl is None:
+        raise SystemExit(f"[ERROR] unknown variant: {variant}")
+    label_map = base / fl / "label_map.json"
     from lib.train_common import param_dir_path
     param_dir = param_dir_path(args.model, args.dataset, args.exp)   # separated by SCIE_VARIANT
     return train_dir, test_dir, label_map, param_dir
@@ -68,7 +73,7 @@ def main():
     ap.add_argument("--model",   required=True, choices=MODELS)
     ap.add_argument("--dataset", required=True)
     ap.add_argument("--exp",     required=True, type=int, choices=[1, 2, 3, 4])
-    ap.add_argument("--variant", choices=["full", "sizectrl", "strat"], default="full",
+    ap.add_argument("--variant", default="full",   # full|sizectrl|strat|cl_* (04_analysis/cl_compare/run_cl_dl.sh)
                     help="dataset variant to read + output separation folder (SCIE_VARIANT)")
     # common
     ap.add_argument("--gpu",           type=int, default=0)

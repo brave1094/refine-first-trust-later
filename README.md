@@ -24,10 +24,12 @@ A guide with the overview, the pipeline, and a quick start is in [`99_documents/
                  field-name maps
 02_preprocess/   00_rename.py (step 1) and lib_rename/; sessions, statistics, the 50-rule engine (noise_rule/), lists, model inputs
 03_model/        training (01_train.py, model/, lib/) and our own model code (own_models/: 1,205 features, 2D-CNN)
-04_analysis/     analyses of the five illusions (a3-a7, 01-05*, seed statistics)
+04_analysis/     analyses of the five illusions (a3-a7, 01-05*, seed statistics); cl_compare/: rules vs. confident
+                 learning, error composition from the rule marking, macro-F1, sampled noise rates; cl_compare/: rules vs. confident
+                 learning, error composition from the rule marking, macro-F1, sampled noise rates
 99_documents/    DATASETS, MODELS, PIPELINE, PAPER_MAP, guide (PPTX/PDF), Supplementary Material S1
   results/         our numbers: model results, result tables, analysis outputs, dataset statistics, refinement counts
-  survey/          the coded list of the 68 surveyed NTC model papers (Table 4, Fig. 1, Table A.1)
+  survey/          the coded list of the 68 surveyed NTC model papers (Table 2, Fig. 1, Table B.1)
 repo_paths.py    the single definition of this layout, used by every script
 run_pipeline.sh  steps 3-7 with the settings of the article
 ```

@@ -54,8 +54,20 @@ without it can be converted with `python 00_assets/datasets/_tools/convert_pcapn
 ## Refined session lists
 
 `01_dataset/refined_list/` lists, for every public dataset, the sessions that remain after its default refinement rules
-(`filename, proto, stream`; the refined sets of Table 8, identical per class). cic18 and iot23 are on Zenodo:
+(`filename, proto, stream`; the refined sets of Table 4, identical per class). cic18 and iot23 are on Zenodo:
 [doi:10.5281/zenodo.23082133](https://doi.org/10.5281/zenodo.23082133). See `01_dataset/refined_list/README.md`.
+
+## Session lists of cic18 and iot23
+
+The full (`00_filelist`) and sizectrl (`00_filelist_sm`) lists of cic18 and iot23 are restored from the inputs the seven
+models were trained on (the xgboost feature files of 2026-08-22): one row per session, in the order of training. For
+large datasets, `05_make_filelist.py` reads the shuffled captures in one bucket per `--workers`, each with its own seed,
+and stops reading once every class is full; its sample therefore also depends on `--workers`, `--chunk_rows`, and
+`--early_stop_mult`. These settings were not recorded for those runs, and a later run of step 5 with the same code and
+data drew a different sample, so rerunning step 5 (`LISTS=rebuild`) does not give the lists of the article for these
+two datasets; use the released lists (`LISTS=published`). The strat lists (`00_filelist_strat`) are the ones used for
+training. The models of those runs numbered the classes differently from `label_map.json` (iot23: `SlowLoris` last;
+cic18: a map of 13 classes): the class names are the same, only the order of the output units differs.
 
 ## Checking the arrangement
 
