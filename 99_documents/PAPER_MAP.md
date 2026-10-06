@@ -16,7 +16,7 @@ repository (their data cannot be shared); every other number can be traced below
 | Table D.3 | accuracy and macro-F1 of Exp1 and Exp3 | `04_analysis/cl_compare/macro_f1_check.py` | `99_documents/results/analysis/09_cl_compare/macro_f1_check.csv` |
 | Section 4.2 (dose-response) | sizectrl+strat injection | `04_analysis/strat_analysis.py`, `compare_sz_strat.py` | `99_documents/results/analysis/0*/strat/` |
 | Section 4.2 (removing only the noise) | training on the refined set vs. removing only rule-marked sessions | `04_analysis/cl_compare/cl_compare.py` | `99_documents/results/analysis/09_cl_compare/` |
-| Figs. 4-5 | Illusion 2: underfitting / memorisation / no effect | `04_analysis/02_convergence.py` | `99_documents/results/analysis/02_convergence/` |
+| Figs. 4-5 | Illusion 2: underfitting (Fig. 4) and overfitting (Fig. 5) | `04_analysis/02_convergence.py` | `99_documents/results/analysis/02_convergence/` |
 | Fig. 6 | Illusion 3: silhouette (and Davies-Bouldin) of penultimate-layer embeddings | `04_analysis/a3_extract_emb.py`, `a3_extract_emb_uer.py`, `a3_metrics.py`, `a3_summary.py`, `04_analysis/03_boundary.py` | `99_documents/results/analysis/03_boundary/` |
 | Table 7, Table D.4 | Illusion 4: Exp1 - Exp4 | `04_analysis/04_fail_to_eval.py`, `a4_eval_gen.py` | `99_documents/results/analysis/04_fail_to_eval/` |
 | Fig. 7, Table D.5 | Illusion 4: error composition, with noise taken from the rule marking of each test session | `04_analysis/cl_compare/mech_true_noise.py` (replaces the list-difference definition of `a4_exp2_noise.py`) | `99_documents/results/analysis/09_cl_compare/mech_true_noise.csv`, `mech_true_noise_long.csv` |
